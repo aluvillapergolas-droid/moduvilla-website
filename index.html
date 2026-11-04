@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ModuVilla · CoveCore · AluVilla | Modular Homes & Outdoor Living</title>
+<meta name="description" content="Discover modular homes, prefabricated houses, A-frame cabins, portable toilets, aluminum pergolas and PVC roofing panels. Direct factory supply from China.">
+<meta name="keywords" content="Modular Homes, Prefabricated Houses, A Frame Houses, Portable Toilets, Aluminum Pergolas, Garden Pavilions, PVC Corrugated Sheets">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --white:#fff;
+  --bg:#f7f8f6;
+  --gray:#eff1ee;
+  --line:#e6e9e5;
+  --text:#242a26;
+  --muted:#737b75;
+  --green:#697d6d;
+  --green-dark:#4f6554;
+  --radius:12px;
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  font-family:'DM Sans',Arial,sans-serif;
+  color:var(--text);
+  background:var(--white);
+  line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+img{display:block;width:100%;object-fit:cover}
+button,select{font:inherit}
+.container{width:min(var(--max),92%);margin:auto}
+.section{padding:90px 0}
+.section-light{background:var(--bg)}
+.eyebrow{
+  color:var(--green);
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:11px;
+  font-weight:700;
+}
+h1,h2,h3{line-height:1.2}
+h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,45px);
+  font-weight:500;
+}
+.section-heading{
+  max-width:700px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+.section-heading p{color:var(--muted);margin-top:15px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 25px;
+  border-radius:5px;
+  font-size:13px;
+  font-weight:700;
+  transition:.25s;
+}
+.btn-primary{background:var(--green-dark);color:white}
+.btn-primary:hover{background:#354b3b}
+.btn-outline{border:1px solid #cbd1ca;color:var(--text)}
+.btn-outline:hover{background:var(--gray)}
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+.brand{flex-shrink:0;line-height:1.25}
+.brand-name{
+  white-space:nowrap;
+  font-size:clamp(15px,1.5vw,20px);
+  font-weight:800;
+  letter-spacing:-.6px;
+}
+.brand-name span{color:var(--green)}
+.brand-tagline{
+  font-size:9px;
+  letter-spacing:.5px;
+  color:var(--muted);
+  margin-top:5px;
+  white-space:nowrap;
+}
+.nav-area{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:24px;
+  margin-left:auto;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  gap:23px;
+}
+.nav>a,.nav-item>a{
+  font-size:12px;
+  font-weight:600;
+  white-space:nowrap;
+}
+.nav a:hover{color:var(--green)}
+.nav-item{position:relative}
+.dropdown{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:-15px;
+  padding:15px;
+  width:240px;
+  background:white;
+  border:1px solid var(--line);
+  box-shadow:0 12px 35px rgba(0,0,0,.07);
+  border-radius:8px;
+}
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown{display:block}
+.dropdown a{
+  display:block;
+  padding:9px;
+  font-size:12px;
+  border-radius:5px;
+}
+.dropdown a:hover{background:var(--bg)}
+.language select{
+  border:1px solid var(--line);
+  background:white;
+  padding:9px 10px;
+  border-radius:5px;
+  font-size:12px;
+  color:var(--text);
+  cursor:pointer;
+}
+.mobile-toggle{
+  display:none;
+  border:0;
+  background:none;
+  font-size:25px;
+  cursor:pointer;
+}
+/* HERO */
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  background:
+  linear-gradient(90deg,rgba(20,28,23,.62),rgba(20,28,23,.12)),
+  url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85') center/cover;
+  color:white;
+}
+.hero-content{max-width:850px;padding:100px 0}
+.hero .eyebrow{color:#e3e9df}
+.hero-logo{
+  font-size:clamp(30px,5.5vw,66px);
+  font-weight:800;
+  letter-spacing:-2px;
+  white-space:nowrap;
+  line-height:1.15;
+  margin:25px 0 14px;
+}
+.hero-logo span{color:#dce6d9}
+.hero-tagline{
+  font-size:clamp(14px,2vw,20px);
+  font-weight:500;
+  letter-spacing:.4px;
+  font-style:normal;
+}
+.hero-desc{
+  max-width:620px;
+  color:#f0f1ed;
+  font-size:15px;
+  margin:24px 0 32px;
+}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:13px}
+.hero .btn-outline{border-color:#fff;color:#fff}
+.hero .btn-outline:hover{background:#fff;color:var(--text)}
+/* INTRO STATS */
+.stats{padding:35px 0;border-bottom:1px solid var(--line)}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  text-align:center;
+}
+.stat strong{
+  display:block;
+  font-family:'Playfair Display',serif;
+  font-size:35px;
+  font-weight:500;
+}
+.stat span{font-size:11px;color:var(--muted);letter-spacing:1px}
+/* PRODUCTS */
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.product-card{
+  background:white;
+  border:1px solid var(--line);
+  overflow:hidden;
+  border-radius:var(--radius);
+  transition:.3s;
+}
+.product-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.07);
+}
+.product-card img{height:245px;transition:.4s}
+.product-card:hover img{transform:scale(1.035)}
+.product-img{overflow:hidden}
+.product-info{padding:24px}
+.product-info h3{font-size:19px;margin-bottom:10px}
+.product-info p{font-size:13px;color:var(--muted);min-height:66px}
+.product-link{
+  display:inline-block;
+  color:var(--green-dark);
+  font-size:12px;
+  font-weight:700;
+  margin-top:16px;
+  border-bottom:1px solid var(--green);
+  padding-bottom:4px;
+}
+/* ABOUT */
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:65px;
+  align-items:center;
+}
+.about-image img{height:470px;border-radius:var(--radius)}
+.about-copy p{color:var(--muted);font-size:14px;margin:20px 0}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:28px 0}
+.feature{border-left:2px solid var(--green);padding-left:13px}
+.feature strong{display:block;font-size:13px}
+.feature span{font-size:11px;color:var(--muted)}
+/* PROJECTS */
+.project-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:16px;
+}
+.project-grid img{height:270px;border-radius:8px}
+.project-grid .project-large img{height:370px}
+.project-caption{font-size:12px;color:var(--muted);margin-top:9px}
+/* PROCESS */
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.process-item{
+  padding:25px;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+.process-number{
+  color:var(--green);
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+}
+.process-item h3{font-size:16px;margin:12px 0}
+.process-item p{font-size:12px;color:var(--muted)}
+/* BLOG */
+.blog-card{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+}
+.blog-card img{height:100%;min-height:340px}
+.blog-copy{padding:40px}
+.blog-copy h3{
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  margin:15px 0;
+}
+.blog-copy p{font-size:13px;color:var(--muted)}
+.blog-meta{font-size:11px;color:var(--green);font-weight:700}
+.article{
+  max-width:850px;
+  margin:auto;
+}
+.article h2{font-size:35px;margin:25px 0 15px}
+.article h3{font-size:21px;margin:30px 0 12px}
+.article p{font-size:14px;color:#555f58;margin:12px 0}
+.article ul{padding-left:22px;color:#555f58;font-size:14px}
+.article li{margin:8px 0}
+.article-image{height:390px;border-radius:9px;margin:25px 0}
+/* CONTACT */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:start;
+}
+.contact-copy p{font-size:14px;color:var(--muted);margin:15px 0}
+.contact-list{margin-top:28px}
+.contact-list a,.contact-list div{
+  display:block;
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+  font-size:13px;
+}
+.contact-form{
+  background:white;
+  border:1px solid var(--line);
+  padding:30px;
+  border-radius:10px;
+}
+.contact-form input,.contact-form textarea,.contact-form select{
+  width:100%;
+  padding:13px;
+  margin:8px 0 15px;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:#fff;
+  outline:none;
+  font-size:13px;
+}
+.contact-form textarea{min-height:120px;resize:vertical}
+.contact-form label{font-size:12px;font-weight:600}
+.contact-form button{border:0;cursor:pointer;width:100%}
+/* FOOTER */
+footer{background:#f3f4f1;padding:55px 0 20px}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr;
+  gap:35px;
+}
+footer h3{font-size:13px;margin-bottom:17px}
+footer p,footer a{font-size:12px;color:var(--muted)}
+footer a{display:block;margin:9px 0}
+footer a:hover{color:var(--green-dark)}
+.copyright{
+  border-top:1px solid var(--line);
+  margin-top:40px;
+  padding-top:20px;
+  font-size:11px;
+  color:var(--muted);
+  text-align:center;
+}
+/* WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  z-index:2000;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.18);
+  transition:.2s;
+}
+.whatsapp-float:hover{transform:scale(1.08)}
+.whatsapp-float svg{width:32px;height:32px;fill:white}
+/* RESPONSIVE */
+@media(max-width:1050px){
+ .nav-area{gap:14px}
+ .nav{gap:13px}
+ .nav>a,.nav-item>a{font-size:11px}
+ .brand-tagline{font-size:8px}
+}
+@media(max-width:850px){
+ .header-inner{min-height:76px}
+ .mobile-toggle{display:block}
+ .nav-area{
+  display:none;
+  position:absolute;
+  left:0;right:0;top:100%;
+  background:white;
+  padding:20px 5%;
+  border-bottom:1px solid var(--line);
+  align-items:stretch;
+ }
+ .nav-area.open{display:flex;flex-direction:column}
+ .nav{flex-direction:column;align-items:stretch;gap:0}
+ .nav>a,.nav-item>a{display:block;padding:12px 0;font-size:14px}
+ .dropdown{
+  position:static;
+  width:100%;
+  display:block;
+  box-shadow:none;
+  border:0;
+  padding:0 12px;
+ }
+ .language select{width:100%}
+ .hero{min-height:570px}
+ .hero-logo{white-space:normal}
+ .products-grid{grid-template-columns:repeat(2,1fr)}
+ .about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}
+ .project-grid{grid-template-columns:1fr 1fr}
+ .project-grid .project-large img,.project-grid img{height:260px}
+ .process-grid{grid-template-columns:repeat(2,1fr)}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:550px){
+ .section{padding:65px 0}
+ .brand-name{font-size:14px}
+ .brand-tagline{font-size:7px}
+ .hero{min-height:560px}
+ .hero-content{padding:75px 0}
+ .hero-logo{font-size:35px;letter-spacing:-1.5px}
+ .hero-desc{font-size:13px}
+ .stats-grid{grid-template-columns:1fr 1fr;gap:25px}
+ .stat strong{font-size:29px}
+ .products-grid{grid-template-columns:1fr}
+ .product-card img{height:235px}
+ .about-image img{height:300px}
+ .features{grid-template-columns:1fr 1fr}
+ .project-grid{grid-template-columns:1fr}
+ .project-grid img,.project-grid .project-large img{height:260px}
+ .process-grid{grid-template-columns:1fr}
+ .blog-card{grid-template-columns:1fr}
+ .blog-card img{min-height:220px;height:220px}
+ .blog-copy{padding:25px}
+ .blog-copy h3{font-size:23px}
+ .article-image{height:240px}
+ .article h2{font-size:28px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:25px}
+ .contact-form{padding:20px}
+ .whatsapp-float{width:54px;height:54px;right:16px;bottom:16px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="container header-inner">
+  <a href="#home" class="brand">
+   <div class="brand-name">ModuVilla <span>·</span> CoveCore <span>·</span> AluVilla</div>
+   <div class="brand-tagline">Where Architecture Meets Nature</div>
+  </a>
+
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+
+  <div class="nav-area" id="navArea">
+   <nav class="nav">
+    <a href="#home" data-i18n="home">Home</a>
+    <div class="nav-item">
+     <a href="#products" data-i18n="products">Products ▾</a>
+     <div class="dropdown">
+      <a href="#modular-homes">Modular Houses</a>
+      <a href="#integrated-homes">Integrated Houses</a>
+      <a href="#aframe-houses">A-Frame Houses</a>
+      <a href="#portable-toilets">Portable Toilets</a>
+      <a href="#pergolas">Pergolas & Pavilions</a>
+      <a href="#pvc-panels">PVC Roofing Sheets</a>
+     </div>
+    </div>
+    <a href="#projects" data-i18n="projects">Projects</a>
+    <a href="#about" data-i18n="about">About Us</a>
+    <a href="#blog-article" data-i18n="blog">Blog</a>
+    <a href="#contact" data-i18n="contact">Contact</a>
+   </nav>
+   <div class="language">
+    <select id="languageSelect" aria-label="Select language">
+     <option value="en">English</option>
+     <option value="ar">العربية</option>
+     <option value="es">Español</option>
+     <option value="de">Deutsch</option>
+     <option value="fr">Français</option>
+     <option value="ru">Русский</option>
+    </select>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-content">
+  <div class="eyebrow">MODULAR LIVING · OUTDOOR ARCHITECTURE</div>
+  <div class="hero-logo">ModuVilla · CoveCore · AluVilla</div>
+  <div class="hero-tagline">Where Architecture Meets Nature</div>
+  <p class="hero-desc" data-i18n="heroDesc">
+   Innovative modular living spaces and refined outdoor structures, designed for modern lifestyles and global projects.
+  </p>
+  <div class="hero-buttons">
+   <a href="#products" class="btn btn-primary" data-i18n="explore">Explore Our Products →</a>
+   <a href="#contact" class="btn btn-outline" data-i18n="quote">Request a Quote</a>
+  </div>
+ </div>
+</section>
+
+<section class="stats">
+ <div class="container stats-grid">
+  <div class="stat"><strong>2024</strong><span>ESTABLISHED</span></div>
+  <div class="stat"><strong>20,000 m²</strong><span>FACTORY AREA</span></div>
+  <div class="stat"><strong>50</strong><span>TEAM MEMBERS</span></div>
+  <div class="stat"><strong>Global</strong><span>PROJECT SOLUTIONS</span></div>
+ </div>
+</section>
+
+<section class="section" id="products">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">OUR COLLECTION</div>
+   <h2>Explore Our Products</h2>
+   <p>From modular living spaces to outdoor architectural solutions, discover products designed for comfort, function and modern design.</p>
+  </div>
+
+  <div class="products-grid">
+
+   <article class="product-card" id="modular-homes">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Modern modular prefabricated house" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>Modular Houses</h3>
+     <p>Flexible modular living solutions for residential, commercial and accommodation projects.</p>
+     <a class="product-link" href="#contact" data-product="Modular Houses">Explore Product →</a>
+    </div>
+   </article>
+
+   <article class="product-card" id="integrated-homes">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Integrated prefabricated house" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>Integrated Houses</h3>
+     <p>Practical prefabricated buildings combining efficient construction and comfortable interiors.</p>
+     <a class="product-link" href="#contact" data-product="Integrated Houses">Explore Product →</a>
+    </div>
+   </article>
+
+   <article class="product-card" id="aframe-houses">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=900&q=85" alt="A frame cabin in nature" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>A-Frame Houses</h3>
+     <p>Distinctive triangular architecture for resorts, glamping sites and nature retreats.</p>
+     <a class="product-link" href="#contact" data-product="A-Frame Houses">Explore Product →</a>
+    </div>
+   </article>
+
+   <article class="product-card" id="portable-toilets">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Modern prefabricated building interior" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>Portable Toilets</h3>
+     <p>Portable sanitation solutions for construction sites, events, parks and outdoor facilities.</p>
+     <a class="product-link" href="#contact" data-product="Portable Toilets">Explore Product →</a>
+    </div>
+   </article>
+
+   <article class="product-card" id="pergolas">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Contemporary outdoor pergola and garden living" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>Pergolas & Pavilions</h3>
+     <p>Elegant outdoor structures for gardens, patios, hotels, restaurants and commercial spaces.</p>
+     <a class="product-link" href="#contact" data-product="Pergolas and Pavilions">Explore Product →</a>
+    </div>
+   </article>
+
+   <article class="product-card" id="pvc-panels">
+    <div class="product-img">
+     <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Modern architectural roof and building materials" loading="lazy">
+    </div>
+    <div class="product-info">
+     <h3>PVC Corrugated Sheets</h3>
+     <p>Roofing panel solutions for buildings, shelters and industrial applications.</p>
+     <a class="product-link" href="#contact" data-product="PVC Corrugated Sheets">Explore Product →</a>
+    </div>
+   </article>
+
+  </div>
+ </div>
+</section>
+
+<section class="section section-light" id="about">
+ <div class="container about-grid">
+  <div class="about-image">
+   <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Modern architecture and manufacturing facilities" loading="lazy">
+  </div>
+  <div class="about-copy">
+   <div class="eyebrow">ABOUT OUR COMPANY</div>
+   <h2>Building Spaces.<br>Creating Possibilities.</h2>
+   <p>
+    Yaodeni Guan Prefabricated Housing Technology Co., Ltd. is a manufacturer focused on modular housing and outdoor architectural solutions.
+   </p>
+   <p>
+    Established in June 2024, our factory covers 20,000 square meters and has a team of 50 employees. We serve global customers with product development, manufacturing and project-oriented solutions.
+   </p>
+   <div class="features">
+    <div class="feature"><strong>Factory Direct Supply</strong><span>Direct communication with the manufacturer</span></div>
+    <div class="feature"><strong>Product Customization</strong><span>Solutions based on project requirements</span></div>
+    <div class="feature"><strong>Multiple Product Lines</strong><span>Housing and outdoor structures</span></div>
+    <div class="feature"><strong>Global Cooperation</strong><span>Supporting international B2B projects</span></div>
+   </div>
+   <a href="#contact" class="btn btn-primary">Discuss Your Project →</a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="projects">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">APPLICATIONS & INSPIRATION</div>
+   <h2>Designed for Different Spaces</h2>
+   <p>Explore the possibilities of modular construction and outdoor living across different applications.</p>
+  </div>
+  <div class="project-grid">
+   <div class="project-large">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Modern residential modular home" loading="lazy">
+    <div class="project-caption">Residential & Modular Living</div>
+   </div>
+   <div>
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=800&q=85" alt="Nature retreat cabin" loading="lazy">
+    <div class="project-caption">Resorts & Nature Retreats</div>
+   </div>
+   <div>
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85" alt="Outdoor architectural space" loading="lazy">
+    <div class="project-caption">Gardens & Outdoor Living</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section-light">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">HOW WE WORK</div>
+   <h2>From Inquiry to Delivery</h2>
+   <p>A clear process to help international customers move their projects forward.</p>
+  </div>
+  <div class="process-grid">
+   <div class="process-item"><div class="process-number">01</div><h3>Share Your Requirements</h3><p>Tell us about your product, dimensions, quantity and destination.</p></div>
+   <div class="process-item"><div class="process-number">02</div><h3>Product Proposal</h3><p>We discuss configurations, materials and project requirements.</p></div>
+   <div class="process-item"><div class="process-number">03</div><h3>Manufacturing</h3><p>Production is arranged according to the confirmed specifications.</p></div>
+   <div class="process-item"><div class="process-number">04</div><h3>Shipping & Support</h3><p>Coordinate packaging, shipment and relevant product documentation.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="blog">
+ <div class="container">
+  <div class="section-heading">
+   <div class="eyebrow">KNOWLEDGE & INSIGHTS</div>
+   <h2>From Our Blog</h2>
+   <p>Ideas, practical guides and industry insights for modular construction and outdoor living.</p>
+  </div>
+  <div class="blog-card">
+   <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Modern prefabricated modular house" loading="lazy">
+   <div class="blog-copy">
+    <div class="blog-meta">MODULAR CONSTRUCTION · BUYING GUIDE</div>
+    <h3>How to Choose the Right Modular House for Your Project</h3>
+    <p>Discover the key factors to consider when selecting a modular house, including layout, materials, insulation, transportation and installation.</p>
+    <a href="#blog-article" class="product-link">Read Full Article →</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- BLOG LINK DIRECTLY SCROLLS TO THE ARTICLE -->
+<section class="section section-light" id="blog-article">
+ <div class="container article">
+  <div class="eyebrow">BLOG / MODULAR HOUSING</div>
+  <h2>How to Choose the Right Modular House for Your Project</h2>
+  <p><strong>Modular Housing Guide | By ModuVilla · CoveCore · AluVilla</strong></p>
+  <p>Modular houses are becoming an increasingly practical option for residential developments, tourism accommodation, construction sites and commercial projects. Compared with conventional construction, modular solutions can offer a more organized manufacturing process, flexible layouts and efficient on-site assembly.</p>
+
+  <img class="article-image" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Contemporary modular house exterior" loading="lazy">
+
+  <h3>1. Define Your Project Requirements</h3>
+  <p>Before choosing a modular house, identify its intended application. A residential unit, construction-site office, holiday cabin and resort accommodation may require different layouts, structural configurations and interior specifications.</p>
+  <p>Consider the number of occupants, available land, local climate, access conditions and expected service life.</p>
+
+  <h3>2. Choose the Right Dimensions and Layout</h3>
+  <p>Dimensions should be selected according to the intended use, transportation restrictions and local building requirements. For example, a project may consider a reference module measuring 5.8m × 2.4m × 2.5m, subject to final engineering and transport confirmation.</p>
+  <p>Ask your supplier for dimensioned drawings, floor plans and a detailed configuration list before confirming an order.</p>
+
+  <h3>3. Understand the Structural Materials</h3>
+  <p>Structural materials have a direct impact on durability, maintenance and overall project performance. Common configurations may include galvanized steel frames, insulated wall panels, roofing systems, doors, windows and interior finishing materials.</p>
+  <ul>
+   <li>Structural frame: confirm steel grade, section sizes and corrosion protection.</li>
+   <li>Wall panels: confirm panel thickness, insulation core and surface material.</li>
+   <li>Roofing: check waterproofing details and drainage design.</li>
+   <li>Windows and doors: confirm dimensions, glazing and hardware.</li>
+   <li>Electrical systems: check local voltage and applicable standards.</li>
+  </ul>
+
+  <h3>4. Evaluate Insulation and Weather Resistance</h3>
+  <p>Different destinations have different climate conditions. Buyers should evaluate thermal insulation, ventilation, condensation control, waterproofing and wind resistance based on the project's location.</p>
+  <p>For coastal, cold or hot regions, request relevant technical information and project-specific recommendations. Do not assume that one standard configuration is suitable for every climate.</p>
+
+  <h3>5. Consider Transportation and Installation</h3>
+  <p>Transportation dimensions, loading arrangements, packaging and site access should be considered at the beginning of the project. Ask the manufacturer to clarify whether the product is delivered flat-packed, folded, expanded or fully assembled.</p>
+  <p>Request installation instructions and confirm the foundation, lifting equipment and number of installers required.</p>
+
+  <h3>6. Request a Detailed Quotation</h3>
+  <p>A useful quotation should identify the product model, dimensions, structural materials, wall and roof configuration, doors, windows, electrical options, packaging and delivery terms.</p>
+  <p>Compare quotations based on the same specifications rather than price alone. Also confirm warranty conditions, production lead time and after-sales arrangements.</p>
+
+  <h3>7. Work with a Manufacturer Who Understands Your Project</h3>
+  <p>Good communication is essential for international modular construction projects. A professional manufacturer should be able to explain product configurations, provide technical drawings and coordinate production and shipping requirements.</p>
+
+  <h3>Conclusion</h3>
+  <p>Choosing the right modular house requires more than comparing exterior appearance or initial price. Dimensions, materials, climate suitability, transportation and installation all contribute to project success.</p>
+  <p>At ModuVilla · CoveCore · AluVilla, we focus on modular housing and outdoor architectural solutions for international projects. Contact our team to discuss your requirements and explore suitable product configurations.</p>
+
+  <a href="#contact" class="btn btn-primary">Discuss Your Modular House Project →</a>
+ </div>
+</section>
+
+<section class="section" id="contact">
+ <div class="container contact-grid">
+  <div class="contact-copy">
+   <div class="eyebrow">LET'S WORK TOGETHER</div>
+   <h2>Have a Project in Mind?</h2>
+   <p>Whether you are a distributor, contractor, developer or project owner, contact us to discuss product details, customization and factory cooperation.</p>
+
+   <div class="contact-list">
+    <a href="https://wa.me/8618561790765" target="_blank" rel="noopener">WhatsApp: +86 185 6179 0765 ↗</a>
+    <a href="mailto:moudvilla@gmail.com">Email: moudvilla@gmail.com</a>
+    <a href="https://www.instagram.com/modularhomemr.liu/reels/" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="https://youtube.com/@hailongliu-y9p?si=AX-AgDQBTye2VR56" target="_blank" rel="noopener">YouTube ↗</a>
+    <div>Factory: No. 7, Qingdao Road Industrial Park, Jiangshan, Laixi City, Qingdao, China</div>
+   </div>
+  </div>
+
+  <form class="contact-form" id="inquiryForm">
+   <h3>Send an Inquiry</h3>
+   <label for="customerName">Your Name</label>
+   <input id="customerName" type="text" placeholder="Enter your name" required>
+
+   <label for="customerEmail">Email Address</label>
+   <input id="customerEmail" type="email" placeholder="Enter your email" required>
+
+   <label for="productType">Product Interested In</label>
+   <select id="productType">
+    <option>Modular Houses</option>
+    <option>Integrated Houses</option>
+    <option>A-Frame Houses</option>
+    <option>Portable Toilets</option>
+    <option>Pergolas & Pavilions</option>
+    <option>PVC Corrugated Sheets</option>
+    <option>Other / Multiple Products</option>
+   </select>
+
+   <label for="customerMessage">Project Requirements</label>
+   <textarea id="customerMessage" placeholder="Please describe your project, quantity, dimensions and destination country."></textarea>
+
+   <button type="submit" class="btn btn-primary">Send Inquiry via WhatsApp →</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="brand-name">ModuVilla <span>·</span> CoveCore <span>·</span> AluVilla</div>
+    <div class="brand-tagline">Where Architecture Meets Nature</div>
+    <p style="margin-top:18px">Modular living and outdoor architectural solutions for global projects.</p>
+   </div>
+   <div>
+    <h3>Products</h3>
+    <a href="#modular-homes">Modular Houses</a>
+    <a href="#integrated-homes">Integrated Houses</a>
+    <a href="#aframe-houses">A-Frame Houses</a>
+    <a href="#portable-toilets">Portable Toilets</a>
+    <a href="#pergolas">Pergolas & Pavilions</a>
+    <a href="#pvc-panels">PVC Roofing Sheets</a>
+   </div>
+   <div>
+    <h3>Explore</h3>
+    <a href="#about">About Us</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog-article">Blog</a>
+    <a href="#contact">Contact</a>
+   </div>
+   <div>
+    <h3>Get in Touch</h3>
+    <a href="https://wa.me/8618561790765">WhatsApp</a>
+    <a href="mailto:moudvilla@gmail.com">Email Us</a>
+    <a href="https://www.instagram.com/modularhomemr.liu/reels/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://youtube.com/@hailongliu-y9p?si=AX-AgDQBTye2VR56" target="_blank" rel="noopener">YouTube</a>
+   </div>
+  </div>
+  <div class="copyright">
+   © <span id="year"></span> Yaodeni Guan Prefabricated Housing Technology Co., Ltd. All Rights Reserved.
+  </div>
+ </div>
+</footer>
+
+<a class="whatsapp-float"
+ href="https://wa.me/8618561790765?text=Hello%2C%20I%20am%20interested%20in%20your%20products."
+ target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+ <svg viewBox="0 0 32 32" aria-hidden="true">
+  <path d="M16 .8A15.1 15.1 0 0 0 3.1 23.8L1 31l7.4-1.9A15.1 15.1 0 1 0 16 .8zm0 27.5c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.4 1.1 1.2-4.3-.3-.5A12.5 12.5 0 1 1 16 28.3zm6.9-9.4c-.4-.2-2.3-1.1-2.7-1.2-.4-.2-.6-.2-.9.2-.3.4-1 1.2-1.2 1.5-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.3-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.3-2.9-.3-.7-.7-.6-.9-.6h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.3s1.5 3.8 1.7 4.1c.2.3 2.9 4.4 7 6.2 1 .4 1.8.7 2.4.8 1 .3 1.9.2 2.6.1.8-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+ </svg>
+</a>
+
+<script>
+const translations = {
+ en:{
+  home:"Home",products:"Products ▾",projects:"Projects",
+  about:"About Us",blog:"Blog",contact:"Contact",
+  heroDesc:"Innovative modular living spaces and refined outdoor structures, designed for modern lifestyles and global projects.",
+  explore:"Explore Our Products →",quote:"Request a Quote"
+ },
+ es:{
+  home:"Inicio",products:"Productos ▾",projects:"Proyectos",
+  about:"Nosotros",blog:"Blog",contact:"Contacto",
+  heroDesc:"Espacios modulares innovadores y estructuras exteriores diseñadas para proyectos internacionales.",
+  explore:"Ver productos →",quote:"Solicitar presupuesto"
+ },
+ de:{
+  home:"Startseite",products:"Produkte ▾",projects:"Projekte",
+  about:"Über uns",blog:"Blog",contact:"Kontakt",
+  heroDesc:"Innovative modulare Wohnräume und hochwertige Außenstrukturen für moderne Lebensstile und internationale Projekte.",
+  explore:"Produkte entdecken →",quote:"Angebot anfordern"
+ },
+ fr:{
+  home:"Accueil",products:"Produits ▾",projects:"Projets",
+  about:"À propos",blog:"Blog",contact:"Contact",
+  heroDesc:"Des espaces modulaires innovants et des structures extérieures élégantes pour les projets internationaux.",
+  explore:"Découvrir nos produits →",quote:"Demander un devis"
+ },
+ ru:{
+  home:"Главная",products:"Продукция ▾",projects:"Проекты",
+  about:"О компании",blog:"Блог",contact:"Контакты",
+  heroDesc:"Инновационные модульные здания и современные конструкции для наружного пространства.",
+  explore:"Наша продукция →",quote:"Запросить цену"
+ },
+ ar:{
+  home:"الرئيسية",products:"المنتجات ▾",projects:"المشاريع",
+  about:"من نحن",blog:"المدونة",contact:"اتصل بنا",
+  heroDesc:"مساحات معيشة معيارية مبتكرة وهياكل خارجية أنيقة للمشاريع العالمية.",
+  explore:"اكتشف منتجاتنا →",quote:"اطلب عرض سعر"
+ }
+};
+
+const langSelect=document.getElementById("languageSelect");
+langSelect.addEventListener("change",function(){
+ const lang=this.value;
+ const dict=translations[lang];
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+  const key=el.dataset.i18n;
+  if(dict[key])el.textContent=dict[key];
+ });
+});
+
+const toggle=document.getElementById("mobileToggle");
+const navArea=document.getElementById("navArea");
+toggle.addEventListener("click",()=>{
+ navArea.classList.toggle("open");
+ toggle.textContent=navArea.classList.contains("open")?"✕":"☰";
+});
+document.querySelectorAll(".nav-area a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  navArea.classList.remove("open");
+  toggle.textContent="☰";
+ });
+});
+
+document.querySelectorAll("[data-product]").forEach(link=>{
+ link.addEventListener("click",()=>{
+  document.getElementById("productType").value=link.dataset.product;
+ });
+});
+
+document.getElementById("inquiryForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("customerName").value.trim();
+ const email=document.getElementById("customerEmail").value.trim();
+ const product=document.getElementById("productType").value;
+ const message=document.getElementById("customerMessage").value.trim();
+
+ const text=
+ `Hello, I would like to make an inquiry.%0A%0A`+
+ `Name: ${encodeURIComponent(name)}%0A`+
+ `Email: ${encodeURIComponent(email)}%0A`+
+ `Product: ${encodeURIComponent(product)}%0A`+
+ `Project Requirements: ${encodeURIComponent(message)}`;
+
+ window.open("https://wa.me/8618561790765?text="+text,"_blank");
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
