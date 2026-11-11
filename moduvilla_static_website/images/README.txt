@@ -1,0 +1,1 @@
+Place your image files (hero.webp, container-house.jpg, folding-house.jpg, house-trailers.jpg) into this images directory.
