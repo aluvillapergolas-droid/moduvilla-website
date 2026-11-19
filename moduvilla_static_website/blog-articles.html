@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog Center & Manufacturing Insights | ModuVilla · AluVilla · CoveCore</title>
+<meta name="description" content="Explore professional manufacturing insights, commercial buying guides, and technical articles for modular homes, outdoor kitchens, container pools, and pergolas.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="YAODENIGUAN - Modular Homes Technology">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+<link id="seo-canonical" rel="canonical" href="https://moduvilla.com/blog-articles.html">
+<link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-articles.html?lang=en">
+<link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-articles.html?lang=ar">
+<link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-articles.html?lang=es">
+<link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-articles.html?lang=de">
+<link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-articles.html?lang=fr">
+<link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-articles.html?lang=ru">
+<link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-articles.html">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;background:#f7f7f8;color:#1e1e22;line-height:1.65}
+a{text-decoration:none;color:inherit}
+
+.topbar{background:#111114;color:#a9a9b2;font-size:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 6%;flex-wrap:wrap;gap:8px}
+.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(247,247,248,.92);backdrop-filter:blur(14px);border-bottom:1px solid #e2e2e6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 6%}
+.logo{font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap}
+.logo small{font-weight:400;color:#7a7a82;font-size:12px;margin-left:8px}
+.nav-right{display:flex;gap:18px;align-items:center}
+.nav-links{display:flex;gap:18px;font-size:12px;font-weight:600;letter-spacing:.05em;white-space:nowrap}
+.lang{position:relative}
+.lang-btn{border:1px solid #e2e2e6;background:#fff;padding:7px 12px;border-radius:999px;cursor:pointer}
+.lang-menu{position:absolute;right:0;top:38px;background:#fff;border:1px solid #e2e2e6;border-radius:12px;display:none;min-width:170px;box-shadow:0 10px 30px rgba(0,0,0,.1);z-index:10}
+.lang-menu a{display:block;padding:10px 14px;font-size:13px;color:#555;cursor:pointer}
+.lang.open .lang-menu{display:block}
+.ham{display:none;width:38px;height:38px;border:1px solid #e2e2e6;background:#fff;border-radius:8px;cursor:pointer}
+.mm{display:none;position:fixed;inset:0;background:rgba(17,17,20,.96);z-index:90;padding:80px 6%;flex-direction:column;gap:20px}
+.mm.open{display:flex}
+.mm a{color:#fff;font-size:22px;font-weight:700}
+
+.sec{padding:60px 6% 80px;max-width:1400px;margin:0 auto}
+.head{text-align:center;margin-bottom:32px;padding-top:16px}
+.head h1{font-size:36px;line-height:1.3;margin-bottom:12px;color:#111}
+.head p{color:#7a7a82;font-size:15px}
+
+/* 顶部返回主站提示条 */
+.back-home-bar{background:#111;color:#fff;padding:14px 6%;display:flex;justify-content:space-between;align-items:center;font-size:13px;flex-wrap:wrap;gap:10px}
+.back-home-bar a{background:#fff;color:#111;padding:6px 16px;border-radius:999px;font-weight:600;font-size:12px;transition:background 0.2s}
+.back-home-bar a:hover{background:#e2e2e6}
+
+/* 跨页产品线内链条 */
+.sub-nav-bar{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.sub-pill{padding:8px 16px;border-radius:999px;font-size:12px;font-weight:600;background:#fff;border:1px solid #d8d8de;color:#333;transition:all .2s}
+.sub-pill:hover{background:#111;color:#fff;border-color:#111}
+
+/* 博客网格列表 */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:24px}
+.blog-card{border:1px solid #e2e2e6;border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column;cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;text-align:left}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,0.08)}
+.blog-card img{width:100%;height:190px;object-fit:cover;background:#e4e4e7}
+.card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1}
+.card-body h3{font-size:16px;line-height:1.4;margin-bottom:10px;color:#111}
+.meta{font-size:12px;color:#7a7a82;margin-top:auto;padding-top:12px;border-top:1px solid #f0f0f3}
+
+/* 文章阅读详情页容器 */
+.blog-reader-wrap{margin-top:20px;background:#fff;border:1px solid #e2e2e6;border-radius:18px;padding:40px;display:none}
+.blog-reader-wrap.active{display:block}
+.blog-reader-content h1{font-size:28px;margin-bottom:12px;color:#111;line-height:1.3}
+.blog-reader-content .reader-meta{font-size:12px;color:#7a7a82;margin-bottom:24px;text-transform:uppercase;letter-spacing:0.05em}
+.blog-reader-content p{color:#444;margin:16px 0;line-height:1.8;font-size:15px}
+.blog-reader-content h2{font-size:20px;color:#111;margin:28px 0 10px;font-weight:700}
+.blog-reader-content img{width:100%;max-height:480px;object-fit:cover;border-radius:12px;margin:20px 0}
+
+/* 详情页底部操作栏 */
+.reader-footer-actions{display:flex;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid #e2e2e6;flex-wrap:wrap}
+.btn-action{background:#fff;border:1px solid #e2e2e6;color:#111;padding:12px 24px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.btn-action:hover{background:#111;color:#fff;border-color:#111}
+.btn-action.primary{background:#111;color:#fff;border-color:#111}
+.btn-action.primary:hover{background:#333}
+
+/* 页脚 */
+footer{background:#111114;color:#a9a9b2;padding:50px 6%;text-align:center;font-size:12px;margin-top:80px;display:flex;flex-direction:column;gap:12px;align-items:center}
+footer a{color:#fff;text-decoration:underline}
+
+body[dir=rtl] .nav, body[dir=rtl] .back-home-bar{flex-direction:row-reverse}
+body[dir=rtl] .lang-menu{right:auto;left:0}
+
+@media(max-width:1000px){
+  .nav-links{display:none}
+  .ham{display:block}
+  .logo small{display:none}
+}
+@media(max-width:768px){
+  .blog-reader-wrap{padding:20px}
+  .head h1, .blog-reader-content h1{font-size:26px}
+}
+</style>
+</head>
+<body id="top">
+
+<div class="topbar">
+  <div><b style="color:#fff">YAODENIGUAN</b> | <span>Email: dasleben@moduvilla.com | Tel / WhatsApp: +86 185 6179 0765</span></div>
+  <div>No.1, Beichang Industrial Park, Fucheng, Hengshui, Hebei</div>
+</div>
+
+<!-- 返回主站横幅 -->
+<div class="back-home-bar">
+  <div><strong data-i="bar_brand">YAODENIGUAN Blog Center</strong> — <span data-i="bar_txt">Independent Article Repository & Knowledge Base</span></div>
+  <a href="./index.html" data-i="back_home">← Back to Main Website</a>
+</div>
+
+<!-- 顶部导航栏 -->
+<div class="nav-wrap">
+  <div class="nav">
+    <div class="logo" onclick="location.href='./index.html'+(curLang&&curLang!=='en'?'?lang='+curLang:'')">ModuVilla · AluVilla · CoveCore<small data-i="logo_sub">— Blog Center</small></div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="./index.html" data-i="nav_home">HOME</a>
+        <a href="./index.html#products" data-i="nav_products">PRODUCTS</a>
+        <a href="./index.html#factory" data-i="nav_factory">FACTORY</a>
+        <a href="#top" onclick="closeReaderAndReset()" data-i="nav_blog" style="color:#2563eb">BLOG CENTER</a>
+        <a href="./index.html#contact" data-i="nav_contact">CONTACT</a>
+      </div>
+      <div class="lang" id="langDrop">
+        <button class="lang-btn" onclick="event.stopPropagation();document.getElementById('langDrop').classList.toggle('open')">🌐 <span id="curLang">EN</span> ▾</button>
+        <div class="lang-menu">
+          <a href="?lang=en" onclick="event.preventDefault();setLang('en')">English</a>
+          <a href="?lang=ar" onclick="event.preventDefault();setLang('ar')">العربية</a>
+          <a href="?lang=es" onclick="event.preventDefault();setLang('es')">Español</a>
+          <a href="?lang=de" onclick="event.preventDefault();setLang('de')">Deutsch</a>
+          <a href="?lang=fr" onclick="event.preventDefault();setLang('fr')">Français</a>
+          <a href="?lang=ru" onclick="event.preventDefault();setLang('ru')">Русский</a>
+        </div>
+      </div>
+      <button class="ham" type="button" aria-label="Menu" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </div>
+</div>
+
+<nav class="mm" id="mobileMenu">
+  <a href="./index.html" onclick="closeMobile()" data-i="nav_home">HOME</a>
+  <a href="./index.html#products" onclick="closeMobile()" data-i="nav_products">PRODUCTS</a>
+  <a href="./index.html#factory" onclick="closeMobile()" data-i="nav_factory">FACTORY</a>
+  <a href="#top" onclick="closeMobile();closeReaderAndReset()" data-i="nav_blog">BLOG CENTER</a>
+  <a href="./index.html#contact" onclick="closeMobile()" data-i="nav_contact">CONTACT</a>
+  <a href="javascript:void(0)" onclick="closeMobile()" style="font-size:16px;color:#a9a9b2">✕ Close</a>
+</nav>
+
+<!-- 主内容区域 -->
+<main class="sec">
+  <div class="head" id="blogMainHead">
+    <h1 data-i="page_title">Manufacturing Insights & Commercial Buying Guides</h1>
+    <p data-i="page_sub">Explore expert guides, architectural trends, and modular construction knowledge.</p>
+  </div>
+
+  <!-- 补充跨页产品线内链，形成站内闭环 -->
+  <div class="sub-nav-bar" aria-label="Related Product Lines">
+    <a class="sub-pill" href="./index.html#products" data-i="link_main_prods">ModuVilla / AluVilla / CoveCore</a>
+    <a class="sub-pill" href="./large-tents.html" data-i="link_tents">Large Tents</a>
+    <a class="sub-pill" href="./building-materials.html" data-i="link_materials">Building Materials</a>
+    <a class="sub-pill" href="./construction-machinery.html" data-i="link_machinery">Construction Machinery</a>
+    <a class="sub-pill" href="./hot-air-balloons.html" data-i="link_balloons">Hot Air Balloons</a>
+  </div>
+
+  <!-- 博客文章网格列表 -->
+  <div class="blog-grid" id="blogGrid"></div>
+
+  <!-- 博客文章详情阅读容器 -->
+  <div class="blog-reader-wrap" id="blogReaderWrap">
+    <div class="blog-reader-content" id="blogReaderContent"></div>
+    <div class="reader-footer-actions">
+      <button class="btn-action" onclick="closeReaderAndReset()" data-i="back_to_list">← Back to Article List</button>
+      <a href="./index.html#factory" class="btn-action primary" data-i="jump_to_quote">Request a Manufacturer Quotation →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div>© 2024-2026 YAODENIGUAN - Modular Homes Technology All Rights Reserved.</div>
+  <div><a href="./index.html" data-i="footer_home_link">Return to ModuVilla Main Website</a></div>
+</footer>
+
+<script>
+var curLang = "en";
+
+var BLOG_DATABASE = {
+  guide: {
+    en: {
+      title: "Outdoor Kitchen Module Buying Guide: Comprehensive Tips & Selection Skills",
+      meta: "OUTDOOR KITCHEN | BUYING GUIDE | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "As outdoor living continues to surge in popularity, outdoor kitchen modules have become an essential must-have for enthusiasts. Faced with a wide array of outdoor kitchen products on the market, how can you choose the right one that best suits your needs? Below, we share some practical selection tips through specific examples.",
+      h2_1: "1. Clarify Your Needs and Plan Reasonably",
+      p2: "Before purchasing outdoor kitchen modules, the first step is to clarify your actual requirements. Are you preparing for short-term picnics and camping, or long-term outdoor living? Different scenarios correspond to different module combinations.",
+      h2_2: "2. Consider the Functionality of the Modules",
+      p3: "Outdoor kitchen modules typically include cooking areas, storage areas, dining areas, and more. When selecting, match your actual usage habits to choose modules with necessary functions.",
+      h2_3: "3. Prioritize 304 Stainless Steel & Weather Resistance",
+      p4: "Outdoor environments expose cabinetry and appliances to rain, UV rays, and temperature fluctuations. Choosing commercial-grade 304 stainless steel ensures rust resistance, easy cleaning, and decades of durability."
+    },
+    ar: {
+      title: "دليل شراء وحدات المطبخ الخارجي: نصائح شاملة ومهارات الاختيار",
+      meta: "مطبخ خارجي | دليل الشراء | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "مع استمرار نمو شعبية المعيشة في الهواء الطلق، أصبحت وحدات المطبخ الخارجي عنصرًا أساسيًا لعشاق التخييم والترفيه. في مواجهة مجموعة واسعة من منتجات المطابخ الخارجية في السوق، كيف يمكنك اختيار الأنسب لاحتياجاتك؟ فيما يلي نشارك بعض نصائح الاختيار العملية.",
+      h2_1: "1. حدد احتياجاتك بوضوح وخطط بشكل معقول",
+      p2: "قبل شراء وحدات المطبخ الخارجي، الخطوة الأولى هي توضيح متطلباتك الفعلية. هل تستعد لنزهات قصيرة أم لإقامة خارجية طويلة الأجل؟",
+      h2_2: "2. ضع في اعتبارك وظائف الوحدات",
+      p3: "تشتمل وحدات المطبخ الخارجي عادةً على مناطق الطهي والتخزين وتناول الطعام. اختر الوظائف التي تتناسب مع عادات الاستخدام الفعلية.",
+      h2_3: "3. أعط الأولوية للستانلس ستيل 304 ومقاومة العوامل الجوية",
+      p4: "تعرض البيئات الخارجية الخزائن والأجهزة للأمطار وأشعة الشمس. يضمن اختيار الفولاذ المقاوم للصدأ 304 مقاومة الصدأ وسهولة التنظيف ومتانة تدوم لعقود."
+    },
+    es: {
+      title: "Guía de Compra de Módulos de Cocina Exterior: Consejos y Habilidades de Selección",
+      meta: "COCINA EXTERIOR | GUÍA DE COMPRA | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "A medida que la vida al aire libre sigue ganando popularidad, los módulos de cocina exterior se han convertido en un elemento esencial. Ante una amplia gama de productos en el mercado, ¿cómo elegir el adecuado? A continuación, compartimos algunos consejos prácticos.",
+      h2_1: "1. Aclare sus necesidades y planifique razonablemente",
+      p2: "Antes de comprar módulos de cocina exterior, el primer paso es aclarar sus requisitos reales. ¿Se prepara para picnics a corto plazo o para la vida al aire libre a largo plazo?",
+      h2_2: "2. Considere la funcionalidad de los módulos",
+      p3: "Los módulos de cocina exterior suelen incluir áreas de cocción, almacenamiento y comedor. Al seleccionar, coincida con sus hábitos de uso reales.",
+      h2_3: "3. Priorice el acero inoxidable 304 y la resistencia a la intemperie",
+      p4: "Los entornos exteriores exponen los gabinetes a la lluvia y los rayos UV. Elegir acero inoxidable 304 de grado comercial garantiza resistencia a la oxidación y durabilidad."
+    },
+    de: {
+      title: "Ratgeber zum Kauf von Outdoor-Küchenmodulen: Tipps & Auswahlkriterien",
+      meta: "OUTDOOR-KÜCHE | KAUFRATGEBER | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "Da das Leben im Freien immer beliebter wird, sind Outdoor-Küchenmodule zu einem unverzichtbaren Must-Have geworden. Angesichts der großen Auswahl auf dem Markt stellen wir Ihnen hier praktische Tipps zur Auswahl vor.",
+      h2_1: "1. Klären Sie Ihre Bedürfnisse und planen Sie vernünftig",
+      p2: "Vor dem Kauf von Outdoor-Küchenmodulen ist der erste Schritt die Klärung Ihrer tatsächlichen Anforderungen. Bereiten Sie sich auf kurzfristiges Camping oder langfristiges Outdoor-Wohnen vor?",
+      h2_2: "2. Berücksichtigen Sie die Funktionalität der Module",
+      p3: "Outdoor-Küchenmodule umfassen typischerweise Kochbereiche, Stauraum und Essbereiche. Passen Sie die Auswahl an Ihre Nutzungsgewohnheiten an.",
+      h2_3: "3. Priorisieren Sie 304 Edelstahl & Witterungsbeständigkeit",
+      p4: "Im Außenbereich sind Schränke Regen und UV-Strahlen ausgesetzt. Die Wahl von kommerziellem 304er Edelstahl garantiert Rostbeständigkeit und jahrzehntelange Haltbarkeit."
+    },
+    fr: {
+      title: "Guide d'Achat des Modules de Cuisine Extérieure : Conseils & Sélection",
+      meta: "CUISINE EXTÉRIEURE | GUIDE D'ACHAT | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "Alors que la vie en plein air gagne en popularité, les modules de cuisine extérieure sont devenus indispensables. Face à la grande variété de produits, voici quelques conseils pratiques pour bien choisir.",
+      h2_1: "1. Définissez vos besoins et planifiez rationnellement",
+      p2: "Avant d'acheter, la première étape est de clarifier vos besoins réels. Préparez-vous des pique-niques de courte durée ou un mode de vie en plein air à long terme ?",
+      h2_2: "2. Considérez la fonctionnalité des modules",
+      p3: "Les modules comprennent généralement des zones de cuisson, de rangement et de repas. Adaptez-les à vos habitudes d'utilisation.",
+      h2_3: "3. Privilégiez l'acier inoxydable 304 et la résistance aux intempéries",
+      p4: "L'environnement extérieur expose les meubles à la pluie et aux UV. L'acier inoxydable 304 de qualité commerciale garantit une résistance à la rouille et une durabilité de plusieurs décennies."
+    },
+    ru: {
+      title: "Руководство по покупке модулей уличной кухни: Советы и критерии выбора",
+      meta: "УЛИЧНАЯ КУХНЯ | РУКОВОДСТВО ПО ПОКУПКЕ | COVECORE",
+      img: "./blog-outdoor-kitchen-module-buying-guide-hero.jpg",
+      p1: "Поскольку загородная жизнь продолжает набирать популярность, модули уличной кухни стали незаменимым атрибутом. Сталкиваясь с широким ассортиментом на рынке, как выбрать подходящий вариант? Ниже мы делимся практическими советами.",
+      h2_1: "1. Определите свои потребности и разумно спланируйте пространство",
+      p2: "Перед покупкой первым шагом является уточнение ваших реальных требований. Готовитесь ли вы к краткосрочным пикникам или к долгосрочному обустройству зоны отдыха?",
+      h2_2: "2. Учитывайте функциональность модулей",
+      p3: "Модули уличной кухни обычно включают зоны приготовления пищи, хранения и обеденные зоны. Подбирайте их в соответствии с вашими привычками.",
+      h2_3: "3. Отдавайте предпочтение нержавеющей стали 304 и погодоустойчивости",
+      p4: "Уличная среда подвергает мебель воздействию дождя и УФ-лучей. Использование коммерческой нержавеющей стали 304 гарантирует защиту от коррозии и долговечность."
+    }
+  },
+  triangle: {
+    en: {
+      title: "The Evolution of Triangle A-Frame Houses in Global Markets",
+      meta: "INDUSTRY TRENDS | ARCHITECTURE | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "A-frame triangle houses have captured the imagination of resort developers and homeowners worldwide. Known for their structural resilience against heavy snow loads and iconic aesthetic appeal, modern prefab engineering has revolutionized their construction efficiency.",
+      h2_1: "1. Structural Advantages of A-Frame Architecture",
+      p2: "The steep sloping roof design inherently sheds snow, rain, and debris effectively, making it exceptionally reliable in alpine regions and harsh northern climates.",
+      h2_2: "2. Modern Prefabrication and Modular Integration",
+      p3: "Unlike traditional on-site framing, factory-prefabricated A-frame modules significantly reduce labor costs and build times while ensuring precision insulation and galvanized steel durability."
+    },
+    ar: {
+      title: "تطور المنازل المثلثة A-Frame في الأسواق العالمية",
+      meta: "اتجاهات الصناعة | الهندسة المعمارية | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "استحوذت المنازل المثلثة على اهتمام مطوري المنتجعات وأصحاب المنازل في جميع أنحاء العالم بفضل قوتها الإنشائية ومظهرها الجمالي الفريد.",
+      h2_1: "1. المزايا الإنشائية لهندسة A-Frame",
+      p2: "يساعد تصميم السقف المنحدر بشدة على تصريف الثلوج والأمطار بكفاءة عالية، مما يجعلها موثوقة للغاية في المناخات القاسية.",
+      h2_2: "2. التصنيع المسبق الحديث والتكامل المعياري",
+      p3: "على عكس البناء التقليدي، تقلل الوحدات الجاهزة في المصنع من تكاليف العمالة وأوقات البناء بشكل ملحوظ."
+    },
+    es: {
+      title: "La Evolución de las Casas Triangulares A-Frame en los Mercados Globales",
+      meta: "TENDENCIAS | ARQUITECTURA | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "Las casas triangulares A-Frame han cautivado a desarrolladores de complejos turísticos y propietarios en todo el mundo gracias a su resistencia estructural.",
+      h2_1: "1. Ventajas Estructurales de la Arquitectura A-Frame",
+      p2: "El diseño de techo inclinado permite evacuar eficazmente la nieve y la lluvia, siendo sumamente confiable en climas severos.",
+      h2_2: "2. Prefabricación Moderna e Integración Modular",
+      p3: "A diferencia de la construcción tradicional, los módulos prefabricados en fábrica reducen drásticamente los costos de mano de obra."
+    },
+    de: {
+      title: "Die Entwicklung von A-Frame Dreieckshäusern auf globalen Märkten",
+      meta: "INDUSTRIETRENDS | ARCHITEKTUR | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "A-Frame-Häuser erfreuen sich weltweit großer Beliebtheit bei Resort-Entwicklern und Hausbesitzern, da sie Schnee- und Windlasten hervorragend standhalten.",
+      h2_1: "1. Strukturelle Vorteile der A-Frame-Architektur",
+      p2: "Das steil abfallende Dach leitet Schnee und Regen effizient ab und eignet sich perfekt für alpine Regionen.",
+      h2_2: "2. Moderne Vorfertigung und modulare Integration",
+      p3: "Im Gegensatz zum traditionellen Bauen verkürzen werkseitig vorgefertigte Module die Bauzeit erheblich."
+    },
+    fr: {
+      title: "L'Évolution des Maisons Triangulaires A-Frame sur les Marchés Mondiaux",
+      meta: "TENDANCES | ARCHITECTURE | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "Les maisons triangulaires A-Frame séduisent les promoteurs de stations balnéaires et de montagne grâce à leur résistance structurelle unique.",
+      h2_1: "1. Avantages Structurels de l'Architecture A-Frame",
+      p2: "La toiture en pente raide évacue efficacement la neige et la pluie, idéale pour les climats rudes.",
+      h2_2: "2. Préfabrication Moderne et Intégration Modulaire",
+      p3: "Contrairement à la construction traditionnelle sur site, les modules préfabriqués réduisent les coûts de main-d'œuvre."
+    },
+    ru: {
+      title: "Эволюция треугольных домов A-Frame на мировых рынках",
+      meta: "ТРЕНДЫ ИНДУСТРИИ | АРХИТЕКТУРА | MODUVILLA",
+      img: "./blog-triangle-a-frame-prefab-house-architecture.jpg",
+      p1: "Треугольные дома A-Frame завоевали популярность во всем мире благодаря своей устойчивости к снеговым нагрузкам и привлекательному внешнему виду.",
+      h2_1: "1. Конструктивные преимущества архитектуры A-Frame",
+      p2: "Крутая скатная крыша эффективно сбрасывает снег, дождь и мусор, что делает такие дома надежными в суровом климате.",
+      h2_2: "2. Современное заводское производство",
+      p3: "В отличие от традиционного строительства, заводские модули существенно сокращают сроки и стоимость монтажа."
+    }
+  },
+  structure: {
+    en: {
+      title: "Modular House Steel Frame Structure Design Explained",
+      meta: "STRUCTURE | ENGINEERING | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "The backbone of any high-end modular building is its steel frame structure. Utilizing galvanized structural steel and precision welding technology, modern prefab units achieve earthquake resistance, wind load tolerance, and decades of structural integrity.",
+      h2_1: "1. Galvanized Steel Framework and Anti-Corrosion Treatment",
+      p2: "Primary steel components undergo hot-dip galvanizing and multi-layer protective coating to prevent rust, even in humid coastal environments.",
+      h2_2: "2. Composite Insulation Wall Panels",
+      p3: "Sandwich wall panels featuring EPS, XPS, or PIR insulation cores deliver superior thermal efficiency, reducing heating and cooling energy consumption."
+    },
+    ar: {
+      title: "شرح تصميم الهيكل الفولاذي للمنزل المعياري",
+      meta: "الهيكل | الهندسة | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "العمود الفقري لأي مبنى معياري عالي الجودة هو هيكله الفولاذي. من خلال استخدام الفولاذ المجلفن وتقنيات اللحام الدقيقة، تحقق الوحدات مقاومة عالية الزلازل.",
+      h2_1: "1. إطار الفولاذ المجلفن والمعالجة المضادة للتآكل",
+      p2: "تخضع المكونات الفولاذية الرئيسية للجلفنة الساخنة والطلاء الواقي متعدد الطبقات لمنع الصدأ في البيئات الرطبة.",
+      h2_2: "2. ألواح الجدران العازلة المركبة",
+      p3: "توفر ألواح الجدران المزودة بعوازل EPS أو XPS أو PIR كفاءة حرارية عالية تقلل من استهلاك الطاقة."
+    },
+    es: {
+      title: "Diseño de Estructura de Acero para Casas Modulares Explicado",
+      meta: "ESTRUCTURA | INGENIERÍA | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "La columna vertebral de cualquier edificio modular de alta gama es su estructura de acero. Mediante el uso de acero galvanizado y soldadura de precisión...",
+      h2_1: "1. Armazón de Acero Galvanizado y Tratamiento Anticorrosión",
+      p2: "Los componentes de acero principales se galvanizan en caliente para evitar la oxidación, incluso en ambientes costeros húmedos.",
+      h2_2: "2. Paneles de Pared con Aislamiento Compuesto",
+      p3: "Los paneles sándwich con núcleos de EPS, XPS o PIR ofrecen una eficiencia térmica superior."
+    },
+    de: {
+      title: "Die Stahlrahmenkonstruktion modularer Häuser erklärt",
+      meta: "STRUKTUR | TECHNIK | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "Das Rückgrat jedes hochwertigen Modulgebäudes ist sein Stahlrahmen. Durch den Einsatz von verzinktem Baustahl und Präzisionsschweißtechnik...",
+      h2_1: "1. Verzinkter Stahlrahmen und Korrosionsschutz",
+      p2: "Primäre Stahlkomponenten werden feuerverzinkt und mehrfach beschichtet, um Rost vorzubeugen.",
+      h2_2: "2. Verbund-Dämmwandpaneele",
+      p3: "Sandwich-Wandpaneele mit EPS-, XPS- oder PIR-Kernen bieten eine hervorragende Wärmedämmung."
+    },
+    fr: {
+      title: "Explication de la Conception de la Structure en Acier des Maisons Modulaires",
+      meta: "STRUCTURE | INGÉNIERIE | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "L'épine dorsale de tout bâtiment modulaire haut de gamme est sa structure en acier. Grâce à l'acier galvanisé et au soudage de précision...",
+      h2_1: "1. Châssis en Acier Galvanisé et Traitement Anti-Corrosion",
+      p2: "Les composants en acier subissent une galvanisation à chaud pour éviter la rouille en milieu humide.",
+      h2_2: "2. Panneaux Muraux Isolants Composites",
+      p3: "Les panneaux sandwich dotés de cœurs isolants EPS, XPS ou PIR garantissent une excellente efficacité thermique."
+    },
+    ru: {
+      title: "Конструкция стального каркаса модульного дома — Подробный разбор",
+      meta: "СТРУКТУРА | ИНЖЕНИРИНГ | MODUVILLA",
+      img: "./blog-modular-house-steel-frame-structure-design.jpg",
+      p1: "Основой любого качественного модульного здания является его стальной каркас. Использование оцинкованной стали и точной сварки...",
+      h2_1: "1. Оцинкованный стальной каркас и антикоррозийная обработка",
+      p2: "Основные стальные элементы проходят горячее цинкование и многослойную защиту для предотвращения коррозии.",
+      h2_2: "2. Композитные теплоизоляционные стеновые панели",
+      p3: "Сэндвич-панели с утеплителем EPS, XPS или PIR обеспечивают превосходную энергоэффективность."
+    }
+  },
+  pool: {
+    en: {
+      title: "Container Pool — Outdoor Leisure Solutions for Modern Properties",
+      meta: "LEISURE | OUTDOOR | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "Container pools have emerged as a stylish, durable, and cost-effective alternative to traditional concrete swimming pools. Built from modified shipping containers or heavy-duty steel structures, they offer plug-and-play installation for backyards and resorts.",
+      h2_1: "1. Plug-and-Play Installation & Portability",
+      p2: "Unlike concrete pools that require months of excavation and construction, container pools arrive pre-plumbed with integrated filtration systems, pumps, and optional heaters.",
+      h2_2: "2. Durability and Aesthetic Customization",
+      p3: "Corrosion-resistant steel framing combined with waterproof liners and acrylic window panels creates a stunning visual centerpiece for any outdoor leisure space."
+    },
+    ar: {
+      title: "حوض سباحة حاوية - حلول الترفيه الخارجي للعقارات الحديثة",
+      meta: "ترفيه | خارجي | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "ظهرت أحواض سباحة الحاويات كبديل أنيق وعملي واقتصادي لحواض السباحة الخرسانية التقليدية. وهي مصممة من حاويات مطورة تتيح التركيب السريع.",
+      h2_1: "1. التركيب السريع وسهولة النقل",
+      p2: "على عكس المسابح الخرسانية التي تتطلب شهوراً من الحفر والبناء، تصل أحواض الحاويات جاهزة مع أنظمة الفلترة والمضخات المدمجة.",
+      h2_2: "2. المتانة والتخصيص الجمالي",
+      p3: "يمنح الهيكل الفولاذي المقاوم للصدأ مع البطانات المقاومة للماء وواجهات الاكريليك مظهراً ساحراً."
+    },
+    es: {
+      title: "Piscina de Contenedor — Soluciones de Ocio al Aire Libre",
+      meta: "OCIO | EXTERIOR | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "Las piscinas de contenedores se han consolidado como una alternativa elegante, duradera y económica a las tradicionales piscinas de hormigón.",
+      h2_1: "1. Instalación Rápida y Portabilidad",
+      p2: "A diferencia de las piscinas de hormigón que requieren meses de obra, las piscinas de contenedores llegan premontadas con sistemas de filtración.",
+      h2_2: "2. Durabilidad y Personalización Estética",
+      p3: "Estructuras de acero anticorrosión combinadas con revestimientos impermeables y paneles acrílicos crean un diseño impresionante."
+    },
+    de: {
+      title: "Container-Pool — Outdoor-Freizeitlösungen für moderne Grundstücke",
+      meta: "FREIZEIT | OUTDOOR | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "Container-Pools sind eine stilvolle, langlebige und kostengünstige Alternative zu herkömmlichen Betonpools für Gärten und Resorts.",
+      h2_1: "1. Schnelle Installation & Mobilität",
+      p2: "Im Gegensatz zu Betonpools erfordern Container-Pools keine monatelangen Bauarbeiten; sie kommen anschlussfertig mit Filtersystemen.",
+      h2_2: "2. Langlebigkeit und Ästhetik",
+      p3: "Korrosionsbeständige Stahlrahmen kombiniert mit wasserdichten Auskleidungen und Acrylfenstern sorgen für eine tolle Optik."
+    },
+    fr: {
+      title: "Piscine Conteneur — Solutions de Loisirs Extérieurs",
+      meta: "LOISIRS | EXTÉRIEUR | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "Les piscines conteneur s'imposent comme une alternative élégante, durable et économique aux piscines en béton traditionnelles.",
+      h2_1: "1. Installation Rapide et Portabilité",
+      p2: "Contrairement aux piscines en béton nécessitant des mois de travaux, les piscines conteneur arrivent pré-équipées de systèmes de filtration.",
+      h2_2: "2. Durabilité et Personnalisation Esthétique",
+      p3: "L'acier anticorrosion combiné à des revêtements étanches et des fenêtres en acrylique crée un design exceptionnel."
+    },
+    ru: {
+      title: "Контейнерный бассейн — Решения для уличного отдыха",
+      meta: "ОТДЫХ | УЛИЦА | COVECORE",
+      img: "./blog-container-pool-backyard-leisure-solution.jpg",
+      p1: "Контейнерные бассейны стали стильной, долговечной и экономичной альтернативой традиционным бетонным бассейнам для загородных домов.",
+      h2_1: "1. Быстрый монтаж и мобильность",
+      p2: "В отличие от бетонных бассейнов, требующих месяцев земляных работ, контейнерные бассейны поставляются готовыми к подключению.",
+      h2_2: "2. Долговечность и эстетика",
+      p3: "Коррозионностойкий стальной каркас в сочетании с гидроизоляцией и акриловыми смотровыми панелями создают потрясающий визуальный эффект."
+    }
+  }
+};
+
+var UI = {
+  en: {
+    bar_brand: "YAODENIGUAN Blog Center",
+    bar_txt: "Independent Article Repository & Knowledge Base",
+    back_home: "← Back to Main Website",
+    logo_sub: "— Blog Center",
+    nav_home: "HOME",
+    nav_products: "PRODUCTS",
+    nav_factory: "FACTORY",
+    nav_blog: "BLOG CENTER",
+    nav_contact: "CONTACT",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "Large Tents",
+    link_materials: "Building Materials",
+    link_machinery: "Construction Machinery",
+    link_balloons: "Hot Air Balloons",
+    page_title: "Manufacturing Insights & Commercial Buying Guides",
+    page_sub: "Explore expert guides, architectural trends, and modular construction knowledge.",
+    read_more: "Read Full Article →",
+    back_to_list: "← Back to Article List",
+    jump_to_quote: "Request a Manufacturer Quotation →",
+    footer_home_link: "Return to ModuVilla Main Website"
+  },
+  ar: {
+    bar_brand: "مركز مدونة ياودين قوان",
+    bar_txt: "مستودع المقالات وقاعدة المعرفة المستقلة",
+    back_home: "← العودة للموقع الرئيسي",
+    logo_sub: "— مركز المدونة",
+    nav_home: "الرئيسية",
+    nav_products: "المنتجات",
+    nav_factory: "المصنع",
+    nav_blog: "مركز المدونة",
+    nav_contact: "اتصل بنا",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "الخيام الكبيرة",
+    link_materials: "مواد البناء",
+    link_machinery: "آلات البناء",
+    link_balloons: "المناطيد الهوائية",
+    page_title: "رؤى المصنع وأدلة الشراء التجاري",
+    page_sub: "استكشف الأدلة المتخصصة والاتجاهات المعمارية ومعرفة البناء المعياري.",
+    read_more: "اقرأ المقال كاملاً →",
+    back_to_list: "← العودة لقائمة المقالات",
+    jump_to_quote: "طلب عرض سعر من المصنع →",
+    footer_home_link: "العودة إلى موقع ModuVilla الرئيسي"
+  },
+  es: {
+    bar_brand: "Centro de Blog YAODENIGUAN",
+    bar_txt: "Repositorio de artículos y base de conocimientos independiente",
+    back_home: "← Volver al Sitio Principal",
+    logo_sub: "— Centro de Blog",
+    nav_home: "INICIO",
+    nav_products: "PRODUCTOS",
+    nav_factory: "FÁBRICA",
+    nav_blog: "BLOG",
+    nav_contact: "CONTACTO",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "Carpas Grandes",
+    link_materials: "Materiales de Construcción",
+    link_machinery: "Maquinaria de Construcción",
+    link_balloons: "Globos Aerostáticos",
+    page_title: "Perspectivas de Fabricación y Guías de Compra",
+    page_sub: "Explore guías expertas, tendencias arquitectónicas y conocimientos de construcción modular.",
+    read_more: "Leer Artículo Completo →",
+    back_to_list: "← Volver a Lista de Artículos",
+    jump_to_quote: "Solicitar Cotización de Fabricante →",
+    footer_home_link: "Regresar al Sitio Web Principal de ModuVilla"
+  },
+  de: {
+    bar_brand: "YAODENIGUAN Blog-Center",
+    bar_txt: "Unabhängiges Artikelarchiv & Wissensdatenbank",
+    back_home: "← Zurück zur Hauptwebsite",
+    logo_sub: "— Blog-Center",
+    nav_home: "START",
+    nav_products: "PRODUKTE",
+    nav_factory: "FERTIGUNG",
+    nav_blog: "BLOG-CENTER",
+    nav_contact: "KONTAKT",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "Großzelte",
+    link_materials: "Baustoffe",
+    link_machinery: "Baumaschinen",
+    link_balloons: "Heißluftballons",
+    page_title: "Fertigungseinblicke & Gewerbliche Einkaufsratgeber",
+    page_sub: "Entdecken Sie Expertenratgeber, architektonische Trends und modulares Bauwissen.",
+    read_more: "Vollständigen Artikel Lesen →",
+    back_to_list: "← Zurück zur Artikelliste",
+    jump_to_quote: "Herstellerangebot Anfordern →",
+    footer_home_link: "Zurück zur ModuVilla Hauptwebsite"
+  },
+  fr: {
+    bar_brand: "Centre de Blog YAODENIGUAN",
+    bar_txt: "Répertoire d'articles et base de connaissances indépendante",
+    back_home: "← Retour au Site Principal",
+    logo_sub: "— Centre de Blog",
+    nav_home: "ACCUEIL",
+    nav_products: "PRODUITS",
+    nav_factory: "USINE",
+    nav_blog: "BLOG",
+    nav_contact: "CONTACT",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "Grandes Tentes",
+    link_materials: "Matériaux de Construction",
+    link_machinery: "Engins de Chantier",
+    link_balloons: "Montgolfières",
+    page_title: "Aperçus de Fabrication & Guides d'Achat",
+    page_sub: "Explorez des guides d'experts, des tendances architecturales et l'art de la construction modulaire.",
+    read_more: "Lire l'Article Complet →",
+    back_to_list: "← Retour à la Liste",
+    jump_to_quote: "Demander un Devis Fabricant →",
+    footer_home_link: "Retour au site principal ModuVilla"
+  },
+  ru: {
+    bar_brand: "Блог-центр YAODENIGUAN",
+    bar_txt: "Независимый архив статей и база знаний",
+    back_home: "← На главный сайт",
+    logo_sub: "— Блог-центр",
+    nav_home: "ГЛАВНАЯ",
+    nav_products: "ПРОДУКТЫ",
+    nav_factory: "ЗАВОД",
+    nav_blog: "БЛОГ-ЦЕНТР",
+    nav_contact: "КОНТАКТ",
+    link_main_prods: "ModuVilla / AluVilla / CoveCore",
+    link_tents: "Большие шатры",
+    link_materials: "Стройматериалы",
+    link_machinery: "Строительная техника",
+    link_balloons: "Воздушные шары",
+    page_title: "Обзор производства и руководства по закупкам",
+    page_sub: "Изучайте экспертные руководства, архитектурные тренды и знания о модульном строительстве.",
+    read_more: "Читать полностью →",
+    back_to_list: "← Назад к списку статей",
+    jump_to_quote: "Запросить коммерческое предложение →",
+    footer_home_link: "Вернуться на главный сайт ModuVilla"
+  }
+};
+
+function G(id) { return document.getElementById(id); }
+
+function toggleMobileMenu() {
+  var m = G("mobileMenu");
+  if (m) m.classList.toggle("open");
+}
+function closeMobile() {
+  var m = G("mobileMenu");
+  if (m) m.classList.remove("open");
+}
+
+function syncPageLinks(lang) {
+  var targets = ["./index.html", "./large-tents.html", "./building-materials.html", "./construction-machinery.html", "./hot-air-balloons.html"];
+  var suffix = lang && lang !== "en" ? "?lang=" + encodeURIComponent(lang) : "";
+  document.querySelectorAll("a[href]").forEach(function(a) {
+    var raw = a.getAttribute("href") || "";
+    var hashIdx = raw.indexOf("#");
+    var hash = hashIdx !== -1 ? raw.slice(hashIdx) : "";
+    var base = (hashIdx !== -1 ? raw.slice(0, hashIdx) : raw).split("?")[0];
+    if (targets.indexOf(base) !== -1) {
+      a.setAttribute("href", base + suffix + hash);
+    }
+  });
+}
+
+function renderBlogGrid() {
+  var grid = G("blogGrid");
+  if (!grid) return;
+  grid.replaceChildren();
+
+  Object.keys(BLOG_DATABASE).forEach(function(key) {
+    var item = BLOG_DATABASE[key];
+    var langData = item[curLang] || item.en;
+
+    var card = document.createElement("div");
+    card.className = "blog-card";
+    card.onclick = function() { openReader(key, { scrollTop: true }); };
+
+    var img = document.createElement("img");
+    img.src = langData.img;
+    img.alt = langData.title;
+    img.loading = "lazy";
+
+    var body = document.createElement("div");
+    body.className = "card-body";
+
+    var h3 = document.createElement("h3");
+    h3.textContent = langData.title;
+
+    var meta = document.createElement("div");
+    meta.className = "meta";
+    meta.textContent = langData.meta + " • " + ((UI[curLang] && UI[curLang].read_more) || UI.en.read_more);
+
+    body.appendChild(h3);
+    body.appendChild(meta);
+    card.appendChild(img);
+    card.appendChild(body);
+    grid.appendChild(card);
+  });
+}
+
+function openReader(key, opts) {
+  opts = opts || {};
+  var data = BLOG_DATABASE[key];
+  if (!data) return;
+  var langData = data[curLang] || data.en;
+
+  var contentDiv = G("blogReaderContent");
+  if (!contentDiv) return;
+  contentDiv.replaceChildren();
+
+  var h1 = document.createElement("h1");
+  h1.textContent = langData.title;
+
+  var m = document.createElement("div");
+  m.className = "reader-meta";
+  m.textContent = langData.meta;
+
+  var img = document.createElement("img");
+  img.src = langData.img;
+  img.alt = langData.title;
+  img.loading = "lazy";
+
+  var p1 = document.createElement("p");
+  p1.textContent = langData.p1;
+
+  contentDiv.appendChild(h1);
+  contentDiv.appendChild(m);
+  contentDiv.appendChild(img);
+  contentDiv.appendChild(p1);
+
+  if (langData.h2_1) {
+    var h2_1 = document.createElement("h2");
+    h2_1.textContent = langData.h2_1;
+    contentDiv.appendChild(h2_1);
+  }
+  if (langData.p2) {
+    var p2 = document.createElement("p");
+    p2.textContent = langData.p2;
+    contentDiv.appendChild(p2);
+  }
+  if (langData.h2_2) {
+    var h2_2 = document.createElement("h2");
+    h2_2.textContent = langData.h2_2;
+    contentDiv.appendChild(h2_2);
+  }
+  if (langData.p3) {
+    var p3 = document.createElement("p");
+    p3.textContent = langData.p3;
+    contentDiv.appendChild(p3);
+  }
+  if (langData.h2_3) {
+    var h2_3 = document.createElement("h2");
+    h2_3.textContent = langData.h2_3;
+    contentDiv.appendChild(h2_3);
+  }
+  if (langData.p4) {
+    var p4 = document.createElement("p");
+    p4.textContent = langData.p4;
+    contentDiv.appendChild(p4);
+  }
+
+  var grid = G("blogGrid");
+  var head = G("blogMainHead");
+  if (grid) grid.style.display = "none";
+  if (head) head.style.display = "none";
+
+  var wrap = G("blogReaderWrap");
+  if (wrap) {
+    wrap.classList.add("active");
+    if (opts.scrollTop) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
+  window.currentKey = key;
+}
+
+function closeReaderAndReset() {
+  var wrap = G("blogReaderWrap");
+  if (wrap) wrap.classList.remove("active");
+  var grid = G("blogGrid");
+  var head = G("blogMainHead");
+  if (grid) grid.style.display = "grid";
+  if (head) head.style.display = "block";
+  window.currentKey = null;
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function setLang(l) {
+  if (!UI[l]) l = "en";
+  curLang = l;
+  var rtl = (l === "ar");
+  document.documentElement.lang = l;
+  document.documentElement.dir = rtl ? "rtl" : "ltr";
+  document.body.dir = rtl ? "rtl" : "ltr";
+
+  var c = G("curLang");
+  if (c) c.textContent = l.toUpperCase();
+
+  var canon = G("seo-canonical");
+  if (canon) {
+    canon.href = l === "en" ? "https://moduvilla.com/blog-articles.html" : "https://moduvilla.com/blog-articles.html?lang=" + l;
+  }
+
+  var D = UI[l], F = UI.en;
+  document.querySelectorAll("[data-i]").forEach(function(el) {
+    var k = el.getAttribute("data-i");
+    var v = D[k] !== undefined ? D[k] : F[k];
+    if (v !== undefined) el.textContent = v;
+  });
+
+  syncPageLinks(l);
+  renderBlogGrid();
+  if (window.currentKey) {
+    openReader(window.currentKey, { scrollTop: false });
+  }
+
+  var ld = G("langDrop");
+  if (ld) ld.classList.remove("open");
+  try {
+    localStorage.setItem("moduvilla_lang", l);
+    var u = new URL(location.href);
+    u.searchParams.set("lang", l);
+    history.replaceState(null, "", u.pathname + u.search + u.hash);
+  } catch(e) {}
+}
+
+document.addEventListener("click", function(e) {
+  var ld = G("langDrop");
+  if (ld && !ld.contains(e.target)) ld.classList.remove("open");
+});
+
+window.addEventListener("DOMContentLoaded", function() {
+  var init = "en";
+  try {
+    var q = new URLSearchParams(location.search), u = q.get("lang"), st = null;
+    try { st = localStorage.getItem("moduvilla_lang"); } catch(e) {}
+    if (u && UI[u]) init = u;
+    else if (st && UI[st]) init = st;
+  } catch(e) {}
+  setLang(init);
+});
+</script>
+</body>
+</html>
