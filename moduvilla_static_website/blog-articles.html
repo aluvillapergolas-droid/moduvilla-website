@@ -10,14 +10,15 @@
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 
-<link id="seo-canonical" rel="canonical" href="https://moduvilla.com/blog-articles.html">
-<link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-articles.html?lang=en">
-<link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-articles.html?lang=ar">
-<link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-articles.html?lang=es">
-<link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-articles.html?lang=de">
-<link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-articles.html?lang=fr">
-<link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-articles.html?lang=ru">
-<link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-articles.html">
+<link id="seo-canonical" rel="canonical" href="https://moduvilla.com/blog-articles">
+<link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-articles?lang=en">
+<link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-articles?lang=ar">
+<link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-articles?lang=es">
+<link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-articles?lang=de">
+<link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-articles?lang=fr">
+<link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-articles?lang=ru">
+<link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-articles">
+<meta id="seo-og-url" property="og:url" content="https://moduvilla.com/blog-articles">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -109,20 +110,20 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
 <!-- 返回主站横幅 -->
 <div class="back-home-bar">
   <div><strong data-i="bar_brand">YAODENIGUAN Blog Center</strong> — <span data-i="bar_txt">Independent Article Repository & Knowledge Base</span></div>
-  <a href="./index.html" data-i="back_home">← Back to Main Website</a>
+  <a href="./" data-i="back_home">← Back to Main Website</a>
 </div>
 
 <!-- 顶部导航栏 -->
 <div class="nav-wrap">
   <div class="nav">
-    <div class="logo" onclick="location.href='./index.html'+(curLang&&curLang!=='en'?'?lang='+curLang:'')">ModuVilla · AluVilla · CoveCore<small data-i="logo_sub">— Blog Center</small></div>
+    <div class="logo" onclick="location.href='./'+(curLang&&curLang!=='en'?'?lang='+curLang:'')">ModuVilla · AluVilla · CoveCore<small data-i="logo_sub">— Blog Center</small></div>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="./index.html" data-i="nav_home">HOME</a>
-        <a href="./index.html#products" data-i="nav_products">PRODUCTS</a>
-        <a href="./index.html#factory" data-i="nav_factory">FACTORY</a>
+        <a href="./" data-i="nav_home">HOME</a>
+        <a href="./#products" data-i="nav_products">PRODUCTS</a>
+        <a href="./#factory" data-i="nav_factory">FACTORY</a>
         <a href="#top" onclick="closeReaderAndReset()" data-i="nav_blog" style="color:#2563eb">BLOG CENTER</a>
-        <a href="./index.html#contact" data-i="nav_contact">CONTACT</a>
+        <a href="./#contact" data-i="nav_contact">CONTACT</a>
       </div>
       <div class="lang" id="langDrop">
         <button class="lang-btn" onclick="event.stopPropagation();document.getElementById('langDrop').classList.toggle('open')">🌐 <span id="curLang">EN</span> ▾</button>
@@ -141,11 +142,11 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
 </div>
 
 <nav class="mm" id="mobileMenu">
-  <a href="./index.html" onclick="closeMobile()" data-i="nav_home">HOME</a>
-  <a href="./index.html#products" onclick="closeMobile()" data-i="nav_products">PRODUCTS</a>
-  <a href="./index.html#factory" onclick="closeMobile()" data-i="nav_factory">FACTORY</a>
+  <a href="./" onclick="closeMobile()" data-i="nav_home">HOME</a>
+  <a href="./#products" onclick="closeMobile()" data-i="nav_products">PRODUCTS</a>
+  <a href="./#factory" onclick="closeMobile()" data-i="nav_factory">FACTORY</a>
   <a href="#top" onclick="closeMobile();closeReaderAndReset()" data-i="nav_blog">BLOG CENTER</a>
-  <a href="./index.html#contact" onclick="closeMobile()" data-i="nav_contact">CONTACT</a>
+  <a href="./#contact" onclick="closeMobile()" data-i="nav_contact">CONTACT</a>
   <a href="javascript:void(0)" onclick="closeMobile()" style="font-size:16px;color:#a9a9b2">✕ Close</a>
 </nav>
 
@@ -158,11 +159,11 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
 
   <!-- 补充跨页产品线内链，形成站内闭环 -->
   <div class="sub-nav-bar" aria-label="Related Product Lines">
-    <a class="sub-pill" href="./index.html#products" data-i="link_main_prods">ModuVilla / AluVilla / CoveCore</a>
-    <a class="sub-pill" href="./large-tents.html" data-i="link_tents">Large Tents</a>
-    <a class="sub-pill" href="./building-materials.html" data-i="link_materials">Building Materials</a>
-    <a class="sub-pill" href="./construction-machinery.html" data-i="link_machinery">Construction Machinery</a>
-    <a class="sub-pill" href="./hot-air-balloons.html" data-i="link_balloons">Hot Air Balloons</a>
+    <a class="sub-pill" href="./#products" data-i="link_main_prods">ModuVilla / AluVilla / CoveCore</a>
+    <a class="sub-pill" href="./large-tents" data-i="link_tents">Large Tents</a>
+    <a class="sub-pill" href="./building-materials" data-i="link_materials">Building Materials</a>
+    <a class="sub-pill" href="./construction-machinery" data-i="link_machinery">Construction Machinery</a>
+    <a class="sub-pill" href="./hot-air-balloons" data-i="link_balloons">Hot Air Balloons</a>
   </div>
 
   <!-- 博客文章网格列表 -->
@@ -173,14 +174,14 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
     <div class="blog-reader-content" id="blogReaderContent"></div>
     <div class="reader-footer-actions">
       <button class="btn-action" onclick="closeReaderAndReset()" data-i="back_to_list">← Back to Article List</button>
-      <a href="./index.html#factory" class="btn-action primary" data-i="jump_to_quote">Request a Manufacturer Quotation →</a>
+      <a href="./#factory" class="btn-action primary" data-i="jump_to_quote">Request a Manufacturer Quotation →</a>
     </div>
   </div>
 </main>
 
 <footer>
   <div>© 2024-2026 YAODENIGUAN - Modular Homes Technology All Rights Reserved.</div>
-  <div><a href="./index.html" data-i="footer_home_link">Return to ModuVilla Main Website</a></div>
+  <div><a href="./" data-i="footer_home_link">Return to ModuVilla Main Website</a></div>
 </footer>
 
 <script>
@@ -596,7 +597,7 @@ function closeMobile() {
 }
 
 function syncPageLinks(lang) {
-  var targets = ["./index.html", "./large-tents.html", "./building-materials.html", "./construction-machinery.html", "./hot-air-balloons.html"];
+  var targets = ["./", "./large-tents", "./building-materials", "./construction-machinery", "./hot-air-balloons"];
   var suffix = lang && lang !== "en" ? "?lang=" + encodeURIComponent(lang) : "";
   document.querySelectorAll("a[href]").forEach(function(a) {
     var raw = a.getAttribute("href") || "";
@@ -743,10 +744,11 @@ function setLang(l) {
   var c = G("curLang");
   if (c) c.textContent = l.toUpperCase();
 
+  var pageUrl = l === "en" ? "https://moduvilla.com/blog-articles" : "https://moduvilla.com/blog-articles?lang=" + encodeURIComponent(l);
   var canon = G("seo-canonical");
-  if (canon) {
-    canon.href = l === "en" ? "https://moduvilla.com/blog-articles.html" : "https://moduvilla.com/blog-articles.html?lang=" + l;
-  }
+  if (canon) canon.href = pageUrl;
+  var ogUrl = G("seo-og-url");
+  if (ogUrl) ogUrl.setAttribute("content", pageUrl);
 
   var D = UI[l], F = UI.en;
   document.querySelectorAll("[data-i]").forEach(function(el) {
