@@ -107,4 +107,64 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://moduvilla.com/hot-air-balloons?lang=ru"/>
   </url>
 
+  <!-- 8. 单篇 Blog：户外厨房模块选购指南 -->
+  <url>
+    <loc>https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-outdoor-kitchen-module-buying-guide?lang=ru"/>
+  </url>
+
+  <!-- 9. 单篇 Blog：三角形 A 字屋演变 -->
+  <url>
+    <loc>https://moduvilla.com/blog-triangle-a-frame-prefab-house</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-triangle-a-frame-prefab-house?lang=ru"/>
+  </url>
+
+  <!-- 10. 单篇 Blog：模块化房屋钢架结构设计 -->
+  <url>
+    <loc>https://moduvilla.com/blog-modular-house-steel-frame-structure</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-modular-house-steel-frame-structure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-modular-house-steel-frame-structure?lang=ru"/>
+  </url>
+
+  <!-- 11. 单篇 Blog：集装箱泳池户外休闲方案 -->
+  <url>
+    <loc>https://moduvilla.com/blog-container-pool-backyard-leisure</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://moduvilla.com/blog-container-pool-backyard-leisure"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moduvilla.com/blog-container-pool-backyard-leisure?lang=ru"/>
+  </url>
+
 </urlset>
