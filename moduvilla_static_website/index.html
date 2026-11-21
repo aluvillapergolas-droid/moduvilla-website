@@ -9,8 +9,9 @@
 <meta name="author" content="YAODENIGUAN - Modular Homes Technology">
 <meta name="keywords" content="modular house, expandable house, container house, mobile sanitary unit, container pool, outdoor pergola, prefab villa, ModuVilla">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+
+<link rel="preload" as="image" href="./hero-slider-moduvilla-factory-overview.webp" fetchpriority="high">
 
 <link id="seo-canonical" rel="canonical" href="https://moduvilla.com/">
 <link id="hreflang-en" rel="alternate" hreflang="en" href="https://moduvilla.com/?lang=en">
@@ -31,100 +32,181 @@
 <meta id="seo-og-locale" property="og:locale" content="en_US">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,Arial,sans-serif;background:#f7f7f8;color:#1e1e22;line-height:1.65} a{text-decoration:none;color:inherit}.topbar{background:#111114;color:#a9a9b2;font-size:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 6%;flex-wrap:wrap;gap:8px}.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(247,247,248,.92);backdrop-filter:blur(14px);border-bottom:1px solid #e2e2e6}.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 6%}.logo{font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap}.logo small{font-weight:400;color:#7a7a82;font-size:12px;margin-left:8px}.nav-right{display:flex;gap:18px;align-items:center}.nav-links{display:flex;gap:18px;font-size:12px;font-weight:600;letter-spacing:.05em;white-space:nowrap}.lang{position:relative}.lang-btn{border:1px solid #e2e2e6;background:#fff;padding:7px 12px;border-radius:999px;cursor:pointer}.lang-menu{position:absolute;right:0;top:38px;background:#fff;border:1px solid #e2e2e6;border-radius:12px;display:none;min-width:170px;box-shadow:0 10px 30px rgba(0,0,0,.1);z-index:10}.lang-menu a{display:block;padding:10px 14px;font-size:13px;color:#555;cursor:pointer}.lang.open .lang-menu{display:block}.ham{display:none;width:38px;height:38px;border:1px solid #e2e2e6;background:#fff;border-radius:8px;cursor:pointer}.mm{display:none;position:fixed;inset:0;background:rgba(17,17,20,.96);z-index:90;padding:80px 6%;flex-direction:column;gap:20px}.mm.open{display:flex}.mm a{color:#fff;font-size:22px;font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Arial,sans-serif;background:#FFFFFF;color:#1F2937;line-height:1.65}
+a{text-decoration:none;color:inherit}
+.topbar{background:#111827;color:#E5E7EB;font-size:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 6%;flex-wrap:wrap;gap:8px}
+.nav-wrap{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid #E5E7EB}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 6%}
+.logo{font-weight:700;font-size:15px;cursor:pointer;white-space:nowrap;color:#1F2937}
+.logo small{font-weight:400;color:#4B5563;font-size:12px;margin-left:8px}
+.nav-right{display:flex;gap:18px;align-items:center}
+.nav-links{display:flex;gap:18px;font-size:12px;font-weight:600;letter-spacing:.05em;white-space:nowrap;color:#1F2937}
+.nav-links a:hover{color:#1D4ED8}
+.lang{position:relative}
+.lang-btn{border:1px solid #E5E7EB;background:#FFFFFF;color:#1F2937;padding:7px 12px;border-radius:999px;cursor:pointer;font-size:12px;font-weight:600}
+.lang-btn:hover{border-color:#1D4ED8}
+.lang-menu{position:absolute;right:0;top:38px;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;display:none;min-width:170px;box-shadow:0 10px 30px rgba(31,41,55,.12);z-index:10}
+.lang-menu a{display:block;padding:10px 14px;font-size:13px;color:#1F2937;cursor:pointer}
+.lang-menu a:hover{background:#F3F4F6;color:#1D4ED8}
+.lang.open .lang-menu{display:block}
+.ham{display:none;width:38px;height:38px;border:1px solid #E5E7EB;background:#FFFFFF;color:#1F2937;border-radius:8px;cursor:pointer}
+.mm{display:none;position:fixed;inset:0;background:rgba(17,24,39,.97);z-index:90;padding:80px 6%;flex-direction:column;gap:20px}
+.mm.open{display:flex}
+.mm a{color:#FFFFFF;font-size:22px;font-weight:700}
 
 /* Hero Carousel Styles */
-.hero{position:relative;height:65vh;min-height:480px;background:#2c353d;overflow:hidden;border-bottom:1px solid #e2e2e6}
+.hero{position:relative;height:65vh;min-height:480px;background:#1F2937;overflow:hidden;border-bottom:1px solid #E5E7EB}
 .hero-slider{position:relative;width:100%;height:100%}
-.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 0.8s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 0.8s ease-in-out;display:flex;flex-direction:column;justify-content:center;align-items:center}
 .hero-slide.active{opacity:1;z-index:2}
-.hero-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.38),rgba(0,0,0,.22) 50%,rgba(0,0,0,.48));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 24px}
+.hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-ov{position:relative;width:100%;height:100%;background:linear-gradient(180deg,rgba(17,24,39,.48),rgba(17,24,39,.34) 50%,rgba(17,24,39,.62));display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 24px;z-index:2}
 
-.hero-brand{display:inline-block;background:none;border:none;padding:0;box-shadow:none;backdrop-filter:none;color:#fff;font-size:clamp(20px,2.6vw,36px);font-weight:800;letter-spacing:0.12em;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,0.7);z-index:3}
-.hero-ov h1, .hero-ov h2{color:#fff;font-size:clamp(16px,2.4vw,36px);text-shadow:0 2px 24px rgba(0,0,0,.6);max-width:1200px;z-index:3;line-height:1.25;letter-spacing:0.02em;white-space:nowrap}
-.hero-sub{color:#f2f2f5;font-size:clamp(10px,1.2vw,15px);font-weight:500;margin-top:14px;text-shadow:0 2px 16px rgba(0,0,0,.65);letter-spacing:0.04em;z-index:3;white-space:nowrap}
+.hero-brand{display:inline-block;background:none;border:none;padding:0;box-shadow:none;backdrop-filter:none;color:#FFFFFF;font-size:clamp(20px,2.6vw,36px);font-weight:800;letter-spacing:0.12em;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,0.75);z-index:3}
+.hero-ov h1, .hero-ov h2{color:#FFFFFF;font-size:clamp(16px,2.4vw,36px);text-shadow:0 2px 24px rgba(0,0,0,.65);max-width:1200px;z-index:3;line-height:1.25;letter-spacing:0.02em;white-space:nowrap}
+.hero-sub{color:#F9FAFB;font-size:clamp(10px,1.2vw,15px);font-weight:500;margin-top:14px;text-shadow:0 2px 16px rgba(0,0,0,.7);letter-spacing:0.04em;z-index:3;white-space:nowrap}
 
-.hero-cta{position:absolute;left:50%;bottom:42px;transform:translateX(-50%);display:flex;gap:10px;z-index:3}
+.hero-cta{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);display:flex;gap:10px;z-index:4}
 .hero-cta a{padding:13px 24px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.04em}
-.hero-cta .d{background:#fff;color:#111}
-.hero-cta .l{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.7)}
-.hero-prev,.hero-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;width:44px;height:44px;border-radius:50%;cursor:pointer;z-index:10;font-size:18px;display:grid;place-items:center;transition:background 0.3s}
-.hero-prev:hover,.hero-next:hover{background:rgba(0,0,0,0.7)}
+.hero-cta .d{background:#1D4ED8;color:#FFFFFF}
+.hero-cta .d:hover{background:#1E40AF}
+.hero-cta .l{background:rgba(17,24,39,.65);color:#FFFFFF;border:1px solid rgba(255,255,255,.85)}
+.hero-cta .l:hover{background:rgba(17,24,39,.85)}
+.hero-prev,.hero-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(17,24,39,0.65);color:#FFFFFF;border:1px solid rgba(255,255,255,0.25);width:44px;height:44px;border-radius:50%;cursor:pointer;z-index:10;font-size:18px;display:grid;place-items:center;transition:background 0.3s}
+.hero-prev:hover,.hero-next:hover{background:#1D4ED8}
 .hero-prev{left:20px}
 .hero-next{right:20px}
-.hero-dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
-.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);cursor:pointer;transition:all 0.3s}
-.dot.active{background:#fff;width:24px;border-radius:5px}
+.hero-dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10;align-items:center}
+.dot{appearance:none;-webkit-appearance:none;border:0;padding:0;width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.65);cursor:pointer;transition:all 0.3s;display:inline-block}
+.dot.active{background:#FFFFFF;width:24px;border-radius:5px}
 
-.sec{padding:80px 6%;border-top:1px solid #e2e2e6;scroll-margin-top:80px}.sec.gray{background:#ededf0}.head{text-align:center;margin-bottom:32px;padding-top:20px}.head h2{font-size:34px;line-height:1.3;margin-bottom:12px}.head p{color:#7a7a82;margin-top:10px}
+.sec{padding:80px 6%;border-top:1px solid #E5E7EB;scroll-margin-top:80px;background:#FFFFFF}
+.sec.gray{background:#F9FAFB}
+.head{text-align:center;margin-bottom:32px;padding-top:20px}
+.head h2{font-size:34px;line-height:1.3;margin-bottom:12px;color:#1F2937}
+.head p{color:#4B5563;margin-top:10px}
 
 /* 分类导航栏样式 */
 .cat-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin-bottom:36px;padding:0 12px}
-.cat-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid #d4d4dc;background:#fff;color:#333;cursor:pointer;transition:all 0.25s ease;user-select:none}
-.cat-btn:hover{border-color:#111114;color:#111114;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
-.cat-btn.active{background:#111114;color:#fff;border-color:#111114;box-shadow:0 6px 16px rgba(17,17,20,0.18)}
-.cat-btn.ext-link{background:#f7f7f8;border-style:dashed;border-color:#b8b8c2;color:#2c2c34}
-.cat-btn.ext-link:hover{background:#fff;border-style:solid;border-color:#111114;color:#111114}
-.cat-ext-icon{font-size:11px;opacity:0.65;line-height:1}
+.cat-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid #D1D5DB;background:#FFFFFF;color:#1F2937;cursor:pointer;transition:all 0.25s ease;user-select:none}
+.cat-btn:hover{border-color:#1D4ED8;color:#1D4ED8;transform:translateY(-1px);box-shadow:0 4px 12px rgba(31,41,55,0.06)}
+.cat-btn.active{background:#1D4ED8;color:#FFFFFF;border-color:#1D4ED8;box-shadow:0 6px 16px rgba(29,78,216,0.22)}
+.cat-btn.ext-link{background:#FFFFFF;border-style:dashed;border-color:#9CA3AF;color:#1F2937}
+.cat-btn.ext-link:hover{background:#FFFFFF;border-style:solid;border-color:#1D4ED8;color:#1D4ED8}
+.cat-ext-icon{font-size:11px;color:#4B5563;line-height:1}
 
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e2e2e6;border-radius:18px;overflow:hidden;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease}.card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(0,0,0,.08)}.card img{width:100%;height:230px;object-fit:cover;display:block;background:#e4e4e7}.card-body{padding:16px 18px}.card-body h3{font-size:15px;line-height:1.4}.meta{font-size:12px;color:#7a7a82;margin:6px 0 10px}.bullets{display:flex;flex-wrap:wrap;gap:6px}.bullets span{background:#f7f7f8;border:1px solid #e2e2e6;padding:5px 10px;border-radius:999px;font-size:11px;color:#555}.fc{display:grid;grid-template-columns:1.1fr .9fr;gap:32px}.fc-img{position:relative;border-radius:18px;overflow:hidden;min-height:500px;background:#e4e4e7}.fc-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden;cursor:pointer;transition:transform 0.25s ease,box-shadow 0.25s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(31,41,55,.08);border-color:#CBD5E1}
+.card img{width:100%;height:230px;object-fit:cover;display:block;background:#F3F4F6}
+.card-body{padding:16px 18px}
+.card-body h3{font-size:15px;line-height:1.4;color:#1F2937}
+.meta{font-size:12px;color:#4B5563;margin:6px 0 10px}
+.bullets{display:flex;flex-wrap:wrap;gap:6px}
+.bullets span{background:#F9FAFB;border:1px solid #E5E7EB;padding:5px 10px;border-radius:999px;font-size:11px;color:#1F2937}
 
-.fc-badge{position:absolute;left:24px;bottom:24px;color:#1e1e22;font-size:13px;line-height:1.6;z-index:3;background:rgba(255,255,255,0.85);backdrop-filter:blur(8px);padding:14px 20px;border-radius:12px;border:1px solid rgba(255,255,255,0.6)}
-.fc-badge .b-top{font-weight:800;font-size:15px;color:#111;letter-spacing:0.05em}
-.fc-badge .b-mid{font-weight:600;color:#333;margin:2px 0}
-.fc-badge .b-bot{font-size:12px;color:#666;font-style:italic}
+.fc{display:grid;grid-template-columns:1.1fr .9fr;gap:32px}
+.fc-img{position:relative;border-radius:18px;overflow:hidden;min-height:500px;background:#F3F4F6;border:1px solid #E5E7EB}
+.fc-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 
-.form{background:#fff;border:1px solid #e2e2e6;border-radius:18px;padding:26px}.form h3{font-size:21px}.form .sub{font-size:13px;color:#7a7a82;margin:6px 0 18px}.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}.f{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.f.full{grid-column:1/-1}.f label{font-size:11px;letter-spacing:.06em;color:#7a7a82}.f input,.f select,.f textarea{border:1px solid #e2e2e6;border-radius:10px;padding:11px 13px;font-size:14px}.f textarea{min-height:90px}.btns{display:flex;gap:10px;flex-wrap:wrap}.btn-black{background:#111;color:#fff;border:1px solid #111;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer}.btn-ghost{background:#fff;border:1px solid #e2e2e6;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer}
+.fc-badge{position:absolute;left:24px;bottom:24px;color:#1F2937;font-size:13px;line-height:1.6;z-index:3;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);padding:14px 20px;border-radius:12px;border:1px solid #E5E7EB}
+.fc-badge .b-top{font-weight:800;font-size:15px;color:#1F2937;letter-spacing:0.05em}
+.fc-badge .b-mid{font-weight:600;color:#1F2937;margin:2px 0}
+.fc-badge .b-bot{font-size:12px;color:#4B5563;font-style:italic}
+
+.form{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:18px;padding:26px}
+.form h3{font-size:21px;color:#1F2937}
+.form .sub{font-size:13px;color:#4B5563;margin:6px 0 18px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.f{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.f.full{grid-column:1/-1}
+.f label{font-size:11px;letter-spacing:.06em;color:#4B5563;font-weight:600}
+.f input,.f select,.f textarea{border:1px solid #E5E7EB;border-radius:10px;padding:11px 13px;font-size:14px;color:#1F2937;background:#FFFFFF}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:#1D4ED8;box-shadow:0 0 0 3px rgba(29,78,216,0.12)}
+.f textarea{min-height:90px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-black{background:#1D4ED8;color:#FFFFFF;border:1px solid #1D4ED8;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer;font-size:13px}
+.btn-black:hover{background:#1E40AF;border-color:#1E40AF}
+.btn-ghost{background:#FFFFFF;color:#1F2937;border:1px solid #E5E7EB;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer;font-size:13px}
+.btn-ghost:hover{border-color:#1D4ED8;color:#1D4ED8}
 
 /* 博客网格卡片样式 */
 .blog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.blog-card{border:1px solid #e2e2e6;border-radius:14px;overflow:hidden;background:#fff;display:block;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;text-align:left}
-.blog-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.06)}
-.blog-card img{width:100%;height:170px;object-fit:cover}
+.blog-card{border:1px solid #E5E7EB;border-radius:14px;overflow:hidden;background:#FFFFFF;display:block;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;text-align:left}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(31,41,55,0.06);border-color:#CBD5E1}
+.blog-card img{width:100%;height:170px;object-fit:cover;display:block}
 
 /* 博客子网站跳转横幅/按钮样式 */
-.blog-center-link-bar{margin-top:30px;background:#111114;border-radius:14px;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.blog-center-link-bar div h4{color:#fff;font-size:16px;margin-bottom:4px}
-.blog-center-link-bar div p{color:#a9a9b2;font-size:12px}
-.btn-blog-center{background:#fff;color:#111;padding:11px 22px;border-radius:999px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:background 0.2s}
-.btn-blog-center:hover{background:#e2e2e6}
+.blog-center-link-bar{margin-top:30px;background:#111827;border-radius:14px;padding:22px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.blog-center-link-bar div h4{color:#FFFFFF;font-size:16px;margin-bottom:4px}
+.blog-center-link-bar div p{color:#D1D5DB;font-size:12px}
+.btn-blog-center{background:#1D4ED8;color:#FFFFFF;padding:11px 22px;border-radius:999px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:background 0.2s}
+.btn-blog-center:hover{background:#1E40AF}
 
 /* 博客阅读模式展开容器 */
-.blog-reader-wrap{margin-top:24px;background:#fff;border:1px solid #e2e2e6;border-radius:16px;padding:32px;display:none}
+.blog-reader-wrap{margin-top:24px;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:16px;padding:32px;display:none}
 .blog-reader-wrap.active{display:block}
-.blog-reader-content h3{font-size:24px;margin-bottom:12px;color:#111}
-.blog-reader-content .reader-meta{font-size:12px;color:#7a7a82;margin-bottom:20px}
-.blog-reader-content p{color:#555;margin:14px 0;line-height:1.8}
+.blog-reader-content h3{font-size:24px;margin-bottom:12px;color:#1F2937}
+.blog-reader-content .reader-meta{font-size:12px;color:#4B5563;margin-bottom:20px}
+.blog-reader-content p{color:#1F2937;margin:14px 0;line-height:1.8}
 .blog-reader-content img{width:100%;max-height:400px;object-fit:cover;border-radius:10px;margin:16px 0}
 
 /* 文章底部按钮操作栏 */
-.reader-footer-actions{display:flex;gap:12px;margin-top:32px;padding-top:20px;border-top:1px solid #e2e2e6;flex-wrap:wrap}
-.btn-back-list{background:#fff;border:1px solid #e2e2e6;color:#111;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer}
-.btn-quote-jump{background:#111;color:#fff;border:1px solid #111;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer}
+.reader-footer-actions{display:flex;gap:12px;margin-top:32px;padding-top:20px;border-top:1px solid #E5E7EB;flex-wrap:wrap}
+.btn-back-list{background:#FFFFFF;border:1px solid #E5E7EB;color:#1F2937;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer}
+.btn-back-list:hover{border-color:#1D4ED8;color:#1D4ED8}
+.btn-quote-jump{background:#1D4ED8;color:#FFFFFF;border:1px solid #1D4ED8;padding:10px 20px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer}
+.btn-quote-jump:hover{background:#1E40AF;border-color:#1E40AF}
 
 .faq-wrap{max-width:1080px;margin:0 auto}
 .faq-highlights{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:32px}
-.faq-card{background:#f7f7f8;border:1px solid #e2e2e6;border-radius:16px;padding:24px}
-.faq-card h3{font-size:16px;margin-bottom:10px;color:#111;display:flex;align-items:center;gap:8px}
-.faq-card p{font-size:14px;color:#555;line-height:1.75}
+.faq-card{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:24px}
+.faq-card h3{font-size:16px;margin-bottom:10px;color:#1F2937;display:flex;align-items:center;gap:8px}
+.faq-card p{font-size:14px;color:#4B5563;line-height:1.75}
 .faq-list{display:flex;flex-direction:column;gap:12px}
-.faq-item{background:#fff;border:1px solid #e2e2e6;border-radius:14px;overflow:hidden;transition:box-shadow 0.2s}
-.faq-item[open]{box-shadow:0 8px 24px rgba(0,0,0,.05);border-color:#d0d0d7}
-.faq-item summary{padding:18px 22px;font-size:15px;font-weight:600;color:#111;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:14px;overflow:hidden;transition:box-shadow 0.2s}
+.faq-item[open]{box-shadow:0 8px 24px rgba(31,41,55,.05);border-color:#CBD5E1}
+.faq-item summary{padding:18px 22px;font-size:15px;font-weight:600;color:#1F2937;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
 .faq-item summary::-webkit-details-marker{display:none}
-.faq-item summary::after{content:"+";font-size:20px;font-weight:400;color:#7a7a82;transition:transform 0.2s}
-.faq-item[open] summary::after{content:"−";color:#111}
-.faq-ans{padding:0 22px 20px;font-size:14px;color:#555;line-height:1.8;border-top:1px solid #f0f0f3;padding-top:14px}
+.faq-item summary::after{content:"+";font-size:20px;font-weight:400;color:#4B5563;transition:transform 0.2s}
+.faq-item[open] summary::after{content:"−";color:#1D4ED8}
+.faq-ans{padding:0 22px 20px;font-size:14px;color:#4B5563;line-height:1.8;border-top:1px solid #E5E7EB;padding-top:14px}
 
-footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-template-columns:1.2fr 1.15fr 1fr;gap:32px;text-align:center;justify-items:center}footer .col{display:flex;flex-direction:column;align-items:center}footer .logo{color:#fff}.ft{color:#fff;font-weight:600;font-size:13px;margin-bottom:12px}.social{display:flex;gap:8px;margin-top:16px}.soc{width:38px;height:38px;border-radius:50%;border:1px solid #2a2a32;display:grid;place-items:center;color:#a9a9b2}.soc svg{width:17px;height:17px;fill:currentColor}.flist{font-size:13px;line-height:1.95}
+footer{background:#111827;color:#D1D5DB;padding:64px 6% 36px;display:grid;grid-template-columns:1.2fr 1.15fr 1fr;gap:32px;text-align:center;justify-items:center}
+footer .col{display:flex;flex-direction:column;align-items:center}
+footer .logo{color:#FFFFFF}
+.ft{color:#FFFFFF;font-weight:600;font-size:13px;margin-bottom:12px}
+.social{display:flex;gap:8px;margin-top:16px}
+.soc{width:38px;height:38px;border-radius:50%;border:1px solid #374151;display:grid;place-items:center;color:#E5E7EB}
+.soc:hover{border-color:#FFFFFF;color:#FFFFFF}
+.soc svg{width:17px;height:17px;fill:currentColor}
+.flist{font-size:13px;line-height:1.95}
 .brand-list{display:flex;flex-direction:column;gap:16px;text-align:center;align-items:center}
-.brand-list b{color:#fff}.brand-list span{font-size:12px;letter-spacing:.05em}.copy{grid-column:1/-1;border-top:1px solid #1e1e24;padding-top:16px;font-size:11px;color:#6e6e7a}.wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;background:#25D366;border-radius:50%;display:grid;place-items:center;z-index:99;box-shadow:0 8px 24px rgba(37,211,102,.35)}.wa svg{width:30px;height:30px;fill:#fff}.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;place-items:center;z-index:100;padding:18px}.modal.open{display:grid}.mbox{background:#fff;border-radius:18px;max-width:960px;width:100%;max-height:90vh;overflow:auto}.mhead{padding:20px 24px;border-bottom:1px solid #e2e2e6;display:flex;justify-content:space-between;align-items:center}.mbody{padding:24px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px}.mbody img{width:100%;border-radius:12px}.spec{list-style:none}.spec li{padding:9px 0;border-bottom:1px solid #e2e2e6;font-size:13px;color:#555}.spec b{color:#111}body[dir=rtl] .nav,body[dir=rtl] .nav-links,body[dir=rtl] .hero-cta,body[dir=rtl] .cat-bar{flex-direction:row-reverse}body[dir=rtl] .lang-menu{right:auto;left:0}@media(max-width:1150px){.logo small{display:none}}@media(max-width:1000px){.grid,.blog-grid,.mbody,.faq-highlights{grid-template-columns:1fr}.fc{grid-template-columns:1fr}footer{grid-template-columns:1fr}.nav-links{display:none}.ham{display:block}.hero-ov h1,.hero-ov h2{font-size:18px;white-space:normal;text-align:center}.hero-sub{font-size:11px;padding:0 16px;white-space:normal}.hero-cta{flex-direction:column}.fg{grid-template-columns:1fr}.fc-img{min-height:360px}.fc-img img{position:relative}.cat-btn{padding:8px 14px;font-size:12px}}
-:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
+.brand-list b{color:#FFFFFF}
+.brand-list span{font-size:12px;letter-spacing:.05em;color:#D1D5DB}
+.copy{grid-column:1/-1;border-top:1px solid #1F2937;padding-top:16px;font-size:11px;color:#9CA3AF}
+.wa{position:fixed;right:22px;bottom:22px;width:58px;height:58px;background:#25D366;border-radius:50%;display:grid;place-items:center;z-index:99;box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.wa svg{width:30px;height:30px;fill:#FFFFFF}
+.modal{position:fixed;inset:0;background:rgba(17,24,39,.6);display:none;place-items:center;z-index:100;padding:18px}
+.modal.open{display:grid}
+.mbox{background:#FFFFFF;border-radius:18px;max-width:960px;width:100%;max-height:90vh;overflow:auto;border:1px solid #E5E7EB;color:#1F2937}
+.mhead{padding:20px 24px;border-bottom:1px solid #E5E7EB;display:flex;justify-content:space-between;align-items:center}
+.mbody{padding:24px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.mbody img{width:100%;border-radius:12px}
+.spec{list-style:none}
+.spec li{padding:9px 0;border-bottom:1px solid #E5E7EB;font-size:13px;color:#4B5563}
+.spec b{color:#1F2937}
+body[dir=rtl] .nav,body[dir=rtl] .nav-links,body[dir=rtl] .hero-cta,body[dir=rtl] .cat-bar{flex-direction:row-reverse}
+body[dir=rtl] .lang-menu{right:auto;left:0}
+@media(max-width:1150px){.logo small{display:none}}
+@media(max-width:1000px){.grid,.blog-grid,.mbody,.faq-highlights{grid-template-columns:1fr}.fc{grid-template-columns:1fr}footer{grid-template-columns:1fr}.nav-links{display:none}.ham{display:block}.hero-ov h1,.hero-ov h2{font-size:18px;white-space:normal;text-align:center}.hero-sub{font-size:11px;padding:0 16px;white-space:normal}.hero-cta{flex-direction:column}.fg{grid-template-columns:1fr}.fc-img{min-height:360px}.fc-img img{position:relative}.cat-btn{padding:8px 14px;font-size:12px}}
+:focus-visible{outline:3px solid #1D4ED8;outline-offset:3px}
 .card[role="button"]{cursor:pointer}
-.form-note{margin-top:12px;font-size:11px;color:#686b73;line-height:1.6}
-.form-status{min-height:1.4em;margin-top:8px;font-size:12px;color:#245b35}
+.form-note{margin-top:12px;font-size:11px;color:#6B7280;line-height:1.6}
+.form-status{min-height:1.4em;margin-top:8px;font-size:12px;color:#166534;font-weight:500}
 .hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
-.copy a{text-decoration:underline;color:#ddd;cursor:pointer}
+.copy a{text-decoration:underline;color:#E5E7EB;cursor:pointer}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
 
@@ -165,11 +247,11 @@ footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-t
 </script>
 </head>
 <body id="top">
-<noscript><div style="padding:16px;background:#fff;text-align:center;font-size:14px"><strong>Global Modular Homes, Prefab Villas & Outdoor Solutions | ModuVilla</strong><br>Contact: dasleben@moduvilla.com | +86 185 6179 0765. <a href="https://moduvilla.com/?lang=en">English</a></div></noscript>
+<noscript><div style="padding:16px;background:#FFFFFF;color:#1F2937;text-align:center;font-size:14px"><strong>Global Modular Homes, Prefab Villas & Outdoor Solutions | ModuVilla</strong><br>Contact: dasleben@moduvilla.com | +86 185 6179 0765. <a href="https://moduvilla.com/?lang=en">English</a></div></noscript>
 
 <!-- 顶部通栏 -->
 <div class="topbar">
-  <div><b style="color:#fff">YAODENIGUAN</b> | <span data-i="topbar_info">Email: dasleben@moduvilla.com | Tel / WhatsApp: +86 185 6179 0765</span></div>
+  <div><b style="color:#FFFFFF">YAODENIGUAN</b> | <span data-i="topbar_info">Email: dasleben@moduvilla.com | Tel / WhatsApp: +86 185 6179 0765</span></div>
   <div data-i="topbar_addr">Hengshui, Hebei · Kuala Lumpur, Malaysia · Foshan, Guangdong</div>
 </div>
 
@@ -187,7 +269,7 @@ footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-t
         <a href="#contact" data-i="nav_contact">CONTACT</a>
       </div>
       <div class="lang" id="langDrop">
-        <button class="lang-btn" onclick="event.stopPropagation();document.getElementById('langDrop').classList.toggle('open')">🌐 <span id="curLang">EN</span> ▾</button>
+        <button class="lang-btn" type="button" onclick="event.stopPropagation();document.getElementById('langDrop').classList.toggle('open')">🌐 <span id="curLang">EN</span> ▾</button>
         <div class="lang-menu">
           <a href="?lang=en" onclick="event.preventDefault();setLang('en')">English</a>
           <a href="?lang=ar" onclick="event.preventDefault();setLang('ar')">العربية</a>
@@ -209,219 +291,225 @@ footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-t
   <a href="./blog-articles" onclick="closeMobile()" data-i="nav_blog">BLOG</a>
   <a href="./faq" onclick="closeMobile()" data-i="nav_faq">FAQ</a>
   <a href="#contact" onclick="closeMobile()" data-i="nav_contact">CONTACT</a>
-  <a href="#top" onclick="closeMobile()" style="font-size:16px;color:#a9a9b2" data-i="mobile_close">✕ Close</a>
+  <a href="#top" onclick="closeMobile()" style="font-size:16px;color:#D1D5DB" data-i="mobile_close">✕ Close</a>
 </nav>
 
-<!-- 首屏轮播图 -->
-<section class="hero" aria-label="Brand Featured Carousel">
-  <div class="hero-slider" id="heroSlider">
-    <div class="hero-slide active" style="background-image: url('./hero-slider-moduvilla-factory-overview.webp'), linear-gradient(135deg, #2b333c, #4b5563)">
-      <div class="hero-ov">
-        <div class="hero-brand" data-i="slide1_brand">ModuVilla · AluVilla · CoveCore</div>
-        <h1 data-i="slide1_title">Global Modular Homes, Prefab Villas & Outdoor Solutions</h1>
-        <p class="hero-sub" data-i="slide1_sub">Modular Houses | Expandable Houses | Container Houses | Mobile Sanitary Units | Container Pools | Outdoor Pergolas</p>
+<main id="main-content">
+  <!-- 首屏轮播图 -->
+  <section class="hero" aria-label="Brand Featured Carousel">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active">
+        <img class="hero-bg-img" src="./hero-slider-moduvilla-factory-overview.webp" alt="ModuVilla Modular House Manufacturing Base" fetchpriority="high" decoding="async" width="1600" height="900">
+        <div class="hero-ov">
+          <div class="hero-brand" data-i="slide1_brand">ModuVilla · AluVilla · CoveCore</div>
+          <h1 data-i="slide1_title">Global Modular Homes, Prefab Villas & Outdoor Solutions</h1>
+          <p class="hero-sub" data-i="slide1_sub">Modular Houses | Expandable Houses | Container Houses | Mobile Sanitary Units | Container Pools | Outdoor Pergolas</p>
+        </div>
+        <div class="hero-cta">
+          <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
+          <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
+        </div>
       </div>
-      <div class="hero-cta">
-        <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
-        <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
+      <div class="hero-slide">
+        <img class="hero-bg-img" src="./hero-slider-modular-prefab-house-manufacture.webp" alt="ModuVilla Modular Prefab House Manufacturing" loading="lazy" decoding="async" width="1600" height="900">
+        <div class="hero-ov">
+          <div class="hero-brand" data-i="slide2_brand">ModuVilla</div>
+          <h2 data-i="slide2_title">Global Modular Homes & Prefabricated Villa Manufacturer</h2>
+          <p class="hero-sub" data-i="slide2_sub">Modular Houses | Prefab Houses | Container Houses | Foldable Houses</p>
+        </div>
+        <div class="hero-cta">
+          <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
+          <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <img class="hero-bg-img" src="./hero-slider-aluvilla-smart-louvered-pergola.webp" alt="AluVilla Smart Louvered Aluminum Pergola" loading="lazy" decoding="async" width="1600" height="900">
+        <div class="hero-ov">
+          <div class="hero-brand" data-i="slide3_brand">AluVilla</div>
+          <h2 data-i="slide3_title">Premium Outdoor Living & Smart Pergola Systems</h2>
+          <p class="hero-sub" data-i="slide3_sub">Aluminum Pergolas | Smart Louvered Pergolas | Outdoor Living Systems</p>
+        </div>
+        <div class="hero-cta">
+          <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
+          <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <img class="hero-bg-img" src="./hero-slider-covecore-outdoor-kitchen-system.webp" alt="CoveCore Outdoor Kitchen and Container Pool System" loading="lazy" decoding="async" width="1600" height="900">
+        <div class="hero-ov">
+          <div class="hero-brand" data-i="slide4_brand">CoveCore</div>
+          <h2 data-i="slide4_title">High-End Outdoor Kitchens, Mobile Kitchens & Container Pools</h2>
+          <p class="hero-sub" data-i="slide4_sub">Outdoor Kitchens | Mobile Kitchens | Container Pools</p>
+        </div>
+        <div class="hero-cta">
+          <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
+          <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
+        </div>
       </div>
     </div>
-    <div class="hero-slide" style="background-image: url('./hero-slider-modular-prefab-house-manufacture.webp'), linear-gradient(135deg, #232b32, #3e4c59)">
-      <div class="hero-ov">
-        <div class="hero-brand" data-i="slide2_brand">ModuVilla</div>
-        <h2 data-i="slide2_title">Global Modular Homes & Prefabricated Villa Manufacturer</h2>
-        <p class="hero-sub" data-i="slide2_sub">Modular Houses | Prefab Houses | Container Houses | Foldable Houses</p>
-      </div>
-      <div class="hero-cta">
-        <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
-        <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
-      </div>
+    <button type="button" class="hero-prev" onclick="prevSlide()" aria-label="Previous Slide">❮</button>
+    <button type="button" class="hero-next" onclick="nextSlide()" aria-label="Next Slide">❯</button>
+    <div class="hero-dots" id="heroDots">
+      <button type="button" class="dot active" onclick="currentSlide(0)" aria-label="Slide 1"></button>
+      <button type="button" class="dot" onclick="currentSlide(1)" aria-label="Slide 2"></button>
+      <button type="button" class="dot" onclick="currentSlide(2)" aria-label="Slide 3"></button>
+      <button type="button" class="dot" onclick="currentSlide(3)" aria-label="Slide 4"></button>
     </div>
-    <div class="hero-slide" style="background-image: url('./hero-slider-aluvilla-smart-louvered-pergola.webp'), linear-gradient(135deg, #2a312c, #445047)">
-      <div class="hero-ov">
-        <div class="hero-brand" data-i="slide3_brand">AluVilla</div>
-        <h2 data-i="slide3_title">Premium Outdoor Living & Smart Pergola Systems</h2>
-        <p class="hero-sub" data-i="slide3_sub">Aluminum Pergolas | Smart Louvered Pergolas | Outdoor Living Systems</p>
-      </div>
-      <div class="hero-cta">
-        <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
-        <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
-      </div>
-    </div>
-    <div class="hero-slide" style="background-image: url('./hero-slider-covecore-outdoor-kitchen-system.webp'), linear-gradient(135deg, #322d2a, #544b46)">
-      <div class="hero-ov">
-        <div class="hero-brand" data-i="slide4_brand">CoveCore</div>
-        <h2 data-i="slide4_title">High-End Outdoor Kitchens, Mobile Kitchens & Container Pools</h2>
-        <p class="hero-sub" data-i="slide4_sub">Outdoor Kitchens | Mobile Kitchens | Container Pools</p>
-      </div>
-      <div class="hero-cta">
-        <a class="d" href="#products" data-i="view_products">VIEW PRODUCTS</a>
-        <a class="l" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" data-i="whatsapp_us">WHATSAPP US</a>
-      </div>
-    </div>
-  </div>
-  <button class="hero-prev" onclick="prevSlide()" aria-label="Previous Slide">❮</button>
-  <button class="hero-next" onclick="nextSlide()" aria-label="Next Slide">❯</button>
-  <div class="hero-dots" id="heroDots">
-    <span class="dot active" onclick="currentSlide(0)" aria-label="Slide 1"></span>
-    <span class="dot" onclick="currentSlide(1)" aria-label="Slide 2"></span>
-    <span class="dot" onclick="currentSlide(2)" aria-label="Slide 3"></span>
-    <span class="dot" onclick="currentSlide(3)" aria-label="Slide 4"></span>
-  </div>
-</section>
+  </section>
 
-<!-- 产品目录板块 -->
-<section id="products" class="sec gray">
-  <div class="head">
-    <h2 data-i="modular_title">Wholesale & Commercial Project Prefab Catalog</h2>
-    <p data-i="modular_sub">12 Products · OEM/ODM Customization · Global Manufacturer Supply · Worldwide Shipping</p>
-  </div>
-
-  <div class="cat-bar" role="tablist" aria-label="Product Categories">
-    <button type="button" class="cat-btn active" data-cat="all" onclick="filterProducts('all', this)" data-i="cat_all">All Products</button>
-    <button type="button" class="cat-btn" data-cat="ModuVilla" onclick="filterProducts('ModuVilla', this)" data-i="cat_moduvilla">ModuVilla Series</button>
-    <button type="button" class="cat-btn" data-cat="AluVilla" onclick="filterProducts('AluVilla', this)" data-i="cat_aluvilla">AluVilla Series</button>
-    <button type="button" class="cat-btn" data-cat="CoveCore" onclick="filterProducts('CoveCore', this)" data-i="cat_covecore">CoveCore Series</button>
-    <a class="cat-btn ext-link" href="./large-tents"><span data-i="cat_tents">Large Tents</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
-    <a class="cat-btn ext-link" href="./building-materials"><span data-i="cat_materials">Building Materials</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
-    <a class="cat-btn ext-link" href="./construction-machinery"><span data-i="cat_machinery">Construction Machinery</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
-    <a class="cat-btn ext-link" href="./hot-air-balloons"><span data-i="cat_balloons">Hot Air Balloons</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
-  </div>
-
-  <div class="grid" id="productGrid"></div>
-</section>
-
-<section id="factory" class="sec" style="background:#fff">
-  <div class="head">
-    <h2 data-i="factory_title">Modular Prefabricated Building R&D, Manufacturing & Global Sales</h2>
-    <p data-i="factory_desc2">Established in June 2024 · 12 Product Lines · Professional manufacturer supply for global commercial & bulk procurement projects</p>
-  </div>
-  <div class="fc">
-    <div class="fc-img">
-      <img src="./factory-assembly-line-prefabricated-building-base.jpg" alt="Modular house factory assembly production line base in Hebei China" loading="lazy" width="800" height="600">
-      <div class="fc-badge">
-        <div class="b-top" data-i="badge_brand">YAODENIGUAN</div>
-        <div class="b-mid">ModuVilla · AluVilla · CoveCore</div>
-        <div class="b-bot" data-i="badge_slogan">Where Architecture Meets Nature</div>
-      </div>
+  <!-- 产品目录板块 -->
+  <section id="products" class="sec gray">
+    <div class="head">
+      <h2 data-i="modular_title">Wholesale & Commercial Project Prefab Catalog</h2>
+      <p data-i="modular_sub">12 Products · OEM/ODM Customization · Global Manufacturer Supply · Worldwide Shipping</p>
     </div>
-    <form class="form" id="contactForm" autocomplete="off" onsubmit="return handleContact(event)">
-      <h3 data-i="form_title">Request a Manufacturer Quotation</h3>
-      <div class="sub" data-i="form_sub">Professional pricing and solutions for global commercial & bulk procurement projects. We respond via WhatsApp / Email within 12 hours.</div>
-      <div class="fg">
-        <div class="f"><label for="fName" data-i="f_name">Full Name</label><input id="fName" name="q_fullname" autocomplete="name" required maxlength="100" placeholder="e.g. Alex Morgan"></div>
-        <div class="f"><label for="fCountry" data-i="f_country">Country / Region</label><input id="fCountry" name="q_country" autocomplete="country-name" required maxlength="100" placeholder="e.g. United States"></div>
-        <div class="f"><label for="fWa" data-i="f_whatsapp">WhatsApp</label><input id="fWa" type="tel" name="q_whatsapp" autocomplete="tel" inputmode="tel" required maxlength="50" placeholder="e.g. +1 234 567 8900"></div>
-        <div class="f"><label for="fEmail" data-i="f_email">Email</label><input id="fEmail" type="email" name="q_email" autocomplete="email" required maxlength="254" placeholder="e.g. you@example.com"></div>
-        <div class="f full"><label for="fProduct" data-i="f_product">Interested Product</label><select id="fProduct" name="q_product" required><option value="" disabled selected data-i="f_product_choose">Select a product</option></select></div>
-        <div class="f full"><label for="fMsg" data-i="f_msg">Project Details</label><textarea id="fMsg" name="q_message" maxlength="3000" placeholder="Size, bulk quantity, OEM requirements, destination port..."></textarea></div>
-      </div>
-      <div class="hp-field" aria-hidden="true"><label for="fWebsite">Leave this field empty</label><input id="fWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-      <div class="btns">
-        <button type="submit" class="btn-black" data-i="form_send">Send via WhatsApp</button>
-        <button type="button" class="btn-ghost" onclick="handleEmail()" data-i="form_email">Send via Email</button>
-      </div>
-      <p class="form-note" data-i="form_note">Specifications are subject to final confirmation. This static website opens WhatsApp or your email app; it does not store submissions.</p>
-      <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-    </form>
-  </div>
-</section>
 
-<!-- 博客板块：保留现有4篇文章，底部增加跳转至独立BLOG子网站的按钮 -->
-<section id="blog" class="sec gray">
-  <div class="head">
-    <h2 data-i="blog_title">Manufacturing Insights & Commercial Buying Guides</h2>
-    <p data-i="blog_sub">Engineering expertise and procurement guides</p>
-  </div>
-  <div class="blog-grid">
-    <div class="blog-card" onclick="openBlogReader('guide')">
-      <img src="./blog-outdoor-kitchen-module-buying-guide-hero.jpg" alt="Outdoor Kitchen Module Buying Guide" loading="lazy" width="600" height="340">
-      <div class="card-body">
-        <h3 data-i="blog_outkit_title">Outdoor Kitchen Module Buying Guide</h3>
-        <div class="meta"><span data-i="blog_outkit_meta">Buying Guide</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
-      </div>
+    <div class="cat-bar" aria-label="Product Categories">
+      <button type="button" class="cat-btn active" data-cat="all" onclick="filterProducts('all', this)" data-i="cat_all">All Products</button>
+      <button type="button" class="cat-btn" data-cat="ModuVilla" onclick="filterProducts('ModuVilla', this)" data-i="cat_moduvilla">ModuVilla Series</button>
+      <button type="button" class="cat-btn" data-cat="AluVilla" onclick="filterProducts('AluVilla', this)" data-i="cat_aluvilla">AluVilla Series</button>
+      <button type="button" class="cat-btn" data-cat="CoveCore" onclick="filterProducts('CoveCore', this)" data-i="cat_covecore">CoveCore Series</button>
+      <a class="cat-btn ext-link" href="./large-tents"><span data-i="cat_tents">Large Tents</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
+      <a class="cat-btn ext-link" href="./building-materials"><span data-i="cat_materials">Building Materials</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
+      <a class="cat-btn ext-link" href="./construction-machinery"><span data-i="cat_machinery">Construction Machinery</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
+      <a class="cat-btn ext-link" href="./hot-air-balloons"><span data-i="cat_balloons">Hot Air Balloons</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
     </div>
-    <div class="blog-card" onclick="openBlogReader('triangle')">
-      <img src="./blog-triangle-a-frame-prefab-house-architecture.jpg" alt="Triangle House Development" loading="lazy" width="600" height="340">
-      <div class="card-body">
-        <h3 data-i="blog_tridev_title">The Evolution of Triangle A-Frame Houses</h3>
-        <div class="meta"><span data-i="blog_tridev_meta">Industry Trends</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
-      </div>
-    </div>
-    <div class="blog-card" onclick="openBlogReader('structure')">
-      <img src="./blog-modular-house-steel-frame-structure-design.jpg" alt="Modular House Structure Explained" loading="lazy" width="600" height="340">
-      <div class="card-body">
-        <h3 data-i="blog_new_title">Modular House Structure Explained</h3>
-        <div class="meta"><span data-i="blog_new_meta">Structure</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
-      </div>
-    </div>
-    <div class="blog-card" onclick="openBlogReader('pool')">
-      <img src="./blog-container-pool-backyard-leisure-solution.jpg" alt="Container Pool Solutions" loading="lazy" width="600" height="340">
-      <div class="card-body">
-        <h3 data-i="blog3_title">Container Pool — Outdoor Leisure Solutions</h3>
-        <div class="meta"><span data-i="blog3_meta">Leisure</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
-      </div>
-    </div>
-  </div>
 
-  <!-- 直达独立 BLOG 子网站的跳转横幅/按钮 -->
-  <div class="blog-center-link-bar">
-    <div>
-      <h4 data-i="blog_center_title">Looking for more manufacturing insights & project guides?</h4>
-      <p data-i="blog_center_desc">Visit our dedicated Blog Center for all articles and regular updates.</p>
-    </div>
-    <a href="./blog-articles" class="btn-blog-center"><span data-i="blog_center_btn">View All Articles in Blog Center</span> →</a>
-  </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
 
-  <!-- 文章阅读模式展开容器 -->
-  <div class="blog-reader-wrap" id="blogReaderWrap">
-    <div class="blog-reader-content" id="blogReaderContent"></div>
-    <div class="reader-footer-actions">
-      <button class="btn-back-list" onclick="closeBlogReader()" data-i="back_to_list">← Back to List</button>
-      <a href="./blog-articles" class="btn-blog-center" style="padding:10px 20px;font-size:13px;" data-i="blog_center_btn">View All Articles in Blog Center →</a>
-      <button class="btn-quote-jump" onclick="jumpToQuote()" data-i="jump_to_quote">Request a Manufacturer Quotation →</button>
+  <section id="factory" class="sec">
+    <div class="head">
+      <h2 data-i="factory_title">Modular Prefabricated Building R&D, Manufacturing & Global Sales</h2>
+      <p data-i="factory_desc2">Established in June 2024 · 12 Product Lines · Professional manufacturer supply for global commercial & bulk procurement projects</p>
     </div>
-  </div>
-</section>
-
-<!-- FAQ 板块：保留原样交互，不增加额外跳转 -->
-<section id="faq" class="sec" style="background:#fff">
-  <div class="head">
-    <h2 data-i="faq_title">Factory Capabilities & Frequently Asked Questions</h2>
-    <p data-i="faq_sub">Global Manufacturing Bases, OEM/ODM Policies & Quality Assurance</p>
-  </div>
-  <div class="faq-wrap">
-    <div class="faq-highlights">
-      <div class="faq-card">
-        <h3 data-i="faq_desc1_t">1. OEM & ODM Custom Manufacturing</h3>
-        <p data-i="faq_desc1_p">We accept both OEM and ODM orders. For private-label brand manufacturing (OEM), clients are required to provide valid trademark registration certificates and brand authorization documentation.</p>
+    <div class="fc">
+      <div class="fc-img">
+        <img src="./factory-assembly-line-prefabricated-building-base.jpg" alt="Modular house factory assembly production line base in Hebei China" loading="lazy" decoding="async" width="800" height="600">
+        <div class="fc-badge">
+          <div class="b-top" data-i="badge_brand">YAODENIGUAN</div>
+          <div class="b-mid">ModuVilla · AluVilla · CoveCore</div>
+          <div class="b-bot" data-i="badge_slogan">Where Architecture Meets Nature</div>
+        </div>
       </div>
-      <div class="faq-card">
-        <h3 data-i="faq_desc2_t">2. Global Production Bases & Product Matrix</h3>
-        <p data-i="faq_desc2_p">We operate specialized manufacturing facilities across Hengshui (Hebei), Kuala Lumpur (Malaysia), and Foshan (Guangdong) for outdoor pergolas, alongside modular housing, mobile sanitary units, outdoor kitchens, container pools, and partner lines.</p>
+      <form class="form" id="contactForm" autocomplete="off" onsubmit="return handleContact(event)">
+        <h3 data-i="form_title">Request a Manufacturer Quotation</h3>
+        <div class="sub" data-i="form_sub">Professional pricing and solutions for global commercial & bulk procurement projects. We respond via WhatsApp / Email within 12 hours.</div>
+        <div class="fg">
+          <div class="f"><label for="fName" data-i="f_name">Full Name</label><input id="fName" name="q_fullname" autocomplete="name" required maxlength="100" placeholder="e.g. Alex Morgan"></div>
+          <div class="f"><label for="fCountry" data-i="f_country">Country / Region</label><input id="fCountry" name="q_country" autocomplete="country-name" required maxlength="100" placeholder="e.g. United States"></div>
+          <div class="f"><label for="fWa" data-i="f_whatsapp">WhatsApp</label><input id="fWa" type="tel" name="q_whatsapp" autocomplete="tel" inputmode="tel" required maxlength="50" placeholder="e.g. +1 234 567 8900"></div>
+          <div class="f"><label for="fEmail" data-i="f_email">Email</label><input id="fEmail" type="email" name="q_email" autocomplete="email" required maxlength="254" placeholder="e.g. you@example.com"></div>
+          <div class="f full"><label for="fProduct" data-i="f_product">Interested Product</label><select id="fProduct" name="q_product" required><option value="" disabled selected data-i="f_product_choose">Select a product</option></select></div>
+          <div class="f full"><label for="fMsg" data-i="f_msg">Project Details</label><textarea id="fMsg" name="q_message" maxlength="3000" placeholder="Size, bulk quantity, OEM requirements, destination port..."></textarea></div>
+        </div>
+        <div class="hp-field" aria-hidden="true"><label for="fWebsite">Leave this field empty</label><input id="fWebsite" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="btns">
+          <button type="submit" class="btn-black" data-i="form_send">Send via WhatsApp</button>
+          <button type="button" class="btn-ghost" onclick="handleEmail()" data-i="form_email">Send via Email</button>
+        </div>
+        <p class="form-note" data-i="form_note">Specifications are subject to final confirmation. This static website opens WhatsApp or your email app; it does not store submissions.</p>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- 博客板块：保留现有4篇文章，底部增加跳转至独立BLOG子网站的按钮 -->
+  <section id="blog" class="sec gray">
+    <div class="head">
+      <h2 data-i="blog_title">Manufacturing Insights & Commercial Buying Guides</h2>
+      <p data-i="blog_sub">Engineering expertise and procurement guides</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card" onclick="openBlogReader('guide')">
+        <img src="./blog-outdoor-kitchen-module-buying-guide-hero.jpg" alt="Outdoor Kitchen Module Buying Guide" loading="lazy" decoding="async" width="600" height="340">
+        <div class="card-body">
+          <h3 data-i="blog_outkit_title">Outdoor Kitchen Module Buying Guide</h3>
+          <div class="meta"><span data-i="blog_outkit_meta">Buying Guide</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
+        </div>
+      </div>
+      <div class="blog-card" onclick="openBlogReader('triangle')">
+        <img src="./blog-triangle-a-frame-prefab-house-architecture.jpg" alt="Triangle House Development" loading="lazy" decoding="async" width="600" height="340">
+        <div class="card-body">
+          <h3 data-i="blog_tridev_title">The Evolution of Triangle A-Frame Houses</h3>
+          <div class="meta"><span data-i="blog_tridev_meta">Industry Trends</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
+        </div>
+      </div>
+      <div class="blog-card" onclick="openBlogReader('structure')">
+        <img src="./blog-modular-house-steel-frame-structure-design.jpg" alt="Modular House Structure Explained" loading="lazy" decoding="async" width="600" height="340">
+        <div class="card-body">
+          <h3 data-i="blog_new_title">Modular House Structure Explained</h3>
+          <div class="meta"><span data-i="blog_new_meta">Structure</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
+        </div>
+      </div>
+      <div class="blog-card" onclick="openBlogReader('pool')">
+        <img src="./blog-container-pool-backyard-leisure-solution.jpg" alt="Container Pool Solutions" loading="lazy" decoding="async" width="600" height="340">
+        <div class="card-body">
+          <h3 data-i="blog3_title">Container Pool — Outdoor Leisure Solutions</h3>
+          <div class="meta"><span data-i="blog3_meta">Leisure</span> • <span style="text-decoration:underline" data-i="read_more">Read Full Article →</span></div>
+        </div>
       </div>
     </div>
 
-    <div class="faq-list">
-      <details class="faq-item" open>
-        <summary data-i="faq_q1">1. How are the products installed and used? Are specific instructions provided?</summary>
-        <div class="faq-ans" data-i="faq_a1">Every order comes with detailed step-by-step installation manuals, user operation guides, and dedicated remote technical support from our engineering team.</div>
-      </details>
-      <details class="faq-item">
-        <summary data-i="faq_q2">2. What after-sales warranty and support do you offer?</summary>
-        <div class="faq-ans" data-i="faq_a2">We provide a 1-year product warranty. For non-product or operational issues beyond the warranty scope, we continue to offer ongoing technical consultation and support.</div>
-      </details>
-      <details class="faq-item">
-        <summary data-i="faq_q3">3. What is the typical production lead time?</summary>
-        <div class="faq-ans" data-i="faq_a3">Standard production & delivery lead time is 20–35 days depending on order quantity. Any force majeure or special circumstances will be communicated in advance, while custom OEM/ODM designs require confirming a specific production schedule.</div>
-      </details>
-      <details class="faq-item">
-        <summary data-i="faq_q4">4. How do you ensure consistent product quality?</summary>
-        <div class="faq-ans" data-i="faq_a4">We enforce full-process quality control from raw materials to assembly, provide finished-product packaging and inspection videos before shipment, and fully support third-party quality inspections.</div>
-      </details>
+    <!-- 直达独立 BLOG 子网站的跳转横幅/按钮 -->
+    <div class="blog-center-link-bar">
+      <div>
+        <h4 data-i="blog_center_title">Looking for more manufacturing insights & project guides?</h4>
+        <p data-i="blog_center_desc">Visit our dedicated Blog Center for all articles and regular updates.</p>
+      </div>
+      <a href="./blog-articles" class="btn-blog-center"><span data-i="blog_center_btn">View All Articles in Blog Center</span> →</a>
     </div>
-  </div>
-</section>
+
+    <!-- 文章阅读模式展开容器 -->
+    <div class="blog-reader-wrap" id="blogReaderWrap">
+      <div class="blog-reader-content" id="blogReaderContent"></div>
+      <div class="reader-footer-actions">
+        <button type="button" class="btn-back-list" onclick="closeBlogReader()" data-i="back_to_list">← Back to List</button>
+        <a href="./blog-articles" class="btn-blog-center" style="padding:10px 20px;font-size:13px;" data-i="blog_center_btn">View All Articles in Blog Center →</a>
+        <button type="button" class="btn-quote-jump" onclick="jumpToQuote()" data-i="jump_to_quote">Request a Manufacturer Quotation →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ 板块：保留原样交互，不增加额外跳转 -->
+  <section id="faq" class="sec">
+    <div class="head">
+      <h2 data-i="faq_title">Factory Capabilities & Frequently Asked Questions</h2>
+      <p data-i="faq_sub">Global Manufacturing Bases, OEM/ODM Policies & Quality Assurance</p>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-highlights">
+        <div class="faq-card">
+          <h3 data-i="faq_desc1_t">1. OEM & ODM Custom Manufacturing</h3>
+          <p data-i="faq_desc1_p">We accept both OEM and ODM orders. For private-label brand manufacturing (OEM), clients are required to provide valid trademark registration certificates and brand authorization documentation.</p>
+        </div>
+        <div class="faq-card">
+          <h3 data-i="faq_desc2_t">2. Global Production Bases & Product Matrix</h3>
+          <p data-i="faq_desc2_p">We operate specialized manufacturing facilities across Hengshui (Hebei), Kuala Lumpur (Malaysia), and Foshan (Guangdong) for outdoor pergolas, alongside modular housing, mobile sanitary units, outdoor kitchens, container pools, and partner lines.</p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary data-i="faq_q1">1. How are the products installed and used? Are specific instructions provided?</summary>
+          <div class="faq-ans" data-i="faq_a1">Every order comes with detailed step-by-step installation manuals, user operation guides, and dedicated remote technical support from our engineering team.</div>
+        </details>
+        <details class="faq-item">
+          <summary data-i="faq_q2">2. What after-sales warranty and support do you offer?</summary>
+          <div class="faq-ans" data-i="faq_a2">We provide a 1-year product warranty. For non-product or operational issues beyond the warranty scope, we continue to offer ongoing technical consultation and support.</div>
+        </details>
+        <details class="faq-item">
+          <summary data-i="faq_q3">3. What is the typical production lead time?</summary>
+          <div class="faq-ans" data-i="faq_a3">Standard production & delivery lead time is 20–35 days depending on order quantity. Any force majeure or special circumstances will be communicated in advance, while custom OEM/ODM designs require confirming a specific production schedule.</div>
+        </details>
+        <details class="faq-item">
+          <summary data-i="faq_q4">4. How do you ensure consistent product quality?</summary>
+          <div class="faq-ans" data-i="faq_a4">We enforce full-process quality control from raw materials to assembly, provide finished-product packaging and inspection videos before shipment, and fully support third-party quality inspections.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
 
 <!-- 页脚：增加马来西亚吉隆坡生产基地 & 广东佛山户外凉棚生产工厂 -->
 <footer id="contact">
@@ -451,16 +539,16 @@ footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-t
   <div class="mbox">
     <div class="mhead">
       <h3 id="mTitle">Product</h3>
-      <button type="button" aria-label="Close product details" onclick="closeModal()" style="border:1px solid #e2e2e6;background:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer">✕</button>
+      <button type="button" aria-label="Close product details" onclick="closeModal()" style="border:1px solid #E5E7EB;background:#FFFFFF;color:#1F2937;width:34px;height:34px;border-radius:50%;cursor:pointer">✕</button>
     </div>
     <div class="mbody">
-      <img id="mImg" src="./product-modular-house-prefabricated-villa-moduvilla.jpg" alt="Product">
+      <img id="mImg" src="./product-modular-house-prefabricated-villa-moduvilla.jpg" alt="Product" decoding="async">
       <div>
         <ul class="spec" id="mSpec"></ul>
         <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
-          <a id="modalWhatsApp" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" style="padding:11px 18px;border-radius:999px;background:#111;color:#fff" data-i="inquire_whatsapp">WhatsApp Inquiry</a>
-          <a id="modalEmail" href="mailto:dasleben@moduvilla.com" style="padding:11px 18px;border-radius:999px;border:1px solid #e2e2e6" data-i="inquire_email">Email Us</a>
-          <button onclick="requestProductQuote()" class="btn-ghost" data-i="modal_form">Request Quote Form</button>
+          <a id="modalWhatsApp" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" style="padding:11px 18px;border-radius:999px;background:#1D4ED8;color:#FFFFFF;font-weight:600" data-i="inquire_whatsapp">WhatsApp Inquiry</a>
+          <a id="modalEmail" href="mailto:dasleben@moduvilla.com" style="padding:11px 18px;border-radius:999px;border:1px solid #E5E7EB;color:#1F2937;font-weight:600" data-i="inquire_email">Email Us</a>
+          <button type="button" onclick="requestProductQuote()" class="btn-ghost" data-i="modal_form">Request Quote Form</button>
         </div>
       </div>
     </div>
@@ -469,16 +557,16 @@ footer{background:#111114;color:#a9a9b2;padding:64px 6% 36px;display:grid;grid-t
 
 <div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-labelledby="pTitle" onclick="if(event.target===this)closePrivacyModal()">
   <div class="mbox" style="padding:30px;">
-    <div class="mhead" style="padding:0 0 16px 0;border-bottom:1px solid #e2e2e6;margin-bottom:20px;">
-      <h3 id="pTitle" data-i="privacy_title" style="font-size:20px;">Privacy Notice</h3>
-      <button type="button" aria-label="Close privacy notice" onclick="closePrivacyModal()" style="border:1px solid #e2e2e6;background:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer">✕</button>
+    <div class="mhead" style="padding:0 0 16px 0;border-bottom:1px solid #E5E7EB;margin-bottom:20px;">
+      <h3 id="pTitle" data-i="privacy_title" style="font-size:20px;color:#1F2937;">Privacy Notice</h3>
+      <button type="button" aria-label="Close privacy notice" onclick="closePrivacyModal()" style="border:1px solid #E5E7EB;background:#FFFFFF;color:#1F2937;width:34px;height:34px;border-radius:50%;cursor:pointer">✕</button>
     </div>
-    <div style="font-size:13px;color:#555;line-height:1.8;">
-      <p style="margin-bottom:10px;"><strong data-i="privacy_p1_b">Information you enter:</strong> <span data-i="privacy_p1_t">name, country/region, WhatsApp number, email address, selected product and project details.</span></p>
-      <p style="margin-bottom:10px;"><strong data-i="privacy_p2_b">How this static website handles it:</strong> <span data-i="privacy_p2_t">the form does not submit to or store data on this website. When you choose WhatsApp or Email, the information is placed into a message for the relevant app. You decide whether to send it.</span></p>
-      <p style="margin-bottom:10px;"><strong data-i="privacy_p3_b">Browser storage:</strong> <span data-i="privacy_p3_t">the site may store your language preference locally in your browser.</span></p>
-      <p style="margin-bottom:10px;"><strong data-i="privacy_p4_b">Data minimization:</strong> <span data-i="privacy_p4_t">do not include passwords, payment-card details, or other sensitive information in the inquiry form.</span></p>
-      <p style="margin-bottom:10px;"><strong data-i="privacy_p5_b">Contact:</strong> <a href="mailto:dasleben@moduvilla.com">dasleben@moduvilla.com</a>.</p>
+    <div style="font-size:13px;color:#4B5563;line-height:1.8;">
+      <p style="margin-bottom:10px;"><strong style="color:#1F2937" data-i="privacy_p1_b">Information you enter:</strong> <span data-i="privacy_p1_t">name, country/region, WhatsApp number, email address, selected product and project details.</span></p>
+      <p style="margin-bottom:10px;"><strong style="color:#1F2937" data-i="privacy_p2_b">How this static website handles it:</strong> <span data-i="privacy_p2_t">the form does not submit to or store data on this website. When you choose WhatsApp or Email, the information is placed into a message for the relevant app. You decide whether to send it.</span></p>
+      <p style="margin-bottom:10px;"><strong style="color:#1F2937" data-i="privacy_p3_b">Browser storage:</strong> <span data-i="privacy_p3_t">the site may store your language preference locally in your browser.</span></p>
+      <p style="margin-bottom:10px;"><strong style="color:#1F2937" data-i="privacy_p4_b">Data minimization:</strong> <span data-i="privacy_p4_t">do not include passwords, payment-card details, or other sensitive information in the inquiry form.</span></p>
+      <p style="margin-bottom:10px;"><strong style="color:#1F2937" data-i="privacy_p5_b">Contact:</strong> <a style="color:#1D4ED8;text-decoration:underline" href="mailto:dasleben@moduvilla.com">dasleben@moduvilla.com</a>.</p>
     </div>
   </div>
 </div>
@@ -565,7 +653,7 @@ var PRODUCTS=[
 ];
 var TYPE={en:{modular:"Modular House",triangle:"Triangle A-Frame House",folding:"Folding Expandable House",container:"Container House",toilet:"Mobile Toilet Unit",wooden:"Wooden Cabin",pergola:"Pergola 4Generation",pergola2:"Pergola 4Pro",pergolaSmart:"Pergola Smart Customization",trailers:"House Trailers",kitchen:"Outdoor Kitchen",pool:"Container Pool"},ar:{modular:"منزل معياري",triangle:"منزل مثلث A-Frame",folding:"منزل قابل للطي والتوسيع",container:"منزل حاوية",toilet:"وحدة مرحاض متنقل",wooden:"كوخ خشبي",pergola:"برجولا 4Generation",pergola2:"برجولا 4Pro",pergolaSmart:"برجولا ذكية مخصصة",trailers:"مقطورة منزل",kitchen:"مطبخ خارجي",pool:"حوض سباحة حاوية"},es:{modular:"Casa Modular",triangle:"Casa Triangular A-Frame",folding:"Casa Plegable Expandible",container:"Casa Contenedor",toilet:"Unidad de Baño Móvil",wooden:"Cabaña de Madera",pergola:"Pérgola 4Generation",pergola2:"Pérgola 4Pro",pergolaSmart:"Pérgola Inteligente Personalizada",trailers:"Casa Remolque",kitchen:"Cocina Exterior",pool:"Piscina de Contenedor"},de:{modular:"Modulares Haus",triangle:"Dreieck A-Frame Haus",folding:"Faltbares Expandable Haus",container:"Container Haus",toilet:"Mobile Toiletten Einheit",wooden:"Holzhaus",pergola:"Pergola 4Generation",pergola2:"Pergola 4Pro",pergolaSmart:"Pergola Smart Anpassung",trailers:"Haus Trailer",kitchen:"Outdoor Küche",pool:"Container-Pool"},fr:{modular:"Maison Modulaire",triangle:"Maison Triangulaire A-Frame",folding:"Maison Pliable Extensible",container:"Maison Conteneur",toilet:"Unité de Toilette Mobile",wooden:"Cabane en Bois",pergola:"Pergola 4Generation",pergola2:"Pergola 4Pro",pergolaSmart:"Pergola Intelligente Personnalisée",trailers:"Maison sur Remorque",kitchen:"Cuisine Extérieure",pool:"Piscine Conteneur"},ru:{modular:"Модульный дом",triangle:"Треугольный дом A-Frame",folding:"Складной расширяемый дом",container:"Дом из морских контейнеров",toilet:"Мобильный санитарный модуль",wooden:"Деревянный домик",pergola:"Пергола 4Generation",pergola2:"Пергола 4Pro",pergolaSmart:"Пергола Умная Индивидуальная",trailers:"Дом-прицеп на колесах",kitchen:"Уличная кухня",pool:"Контейнерный бассейн"}};
 var AL={"en":{"sku":"SKU","size":"Model / Size","specs":"Specifications","size1":"Size 1","size2":"Size 2","oem":"High-End Customization","frame":"Frame Material","material":"Material","wall":"Exterior Wall Material","insul":"Insulation Material","mat_spec":"Material Specification","color":"Exterior Color","appearance":"Appearance","layout":"Interior Layout","doors_win":"Doors & Windows","roof":"Roof","config":"Configuration","config1":"Configuration 1","config2":"Configuration 2","custom":"Customization Options","light":"Lighting","curtain":"Curtains","glass":"Glass","chassis":"Chassis","cert":"Certification","features":"Features","thick":"Thickness","app":"Application","moq":"MOQ","lead":"Production Lead Time","inspect":"Inspection","price":"Price","install":"Installation","perf":"Performance"},"ar":{"sku":"رمز المنتج (SKU)","size":"الموديل / المقاس","specs":"المواصفات","size1":"المقاس 1","size2":"المقاس 2","oem":"تخصيص فاخر (OEM)","frame":"مادة الهيكل","material":"المادة","wall":"مادة الجدار الخارجي","insul":"مادة العزل","mat_spec":"مواصفات المادة","color":"اللون الخارجي","appearance":"المظهر","layout":"التخطيط الداخلي","doors_win":"الأبواب والنوافذ","roof":"السقف","config":"التكوين","config1":"التكوين 1","config2":"التكوين 2","custom":"خيارات التخصيص","light":"الإضاءة","curtain":"الستائر","glass":"الزجاج","chassis":"الشاسيه","cert":"الشهادات","features":"الميزات","thick":"السماكة","app":"التطبيق","moq":"الحد الأدنى للطلب","lead":"مدة الإنتاج","inspect":"الفحص والجودة","price":"السعر","install":"التركيب","perf":"الأداء"},"es":{"sku":"SKU","size":"Modelo / Tamaño","specs":"Especificaciones","size1":"Tamaño 1","size2":"Tamaño 2","oem":"Personalización Premium","frame":"Material del Marco","material":"Material","wall":"Material de Pared Exterior","insul":"Material Aislante","mat_spec":"Especificación de Material","color":"Color Exterior","appearance":"Apariencia","layout":"Distribución Interior","doors_win":"Puertas y Ventanas","roof":"Techo","config":"Configuración","config1":"Configuración 1","config2":"Configuración 2","custom":"Opciones de Personalización","light":"Iluminación","curtain":"Cortinas","glass":"Vidrio","chassis":"Chasis","cert":"Certificación","features":"Características","thick":"Espesor","app":"Aplicación","moq":"Pedido Mínimo (MOQ)","lead":"Tiempo de Producción","inspect":"Inspección","price":"Precio","install":"Instalación","perf":"Rendimiento"},"de":{"sku":"SKU","size":"Modell / Größe","specs":"Spezifikationen","size1":"Größe 1","size2":"Größe 2","oem":"High-End-Anpassung","frame":"Rahmenmaterial","material":"Material","wall":"Außenwandmaterial","insul":"Dämmmaterial","mat_spec":"Materialspezifikation","color":"Außenfarbe","appearance":"Erscheinungsbild","layout":"Innenaufteilung","doors_win":"Türen & Fenster","roof":"Dach","config":"Konfiguration","config1":"Konfiguration 1","config2":"Konfiguration 2","custom":"Anpassungsoptionen","light":"Beleuchtung","curtain":"Vorhänge","glass":"Glas","chassis":"Fahrgestell","cert":"Zertifizierung","features":"Merkmale","thick":"Dicke","app":"Anwendung","moq":"Mindestbestellmenge (MOQ)","lead":"Produktionszeit","inspect":"Inspektion","price":"Preis","install":"Installation","perf":"Leistung"},"fr":{"sku":"SKU","size":"Modèle / Taille","specs":"Spécifications","size1":"Taille 1","size2":"Taille 2","oem":"Personnalisation Haut de Gamme","frame":"Matériau du Cadre","material":"Matériau","wall":"Matériau du Mur Extérieur","insul":"Matériau Isolant","mat_spec":"Spécification du Matériau","color":"Couleur Extérieure","appearance":"Apparence","layout":"Aménagement Intérieur","doors_win":"Portes & Fenêtres","roof":"Toit","config":"Configuration","config1":"Configuration 1","config2":"Configuration 2","custom":"Options de Personnalisation","light":"Éclairage","curtain":"Rideaux","glass":"Verre","chassis":"Châssis","cert":"Certification","features":"Caractéristiques","thick":"Épaisseur","app":"Application","moq":"Quantité Min. (MOQ)","lead":"Délai de Production","inspect":"Inspection","price":"Prix","install":"Installation","perf":"Performance"},"ru":{"sku":"Артикул (SKU)","size":"Модель / Размер","specs":"Характеристики","size1":"Размер 1","size2":"Размер 2","oem":"Премиум-кастомизация","frame":"Материал каркаса","material":"Материал","wall":"Материал наружных стен","insul":"Изоляционный материал","mat_spec":"Спецификация материала","color":"Цвет экстерьера","appearance":"Внешний вид","layout":"Внутренняя планировка","doors_win":"Двери и окна","roof":"Крыша","config":"Комплектация","config1":"Комплектация 1","config2":"Комплектация 2","custom":"Опции кастомизации","light":"Освещение","curtain":"Шторы","glass":"Стекло","chassis":"Шасси","cert":"Сертификация","features":"Особенности","thick":"Толщина","app":"Применение","moq":"Мин. заказ (MOQ)","lead":"Срок производства","inspect":"Инспекция","price":"Цена","install":"Монтаж","perf":"Характеристики"}};
-var AV={"en":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Customizable","custom_oem":"High-end customization, tailored for brand/OEM specifications","custom_oem_only":"Tailored for brand/OEM specifications upon request","high_custom":"High-end customization","custom_design":"Selected according to custom design requirements","insul_3":"3 options: EPS / XPS / PIR (Default: EPS)","insul_wall":"EPS | XPS | PIR optional","spec_modular":"Optional: 50mm / 60mm / 65mm / 70mm / 100mm (Default: 60mm)","spec_container":"Optional: 60mm / 65mm / 70mm / 80mm (Default: 60mm)","spec_toilet":"Optional: 50mm / 60mm (Default: 50mm)","spec_wooden":"Optional: 40mm / 50mm (Default: 40mm)","color_black":"Customizable (Default: Black frame)","color_whitegray":"Customizable (Default: White-gray frame)","wood_nat":"Natural wood finish","appear_fold":"Customizable (Default: Black frame with white walls)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Full galvanized 35 steel tube, welded structure","20_40":"20FT / 40FT Standard Shipping Container","layout_1b1l":"Customizable (Default: 1 Bedroom, 1 Living Room, 1 Kitchen, 1 Bathroom)","doors_sec":"Security door, sliding windows + anti-theft grilles","toilet_types":"Single Squat | Double Squat | Shower | Accessible (Disabled) | 5-Stall | Folding | PVC Toilet","q235_steel":"Q235 welded steel structure","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aluminum Alloy","roof_manual":"Leak-proof design, manual louvered roof","config_gen4":"4th Generation basic model (no extra default add-ons)","price_pergola1":"2,900 – 5,200 USD","roof_motor":"Leak-proof design, motorized / remote / APP control","opt_led":"Optional: LED lights / LED light strips","opt_screen":"Optional: Glass / automatic retractable screen / folding louvers","price_pergola2":"3,500 – 6,200 USD","smart_opts":"Size / Color / Layout / Lighting / Curtains / Glass / OEM","roof_smart":"High-end customization (Remote / APP / Voice control)","quote_design":"Quoted based on final design plan","trailer_s1":"Customizable, default matched with 20×19FT house","trailer_s2":"Customizable dedicated trailer for mobile toilet units","chassis":"Galvanized steel trailer chassis with wheels","dot":"DOT / VIN optional","kitchen":"Customizable, L-shape / U-shape / Island optional","steel":"304 Stainless Steel","kitchen2":"BBQ grill, sink, refrigerator optional","pool_sizes":"20FT | 40FT | Custom dimensions","pool_mat":"Corrosion-resistant steel structure + waterproof liner","pool_feat":"Integrated filtration system, LED lights, heating optional","moq_1_cat":"1 unit. Contact us for product catalog","moq_2_cat":"2 units. Contact us for product catalog","moq_4_cat":"4 sets. Contact us for product catalog","moq_40hq_cat":"Calculated by max 40HQ container load. Contact us for catalog","moq_cat":"Contact us for product catalog","lead_20_35":"20–35 days","inspect_full":"Full-process & factory inspection with report; third-party inspection supported","quote_custom":"Quoted according to specific customization","quote":"Request a quotation","guide":"Installation guide provided","perf_final":"Subject to product specifications and final design"},"ar":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"قابل للتخصيص","custom_oem":"تخصيص فاخر حسب الطلب، متاح للتصنيع للعلامات التجارية (OEM)","custom_oem_only":"متاح للتخصيص حسب مواصفات العلامة التجارية (OEM)","high_custom":"تخصيص فاخر","custom_design":"يُحدد وفقاً لمتطلبات التصميم المخصص","insul_3":"3 خيارات: EPS / XPS / PIR (الافتراضي: EPS)","insul_wall":"EPS | XPS | PIR اختياري","spec_modular":"اختياري: 50مم / 60مم / 65مم / 70مم / 100مم (الافتراضي: 60مم)","spec_container":"اختياري: 60مم / 65مم / 70مم / 80مم (الافتراضي: 60مم)","spec_toilet":"اختياري: 50مم / 60مم (الافتراضي: 50مم)","spec_wooden":"اختياري: 40مم / 50مم (الافتراضي: 40مم)","color_black":"قابل للتخصيص (الافتراضي: إطار أسود)","color_whitegray":"قابل للتخصيص (الافتراضي: إطار أبيض رمادي)","wood_nat":"لون الخشب الطبيعي","appear_fold":"قابل للتخصيص (الافتراضي: إطار أسود والجدران بيضاء)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"أنابيب فولاذية مجلفنة بالكامل مقاس 35، هيكل ملحوم","20_40":"حاوية شحن قياسية 20 قدم / 40 قدم","layout_1b1l":"قابل للتخصيص (الافتراضي: غرفة نوم، صالة، مطبخ، حمام)","doors_sec":"باب أمان، نوافذ منزلقة + شبك حماية ضد السرقة","toilet_types":"مرحاض أرضي مفرد | مزدوج | مع دش | لذوي الهمم | 5 مقصورات | قابل للطي | PVC","q235_steel":"هيكل فولاذي ملحوم Q235","pergola_sizes":"3×3م / 3×4م / 3×6م / 4×4م / 4×6م / 4×8م","alu":"سبائك الألومنيوم","roof_manual":"تصميم مانع للتسرب، سقف شرائح يدوي","config_gen4":"الإصدار الأساسي للجيل الرابع (بدون إضافات افتراضية)","price_pergola1":"2,900 – 5,200 دولار أمريكي","roof_motor":"تصميم مانع للتسرب، تحكم كهربائي / ريموت / تطبيق","opt_led":"اختياري: إضاءة LED / شرائط LED","opt_screen":"اختياري: زجاج / ستارة أوتوماتيكية قابلة للسحب / شرائح قابلة للطي","price_pergola2":"3,500 – 6,200 دولار أمريكي","smart_opts":"المقاس / اللون / التخطيط / الإضاءة / الستائر / الزجاج / OEM","roof_smart":"تخصيص فاخر (تحكم بالريموت / التطبيق / الصوت)","quote_design":"يُحدد السعر وفقاً لمخطط التصميم النهائي","trailer_s1":"قابل للتخصيص، يتوافق افتراضياً مع منزل 20×19 قدم","trailer_s2":"مقطورة مخصصة قابلة للتعديل لوحدات المراحيض","chassis":"شاسيه مقطورة من الفولاذ المجلفن مع عجلات","dot":"شهادة DOT / VIN اختيارية","kitchen":"قابل للتخصيص، شكل L / U / جزيرة اختياري","steel":"ستانلس ستيل 304","kitchen2":"شواية، حوض، ثلاجة اختيارية","pool_sizes":"20 قدم | 40 قدم | مقاسات مخصصة","pool_mat":"هيكل فولاذي مقاوم للصدأ + بطانة مقاومة للماء","pool_feat":"نظام فلترة مدمج، إضاءة LED، تدفئة اختياري","moq_1_cat":"وحدة واحدة. تواصل معنا للحصول على الكتالوج","moq_2_cat":"وحدتان. تواصل معنا للحصول على الكتالوج","moq_4_cat":"4 مجموعات. تواصل معنا للحصول على الكتالوج","moq_40hq_cat":"يُحسب حسب السعة القصوى لحاوية 40HQ. تواصل معنا للكتالوج","moq_cat":"تواصل معنا للحصول على الكتالوج","lead_20_35":"20–35 يوماً","inspect_full":"فحص شامل وفحص مصنع مع تقرير؛ يدعم شركات الفحص المستقلة","quote_custom":"يُحدد السعر حسب التخصيص المطلوب","quote":"طلب عرض سعر","guide":"يتوفر دليل التركيب","perf_final":"يخضع لمواصفات المنتج والتصميم النهائي"},"es":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Personalizable","custom_oem":"Personalización de alta gama, suministro exclusivo OEM/marca","custom_oem_only":"Suministro exclusivo OEM/marca bajo pedido","high_custom":"Personalización de alta gama","custom_design":"Según los requisitos de diseño personalizado","insul_3":"3 opciones: EPS / XPS / PIR (Por defecto: EPS)","insul_wall":"EPS | XPS | PIR opcional","spec_modular":"Opcional: 50mm / 60mm / 65mm / 70mm / 100mm (Por defecto: 60mm)","spec_container":"Opcional: 60mm / 65mm / 70mm / 80mm (Por defecto: 60mm)","spec_toilet":"Opcional: 50mm / 60mm (Por defecto: 50mm)","spec_wooden":"Opcional: 40mm / 50mm (Por defecto: 40mm)","color_black":"Personalizable (Por defecto: marco negro)","color_whitegray":"Personalizable (Por defecto: marco blanco grisáceo)","wood_nat":"Color madera natural","appear_fold":"Personalizable (Por defecto: marco negro y paredes blancas)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Tubo de acero galvanizado integral 35, estructura soldada","20_40":"Contenedor marítimo estándar de 20FT / 40FT","layout_1b1l":"Personalizable (Por defecto: 1 dormitorio, 1 salón, 1 cocina, 1 baño)","doors_sec":"Puerta de seguridad, ventanas correderas + rejas antirrobo","toilet_types":"Inodoro turco simple | Doble | Ducha | Accesible | 5 plazas | Plegable | PVC","q235_steel":"Estructura soldada de acero Q235","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aleación de aluminio","roof_manual":"Diseño antifugas, lamas manuales","config_gen4":"Modelo básico 4.ª generación (sin extras por defecto)","price_pergola1":"2.900 – 5.200 USD","roof_motor":"Diseño antifugas, motorizado / control remoto / APP","opt_led":"Opcional: Luces LED / Tiras LED","opt_screen":"Opcional: Vidrio / pantalla retráctil automática / lamas plegables","price_pergola2":"3.500 – 6.200 USD","smart_opts":"Tamaño / Color / Distribución / Iluminación / Cortinas / Vidrio / OEM","roof_smart":"Personalización de alta gama (Control remoto / APP / Voz)","quote_design":"Cotizado según el plan de diseño final","trailer_s1":"Personalizable, compatible por defecto con casa de 20×19FT","trailer_s2":"Remolque personalizado específico para sanitarios móviles","chassis":"Chasis de remolque de acero galvanizado con ruedas","dot":"DOT / VIN opcional","kitchen":"Personalizable, forma L / U / Isla opcional","steel":"Acero inoxidable 304","kitchen2":"Parrilla BBQ, fregadero, refrigerador opcional","pool_sizes":"20FT | 40FT | Dimensiones personalizadas","pool_mat":"Estructura de acero anticorrosión + revestimiento impermeable","pool_feat":"Sistema de filtración integrado, luces LED, calefacción opcional","moq_1_cat":"1 unidad. Contáctenos para el catálogo","moq_2_cat":"2 unidades. Contáctenos para el catálogo","moq_4_cat":"4 juegos. Contáctenos para el catálogo","moq_40hq_cat":"Calculado según carga máxima de contenedor 40HQ. Contáctenos","moq_cat":"Contáctenos para obtener el catálogo","lead_20_35":"20–35 días","inspect_full":"Inspección integral y de fábrica con informe; inspección externa admitida","quote_custom":"Cotizado según personalización específica","quote":"Solicitar cotización","guide":"Se proporciona guía de instalación","perf_final":"Sujeto a especificaciones del producto y diseño final"},"de":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Anpassbar","custom_oem":"High-End-Anpassung, exklusive Marken-/OEM-Fertigung möglich","custom_oem_only":"Exklusive Marken-/OEM-Fertigung auf Anfrage","high_custom":"High-End-Anpassung","custom_design":"Auswahl nach individuellen Designanforderungen","insul_3":"3 Optionen: EPS / XPS / PIR (Standard: EPS)","insul_wall":"EPS | XPS | PIR optional","spec_modular":"Optional: 50mm / 60mm / 65mm / 70mm / 100mm (Standard: 60mm)","spec_container":"Optional: 60mm / 65mm / 70mm / 80mm (Standard: 60mm)","spec_toilet":"Optional: 50mm / 60mm (Standard: 50mm)","spec_wooden":"Optional: 40mm / 50mm (Standard: 40mm)","color_black":"Anpassbar (Standard: schwarzer Rahmen)","color_whitegray":"Anpassbar (Standard: weiß-grauer Rahmen)","wood_nat":"Naturholzfarbe","appear_fold":"Anpassbar (Standard: schwarzer Rahmen, weiße Wände)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Vollverzinktes 35er Stahlrohr, geschweißte Konstruktion","20_40":"20FT / 40FT Standard-Seecontainer","layout_1b1l":"Anpassbar (Standard: 1 Schlafzimmer, 1 Wohnzimmer, 1 Küche, 1 Bad)","doors_sec":"Sicherheitstür, Schiebefenster + Einbruchschutzgitter","toilet_types":"Einzel-Hocktoilette | Doppel | Dusche | Barrierefrei | 5-Kabinen | Faltbar | PVC","q235_steel":"Geschweißte Q235-Stahlkonstruktion","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aluminiumlegierung","roof_manual":"Auslaufsicheres Design, manuelle Lamellen","config_gen4":"Basismodell 4. Generation (ohne weitere Standard-Extras)","price_pergola1":"2.900 – 5.200 USD","roof_motor":"Auslaufsicheres Design, motorisiert / Fernbedienung / APP","opt_led":"Optional: LED-Leuchten / LED-Lichtbänder","opt_screen":"Optional: Glas / automatischer Einzieh-Screen / Faltlamellen","price_pergola2":"3.500 – 6.200 USD","smart_opts":"Größe / Farbe / Layout / Beleuchtung / Vorhänge / Glas / OEM","roof_smart":"High-End-Anpassung (Fernbedienung / APP / Sprachsteuerung)","quote_design":"Angebot nach endgültigem Designplan","trailer_s1":"Anpassbar, standardmäßig passend für 20×19FT Haus","trailer_s2":"Anpassbarer Spezialanhänger für mobile Toiletten","chassis":"Verzinktes Stahl-Trailer-Fahrgestell mit Rädern","dot":"DOT / VIN optional","kitchen":"Anpassbar, L-Form / U-Form / Insel optional","steel":"Edelstahl 304","kitchen2":"BBQ-Grill, Spüle, Kühlschrank optional","pool_sizes":"20FT | 40FT | Benutzerdefinierte Maße","pool_mat":"Korrosionsbeständige Stahlkonstruktion + wasserdichte Auskleidung","pool_feat":"Integriertes Filtersystem, LED-Leuchten, Heizung optional","moq_1_cat":"1 Einheit. Kontaktieren Sie uns für den Katalog","moq_2_cat":"2 Einheiten. Kontaktieren Sie uns für den Katalog","moq_4_cat":"4 Sets. Kontaktieren Sie uns für den Katalog","moq_40hq_cat":"Berechnet nach max. 40HQ-Containerladung. Katalog anfordern","moq_cat":"Kontaktieren Sie uns für den Produktkatalog","lead_20_35":"20–35 Tage","inspect_full":"Gesamtprozess- & Werksinspektion inkl. Bericht; Drittanbieter-Prüfung möglich","quote_custom":"Angebot je nach individueller Anpassung","quote":"Angebot anfordern","guide":"Installationsanleitung wird bereitgestellt","perf_final":"Vorbehaltlich Produktspezifikationen und finalem Design"},"fr":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Personnalisable","custom_oem":"Personnalisation haut de gamme, fabrication OEM/marque sur mesure","custom_oem_only":"Fabrication OEM/marque sur mesure sur demande","high_custom":"Personnalisation haut de gamme","custom_design":"Déterminé selon les besoins de conception sur mesure","insul_3":"3 options : EPS / XPS / PIR (Par défaut : EPS)","insul_wall":"EPS | XPS | PIR en option","spec_modular":"Option : 50mm / 60mm / 65mm / 70mm / 100mm (Par défaut : 60mm)","spec_container":"Option : 60mm / 65mm / 70mm / 80mm (Par défaut : 60mm)","spec_toilet":"Option : 50mm / 60mm (Par défaut : 50mm)","spec_wooden":"Option : 40mm / 50mm (Par défaut : 40mm)","color_black":"Personnalisable (Par défaut : cadre noir)","color_whitegray":"Personnalisable (Par défaut : cadre blanc-gris)","wood_nat":"Couleur bois naturel","appear_fold":"Personnalisable (Par défaut : cadre noir, murs blancs)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Tube en acier galvanisé 35 intégral, structure soudée","20_40":"Conteneur maritime standard 20FT / 40FT","layout_1b1l":"Personnalisable (Par défaut : 1 chambre, 1 salon, 1 cuisine, 1 salle de bain)","doors_sec":"Porte blindée, fenêtres coulissantes + grilles antivol","toilet_types":"Toilettes turques simple | Double | Douche | PMR | 5 cabines | Pliable | PVC","q235_steel":"Structure soudée en acier Q235","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Alliage d'aluminium","roof_manual":"Conception étanche, lames orientables manuelles","config_gen4":"Modèle de base 4e génération (sans options par défaut)","price_pergola1":"2 900 – 5 200 USD","roof_motor":"Conception étanche, motorisé / télécommande / APP","opt_led":"Option : Éclairage LED / Rubans LED","opt_screen":"Option : Vitrage / store rétractable automatique / persiennes pliantes","price_pergola2":"3 500 – 6 200 USD","smart_opts":"Taille / Couleur / Aménagement / Éclairage / Rideaux / Vitrage / OEM","roof_smart":"Personnalisation haut de gamme (Télécommande / APP / Voix)","quote_design":"Devis établi selon le plan de conception final","trailer_s1":"Personnalisable, adapté par défaut à la maison 20×19FT","trailer_s2":"Remorque sur mesure dédiée aux unités sanitaires","chassis":"Châssis remorque en acier galvanisé avec roues","dot":"DOT / VIN en option","kitchen":"Personnalisable, forme L / U / Îlot en option","steel":"Acier inoxydable 304","kitchen2":"Grill BBQ, évier, réfrigérateur en option","pool_sizes":"20FT | 40FT | Dimensions personnalisées","pool_mat":"Structure en acier anticorrosion + revêtement imperméable","pool_feat":"Système de filtration intégré, lumières LED, chauffage en option","moq_1_cat":"1 unité. Contactez-nous pour le catalogue","moq_2_cat":"2 unités. Contactez-nous pour le catalogue","moq_4_cat":"4 ensembles. Contactieren Sie uns für den Katalog","moq_40hq_cat":"Calculé selon la capacité max d'un conteneur 40HQ. Contactez-nous","moq_cat":"Contactez-nous pour obtenir le catalogue","lead_20_35":"20–35 jours","inspect_full":"Inspection complète et en usine avec rapport ; inspection tierce acceptée","quote_custom":"Devis selon personnalisation spécifique","quote":"Demander un devis","guide":"Guide d'installation fourni","perf_final":"Sous réserve des spécifications et de la conception finale"},"ru":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Индивидуально","custom_oem":"Премиум-кастомизация, изготовление под бренд заказчика (OEM)","custom_oem_only":"Изготовление под бренд заказчика (OEM) по запросу","high_custom":"Премиум-кастомизация","custom_design":"Подбирается согласно индивидуальному проекту","insul_3":"3 варианта на выбор: EPS / XPS / PIR (По умолчанию: EPS)","insul_wall":"EPS | XPS | PIR опционально","spec_modular":"Опционально: 50мм / 60мм / 65мм / 70мм / 100мм (По умолчанию: 60мм)","spec_container":"Опционально: 60мм / 65мм / 70мм / 80мм (По умолчанию: 60мм)","spec_toilet":"Опционально: 50мм / 60мм (По умолчанию: 50мм)","spec_wooden":"Опционально: 40мм / 50мм (По умолчанию: 40мм)","color_black":"Индивидуально (По умолчанию: черный каркас)","color_whitegray":"Индивидуально (По умолчанию: бело-серый каркас)","wood_nat":"Натуральный цвет дерева","appear_fold":"Индивидуально (По умолчанию: черный каркас, белые стены)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Цельная оцинкованная стальная труба 35, сварная конструкция","20_40":"Стандартный морской контейнер 20FT / 40FT","layout_1b1l":"Индивидуально (По умолчанию: 1 спальня, 1 гостиная, 1 кухня, 1 санузел)","doors_sec":"Взломостойкая дверь, раздвижные окна + защитные решетки","toilet_types":"Одиночный | Двойной | Душ | Для МГН | 5-местный | Складной | ПВХ","q235_steel":"Сварной каркас из стали Q235","pergola_sizes":"3×3м / 3×4м / 3×6м / 4×4м / 4×6м / 4×8м","alu":"Алюминиевый сплав","roof_manual":"Защита от протечек, ручные поворотные ламели","config_gen4":"Базовая модель 4-го поколения (без доп. опций по умолчанию)","price_pergola1":"2 900 – 5 200 USD","roof_motor":"Защита от протечек, электропривод / пульт / APP","opt_led":"Опционально: LED-подсветка / LED-ленты","opt_screen":"Опционально: Остекление / авто-маркиза / складные жалюзи","price_pergola2":"3 500 – 6 200 USD","smart_opts":"Размер / Цвет / Планировка / Освещение / Шторы / Остекление / OEM","roof_smart":"Премиум-кастомизация (Пульт / APP / Голосовое управление)","quote_design":"Расчет цены по итоговому дизайн-проекту","trailer_s1":"Индивидуально, по умолчанию под дом 20×19FT","trailer_s2":"Индивидуальный прицеп для санитарных модулей","chassis":"Оцинкованное стальное шасси прицепа с колесами","dot":"DOT / VIN опционально","kitchen":"Индивидуально, L-форма / U-форма / Остров опционально","steel":"Нержавеющая сталь 304","kitchen2":"Гриль BBQ, мойка, холодильник опционально","pool_sizes":"20FT | 40FT | Индивидуальные размеры","pool_mat":"Коррозионностойкий стальной каркас + водонепроницаемый лайнер","pool_feat":"Встроенная система фильтрации, LED-подсветка, подогрев опционально","moq_1_cat":"1 комплект. Свяжитесь с нами для получения каталога","moq_2_cat":"2 комплекта. Свяжитесь с нами для получения каталога","moq_4_cat":"4 комплекта. Свяжитесь с нами для получения каталога","moq_40hq_cat":"По макс. загрузке контейнера 40HQ. Запросите каталог","moq_cat":"Свяжитесь с нами для получения каталога продукции","lead_20_35":"20–35 дней","inspect_full":"Сквозной и выходной контроль с отчетом; возможна сторонняя инспекция","quote_custom":"Расчет цены по индивидуальной спецификации","quote":"Запросить коммерческое предложение","guide":"Предоставляется руководство по монтажу","perf_final":"Согласно спецификации продукта и итоговому проекту"}};
+var AV={"en":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Customizable","custom_oem":"High-end customization, tailored for brand/OEM specifications","custom_oem_only":"Tailored for brand/OEM specifications upon request","high_custom":"High-end customization","custom_design":"Selected according to custom design requirements","insul_3":"3 options: EPS / XPS / PIR (Default: EPS)","insul_wall":"EPS | XPS | PIR optional","spec_modular":"Optional: 50mm / 60mm / 65mm / 70mm / 100mm (Default: 60mm)","spec_container":"Optional: 60mm / 65mm / 70mm / 80mm (Default: 60mm)","spec_toilet":"Optional: 50mm / 60mm (Default: 50mm)","spec_wooden":"Optional: 40mm / 50mm (Default: 40mm)","color_black":"Customizable (Default: Black frame)","color_whitegray":"Customizable (Default: White-gray frame)","wood_nat":"Natural wood finish","appear_fold":"Customizable (Default: Black frame with white walls)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Full galvanized 35 steel tube, welded structure","20_40":"20FT / 40FT Standard Shipping Container","layout_1b1l":"Customizable (Default: 1 Bedroom, 1 Living Room, 1 Kitchen, 1 Bathroom)","doors_sec":"Security door, sliding windows + anti-theft grilles","toilet_types":"Single Squat | Double Squat | Shower | Accessible (Disabled) | 5-Stall | Folding | PVC Toilet","q235_steel":"Q235 welded steel structure","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aluminum Alloy","roof_manual":"Leak-proof design, manual louvered roof","config_gen4":"4th Generation basic model (no extra default add-ons)","price_pergola1":"2,900 – 5,200 USD","roof_motor":"Leak-proof design, motorized / remote / APP control","opt_led":"Optional: LED lights / LED light strips","opt_screen":"Optional: Glass / automatic retractable screen / folding louvers","price_pergola2":"3,500 – 6,200 USD","smart_opts":"Size / Color / Layout / Lighting / Curtains / Glass / OEM","roof_smart":"High-end customization (Remote / APP / Voice control)","quote_design":"Quoted based on final design plan","trailer_s1":"Customizable, default matched with 20×19FT house","trailer_s2":"Customizable dedicated trailer for mobile toilet units","chassis":"Galvanized steel trailer chassis with wheels","dot":"DOT / VIN optional","kitchen":"Customizable, L-shape / U-shape / Island optional","steel":"304 Stainless Steel","kitchen2":"BBQ grill, sink, refrigerator optional","pool_sizes":"20FT | 40FT | Custom dimensions","pool_mat":"Corrosion-resistant steel structure + waterproof liner","pool_feat":"Integrated filtration system, LED lights, heating optional","moq_1_cat":"1 unit. Contact us for product catalog","moq_2_cat":"2 units. Contact us for product catalog","moq_4_cat":"4 sets. Contact us for product catalog","moq_40hq_cat":"Calculated by max 40HQ container load. Contact us for catalog","moq_cat":"Contact us for product catalog","lead_20_35":"20–35 days","inspect_full":"Full-process & factory inspection with report; third-party inspection supported","quote_custom":"Quoted according to specific customization","quote":"Request a quotation","guide":"Installation guide provided","perf_final":"Subject to product specifications and final design"},"ar":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"قابل للتخصيص","custom_oem":"تخصيص فاخر حسب الطلب، متاح للتصنيع للعلامات التجارية (OEM)","custom_oem_only":"متاح للتخصيص حسب مواصفات العلامة التجارية (OEM)","high_custom":"تخصيص فاخر","custom_design":"يُحدد وفقاً لمتطلبات التصميم المخصص","insul_3":"3 خيارات: EPS / XPS / PIR (الافتراضي: EPS)","insul_wall":"EPS | XPS | PIR اختياري","spec_modular":"اختياري: 50مم / 60مم / 65مم / 70مم / 100مم (الافتراضي: 60مم)","spec_container":"اختياري: 60مم / 65مم / 70مم / 80مم (الافتراضي: 60مم)","spec_toilet":"اختياري: 50مم / 60مم (الافتراضي: 50مم)","spec_wooden":"اختياري: 40مم / 50مم (الافتراضي: 40مم)","color_black":"قابل للتخصيص (الافتراضي: إطار أسود)","color_whitegray":"قابل للتخصيص (الافتراضي: إطار أبيض رمادي)","wood_nat":"لون الخشب الطبيعي","appear_fold":"قابل للتخصيص (الافتراضي: إطار أسود والجدران بيضاء)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"أنابيب فولاذية مجلفنة بالكامل مقاس 35، هيكل ملحوم","20_40":"حاوية شحن قياسية 20 قدم / 40 قدم","layout_1b1l":"قابل للتخصيص (الافتراضي: غرفة نوم، صالة، مطبخ، حمام)","doors_sec":"باب أمان، نوافذ منزلقة + شبك حماية ضد السرقة","toilet_types":"مرحاض أرضي مفرد | مزدوج | مع دش | لذوي الهمم | 5 مقصورات | قابل للطي | PVC","q235_steel":"هيكل فولاذي ملحوم Q235","pergola_sizes":"3×3م / 3×4م / 3×6م / 4×4م / 4×6م / 4×8م","alu":"سبائك الألومنيوم","roof_manual":"تصميم مانع للتسرب، سقف شرائح يدوي","config_gen4":"الإصدار الأساسي للجيل الرابع (بدون إضافات افتراضية)","price_pergola1":"2,900 – 5,200 دولار أمريكي","roof_motor":"تصميم مانع للتسرب، تحكم كهربائي / ريموت / تطبيق","opt_led":"اختياري: إضاءة LED / شرائط LED","opt_screen":"اختياري: زجاج / ستارة أوتوماتيكية قابلة للسحب / شرائح قابلة للطي","price_pergola2":"3,500 – 6,200 دولار أمريكي","smart_opts":"المقاس / اللون / التخطيط / الإضاءة / الستائر / الزجاج / OEM","roof_smart":"تخصيص فاخر (تحكم بالريموت / التطبيق / الصوت)","quote_design":"يُحدد السعر وفقاً لمخطط التصميم النهائي","trailer_s1":"قابل للتخصيص، يتوافق افتراضياً مع منزل 20×19 قدم","trailer_s2":"مقطورة مخصصة قابلة للتعديل لوحدات المراحيض","chassis":"شاسيه مقطورة من الفولاذ المجلفن مع عجلات","dot":"شهادة DOT / VIN اختيارية","kitchen":"قابل للتخصيص، شكل L / U / جزيرة اختياري","steel":"ستانلس ستيل 304","kitchen2":"شواية، حوض، ثلاجة اختيارية","pool_sizes":"20 قدم | 40 قدم | مقاسات مخصصة","pool_mat":"هيكل فولاذي مقاوم للصدأ + بطانة مقاومة للماء","pool_feat":"نظام فلترة مدمج، إضاءة LED، تدفئة اختياري","moq_1_cat":"وحدة واحدة. تواصل معنا للحصول على الكتالوج","moq_2_cat":"وحدتان. تواصل معنا للحصول على الكتالوج","moq_4_cat":"4 مجموعات. تواصل معنا للحصول على الكتالوج","moq_40hq_cat":"يُحسب حسب السعة القصوى لحاوية 40HQ. تواصل معنا للكتالوج","moq_cat":"تواصل معنا للحصول على الكتالوج","lead_20_35":"20–35 يوماً","inspect_full":"فحص شامل وفحص مصنع مع تقرير؛ يدعم شركات الفحص المستقلة","quote_custom":"يُحدد السعر حسب التخصيص المطلوب","quote":"طلب عرض سعر","guide":"يتوفر دليل التركيب","perf_final":"يخضع لمواصفات المنتج والتصميم النهائي"},"es":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Personalizable","custom_oem":"Personalización de alta gama, suministro exclusivo OEM/marca","custom_oem_only":"Suministro exclusivo OEM/marca bajo pedido","high_custom":"Personalización de alta gama","custom_design":"Según los requisitos de diseño personalizado","insul_3":"3 opciones: EPS / XPS / PIR (Por defecto: EPS)","insul_wall":"EPS | XPS | PIR opcional","spec_modular":"Opcional: 50mm / 60mm / 65mm / 70mm / 100mm (Por defecto: 60mm)","spec_container":"Opcional: 60mm / 65mm / 70mm / 80mm (Por defecto: 60mm)","spec_toilet":"Opcional: 50mm / 60mm (Por defecto: 50mm)","spec_wooden":"Opcional: 40mm / 50mm (Por defecto: 40mm)","color_black":"Personalizable (Por defecto: marco negro)","color_whitegray":"Personalizable (Por defecto: marco blanco grisáceo)","wood_nat":"Color madera natural","appear_fold":"Personalizable (Por defecto: marco negro y paredes blancas)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Tubo de acero galvanizado integral 35, estructura soldada","20_40":"Contenedor marítimo estándar de 20FT / 40FT","layout_1b1l":"Personalizable (Por defecto: 1 dormitorio, 1 salón, 1 cocina, 1 baño)","doors_sec":"Puerta de seguridad, ventanas correderas + rejas antirrobo","toilet_types":"Inodoro turco simple | Doble | Ducha | Accesible | 5 plazas | Plegable | PVC","q235_steel":"Estructura soldada de acero Q235","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aleación de aluminio","roof_manual":"Diseño antifugas, lamas manuales","config_gen4":"Modelo básico 4.ª generación (sin extras por defecto)","price_pergola1":"2.900 – 5.200 USD","roof_motor":"Diseño antifugas, motorizado / control remoto / APP","opt_led":"Opcional: Luces LED / Tiras LED","opt_screen":"Opcional: Vidrio / pantalla retráctil automática / lamas plegables","price_pergola2":"3.500 – 6.200 USD","smart_opts":"Tamaño / Color / Distribución / Iluminación / Cortinas / Vidrio / OEM","roof_smart":"Personalización de alta gama (Control remoto / APP / Voz)","quote_design":"Cotizado según el plan de diseño final","trailer_s1":"Personalizable, compatible por defecto con casa de 20×19FT","trailer_s2":"Remolque personalizado específico para sanitarios móviles","chassis":"Chasis de remolque de acero galvanizado con ruedas","dot":"DOT / VIN opcional","kitchen":"Personalizable, forma L / U / Isla opcional","steel":"Acero inoxidable 304","kitchen2":"Parrilla BBQ, fregadero, refrigerador opcional","pool_sizes":"20FT | 40FT | Dimensiones personalizadas","pool_mat":"Estructura de acero anticorrosión + revestimiento impermeable","pool_feat":"Sistema de filtración integrado, luces LED, calefacción opcional","moq_1_cat":"1 unidad. Contáctenos para el catálogo","moq_2_cat":"2 unidades. Contáctenos para el catálogo","moq_4_cat":"4 juegos. Contáctenos para el catálogo","moq_40hq_cat":"Calculado según carga máxima de contenedor 40HQ. Contáctenos","moq_cat":"Contáctenos para obtener el catálogo","lead_20_35":"20–35 días","inspect_full":"Inspección integral y de fábrica con informe; inspección externa admitida","quote_custom":"Cotizado según personalización específica","quote":"Solicitar cotización","guide":"Se proporciona guía de instalación","perf_final":"Sujeto a especificaciones del producto y diseño final"},"de":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Anpassbar","custom_oem":"High-End-Anpassung, exklusive Marken-/OEM-Fertigung möglich","custom_oem_only":"Exklusive Marken-/OEM-Fertigung auf Anfrage","high_custom":"High-End-Anpassung","custom_design":"Auswahl nach individuellen Designanforderungen","insul_3":"3 Optionen: EPS / XPS / PIR (Standard: EPS)","insul_wall":"EPS | XPS | PIR optional","spec_modular":"Optional: 50mm / 60mm / 65mm / 70mm / 100mm (Standard: 60mm)","spec_container":"Optional: 60mm / 65mm / 70mm / 80mm (Standard: 60mm)","spec_toilet":"Optional: 50mm / 60mm (Standard: 50mm)","spec_wooden":"Optional: 40mm / 50mm (Standard: 40mm)","color_black":"Anpassbar (Standard: schwarzer Rahmen)","color_whitegray":"Anpassbar (Standard: weiß-grauer Rahmen)","wood_nat":"Naturholzfarbe","appear_fold":"Anpassbar (Standard: schwarzer Rahmen, weiße Wände)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Vollverzinktes 35er Stahlrohr, geschweißte Konstruktion","20_40":"20FT / 40FT Standard-Seecontainer","layout_1b1l":"Anpassbar (Standard: 1 Schlafzimmer, 1 Wohnzimmer, 1 Küche, 1 Bad)","doors_sec":"Sicherheitstür, Schiebefenster + Einbruchschutzgitter","toilet_types":"Einzel-Hocktoilette | Doppel | Dusche | Barrierefrei | 5-Kabinen | Faltbar | PVC","q235_steel":"Geschweißte Q235-Stahlkonstruktion","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Aluminiumlegierung","roof_manual":"Auslaufsicheres Design, manuelle Lamellen","config_gen4":"Basismodell 4. Generation (ohne weitere Standard-Extras)","price_pergola1":"2.900 – 5.200 USD","roof_motor":"Auslaufsicheres Design, motorisiert / Fernbedienung / APP","opt_led":"Optional: LED-Leuchten / LED-Lichtbänder","opt_screen":"Optional: Glas / automatischer Einzieh-Screen / Faltlamellen","price_pergola2":"3.500 – 6.200 USD","smart_opts":"Größe / Farbe / Layout / Beleuchtung / Vorhänge / Glas / OEM","roof_smart":"High-End-Anpassung (Fernbedienung / APP / Sprachsteuerung)","quote_design":"Angebot nach endgültigem Designplan","trailer_s1":"Anpassbar, standardmäßig passend für 20×19FT Haus","trailer_s2":"Anpassbarer Spezialanhänger für mobile Toiletten","chassis":"Verzinktes Stahl-Trailer-Fahrgestell mit Rädern","dot":"DOT / VIN optional","kitchen":"Anpassbar, L-Form / U-Form / Insel optional","steel":"Edelstahl 304","kitchen2":"BBQ-Grill, Spüle, Kühlschrank optional","pool_sizes":"20FT | 40FT | Benutzerdefinierte Maße","pool_mat":"Korrosionsbeständige Stahlkonstruktion + wasserdichte Auskleidung","pool_feat":"Integriertes Filtersystem, LED-Leuchten, Heizung optional","moq_1_cat":"1 Einheit. Kontaktieren Sie uns für den Katalog","moq_2_cat":"2 Einheiten. Kontaktieren Sie uns für den Katalog","moq_4_cat":"4 Sets. Kontaktieren Sie uns für den Katalog","moq_40hq_cat":"Berechnet nach max. 40HQ-Containerladung. Katalog anfordern","moq_cat":"Kontaktieren Sie uns für den Produktkatalog","lead_20_35":"20–35 Tage","inspect_full":"Gesamtprozess- & Werksinspektion inkl. Bericht; Drittanbieter-Prüfung möglich","quote_custom":"Angebot je nach individueller Anpassung","quote":"Angebot anfordern","guide":"Installationsanleitung wird bereitgestellt","perf_final":"Vorbehaltlich Produktspezifikationen und finalem Design"},"fr":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Personnalisable","custom_oem":"Personnalisation haut de gamme, fabrication OEM/marque sur mesure","custom_oem_only":"Fabrication OEM/marque sur mesure sur demande","high_custom":"Personnalisation haut de gamme","custom_design":"Déterminé selon les besoins de conception sur mesure","insul_3":"3 options : EPS / XPS / PIR (Par défaut : EPS)","insul_wall":"EPS | XPS | PIR en option","spec_modular":"Option : 50mm / 60mm / 65mm / 70mm / 100mm (Par défaut : 60mm)","spec_container":"Option : 60mm / 65mm / 70mm / 80mm (Par défaut : 60mm)","spec_toilet":"Option : 50mm / 60mm (Par défaut : 50mm)","spec_wooden":"Option : 40mm / 50mm (Par défaut : 40mm)","color_black":"Personnalisable (Par défaut : cadre noir)","color_whitegray":"Personnalisable (Par défaut : cadre blanc-gris)","wood_nat":"Couleur bois naturel","appear_fold":"Personnalisable (Par défaut : cadre noir, murs blancs)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Tube en acier galvanisé 35 intégral, structure soudée","20_40":"Conteneur maritime standard 20FT / 40FT","layout_1b1l":"Personnalisable (Par défaut : 1 chambre, 1 salon, 1 cuisine, 1 salle de bain)","doors_sec":"Porte blindée, fenêtres coulissantes + grilles antivol","toilet_types":"Toilettes turques simple | Double | Douche | PMR | 5 cabines | Pliable | PVC","q235_steel":"Structure soudée en acier Q235","pergola_sizes":"3×3m / 3×4m / 3×6m / 4×4m / 4×6m / 4×8m","alu":"Alliage d'aluminium","roof_manual":"Conception étanche, lames orientables manuelles","config_gen4":"Modèle de base 4e génération (sans options par défaut)","price_pergola1":"2 900 – 5 200 USD","roof_motor":"Conception étanche, motorisé / télécommande / APP","opt_led":"Option : Éclairage LED / Rubans LED","opt_screen":"Option : Vitrage / store rétractable automatique / persiennes pliantes","price_pergola2":"3 500 – 6 200 USD","smart_opts":"Taille / Couleur / Aménagement / Éclairage / Rideaux / Vitrage / OEM","roof_smart":"Personnalisation haut de gamme (Télécommande / APP / Voix)","quote_design":"Devis établi selon le plan de conception final","trailer_s1":"Personnalisable, adapté par défaut à la maison 20×19FT","trailer_s2":"Remorque sur mesure dédiée aux unités sanitaires","chassis":"Châssis remorque en acier galvanisé avec roues","dot":"DOT / VIN en option","kitchen":"Personnalisable, forme L / U / Îlot en option","steel":"Acier inoxydable 304","kitchen2":"Grill BBQ, évier, réfrigérateur en option","pool_sizes":"20FT | 40FT | Dimensions personnalisées","pool_mat":"Structure en acier anticorrosion + revêtement imperméable","pool_feat":"Système de filtration intégré, lumières LED, chauffage en option","moq_1_cat":"1 unité. Contactez-nous pour le catalogue","moq_2_cat":"2 unités. Contactez-nous pour le catalogue","moq_4_cat":"4 ensembles. Contactez-nous pour le catalogue","moq_40hq_cat":"Calculé selon la capacité max d'un conteneur 40HQ. Contactez-nous","moq_cat":"Contactez-nous pour obtenir le catalogue","lead_20_35":"20–35 jours","inspect_full":"Inspection complète et en usine avec rapport ; inspection tierce acceptée","quote_custom":"Devis selon personnalisation spécifique","quote":"Demander un devis","guide":"Guide d'installation fourni","perf_final":"Sous réserve des spécifications et de la conception finale"},"ru":{"sku_modular":"MVH-01-001A","sku_triangle":"MVH-01A-001A","sku_folding":"MVH-02-000","sku_container":"MVH-03A-001A","sku_toilet":"MVH-04-00**","sku_wooden":"MVH-05-001A","sku_pergola":"AVP-01A-001A","sku_pergola2":"AVP-01A-002A","sku_pool":"CCP-01-001A","custom":"Индивидуально","custom_oem":"Премиум-кастомизация, изготовление под бренд заказчика (OEM)","custom_oem_only":"Изготовление под бренд заказчика (OEM) по запросу","high_custom":"Премиум-кастомизация","custom_design":"Подбирается согласно индивидуальному проекту","insul_3":"3 варианта на выбор: EPS / XPS / PIR (По умолчанию: EPS)","insul_wall":"EPS | XPS | PIR опционально","spec_modular":"Опционально: 50мм / 60мм / 65мм / 70мм / 100мм (По умолчанию: 60мм)","spec_container":"Опционально: 60мм / 65мм / 70мм / 80мм (По умолчанию: 60мм)","spec_toilet":"Опционально: 50мм / 60мм (По умолчанию: 50мм)","spec_wooden":"Опционально: 40мм / 50мм (По умолчанию: 40мм)","color_black":"Индивидуально (По умолчанию: черный каркас)","color_whitegray":"Индивидуально (По умолчанию: бело-серый каркас)","wood_nat":"Натуральный цвет дерева","appear_fold":"Индивидуально (По умолчанию: черный каркас, белые стены)","fold_sizes":"10FT×19FT | 13FT×19FT | 19FT×15FT | 20FT×19FT | 30FT×19FT | 40FT×19FT","galv_steel":"Цельная оцинкованная стальная труба 35, сварная конструкция","20_40":"Стандартный морской контейнер 20FT / 40FT","layout_1b1l":"Индивидуально (По умолчанию: 1 спальня, 1 гостиная, 1 кухня, 1 санузел)","doors_sec":"Взломостойкая дверь, раздвижные окна + защитные решетки","toilet_types":"Одиночный | Двойной | Душ | Для МГН | 5-местный | Складной | ПВХ","q235_steel":"Сварной каркас из стали Q235","pergola_sizes":"3×3м / 3×4м / 3×6м / 4×4м / 4×6м / 4×8м","alu":"Алюминиевый сплав","roof_manual":"Защита от протечек, ручные поворотные ламели","config_gen4":"Базовая модель 4-го поколения (без доп. опций по умолчанию)","price_pergola1":"2 900 – 5 200 USD","roof_motor":"Защита от протечек, электропривод / пульт / APP","opt_led":"Опционально: LED-подсветка / LED-ленты","opt_screen":"Опционально: Остекление / авто-маркиза / складные жалюзи","price_pergola2":"3 500 – 6 200 USD","smart_opts":"Размер / Цвет / Планировка / Освещение / Шторы / Остекление / OEM","roof_smart":"Премиум-кастомизация (Пульт / APP / Голосовое управление)","quote_design":"Расчет цены по итоговому дизайн-проекту","trailer_s1":"Индивидуально, по умолчанию под дом 20×19FT","trailer_s2":"Индивидуальный прицеп для санитарных модулей","chassis":"Оцинкованное стальное шасси прицепа с колесами","dot":"DOT / VIN опционально","kitchen":"Индивидуально, L-форма / U-форма / Остров опционально","steel":"Нержавеющая сталь 304","kitchen2":"Гриль BBQ, мойка, холодильник опционально","pool_sizes":"20FT | 40FT | Индивидуальные размеры","pool_mat":"Коррозионностойкий стальной каркас + водонепроницаемый лайнер","pool_feat":"Встроенная система фильтрации, LED-подсветка, подогрев опционально","moq_1_cat":"1 комплект. Свяжитесь с нами для получения каталога","moq_2_cat":"2 комплекта. Свяжитесь с нами для получения каталога","moq_4_cat":"4 комплекта. Свяжитесь с нами для получения каталога","moq_40hq_cat":"По макс. загрузке контейнера 40HQ. Запросите каталог","moq_cat":"Свяжитесь с нами для получения каталога продукции","lead_20_35":"20–35 дней","inspect_full":"Сквозной и выходной контроль с отчетом; возможна сторонняя инспекция","quote_custom":"Расчет цены по индивидуальной спецификации","quote":"Запросить коммерческое предложение","guide":"Предоставляется руководство по монтажу","perf_final":"Согласно спецификации продукта и итоговому проекту"}};
 
 var UI={
   en:{
@@ -1255,6 +1343,7 @@ function openBlogReader(blogKey) {
   img.src = langData.img;
   img.alt = langData.title;
   img.loading = "lazy";
+  img.decoding = "async";
   
   var p1 = document.createElement("p");
   p1.textContent = langData.p1;
@@ -1267,7 +1356,7 @@ function openBlogReader(blogKey) {
   if (langData.h2_1) {
     var h2_1 = document.createElement("h2");
     h2_1.style.fontSize = "18px";
-    h2_1.style.color = "#18344d";
+    h2_1.style.color = "#1F2937";
     h2_1.style.margin = "24px 0 10px";
     h2_1.textContent = langData.h2_1;
     contentDiv.appendChild(h2_1);
@@ -1280,7 +1369,7 @@ function openBlogReader(blogKey) {
   if (langData.h2_2) {
     var h2_2 = document.createElement("h2");
     h2_2.style.fontSize = "18px";
-    h2_2.style.color = "#18344d";
+    h2_2.style.color = "#1F2937";
     h2_2.style.margin = "24px 0 10px";
     h2_2.textContent = langData.h2_2;
     contentDiv.appendChild(h2_2);
@@ -1293,7 +1382,7 @@ function openBlogReader(blogKey) {
   if (langData.h2_3) {
     var h2_3 = document.createElement("h2");
     h2_3.style.fontSize = "18px";
-    h2_3.style.color = "#18344d";
+    h2_3.style.color = "#1F2937";
     h2_3.style.margin = "24px 0 10px";
     h2_3.textContent = langData.h2_3;
     contentDiv.appendChild(h2_3);
