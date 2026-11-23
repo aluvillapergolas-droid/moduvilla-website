@@ -20,7 +20,7 @@
 <meta property="og:title" content="Mobile Toilet | Portable & Trailer Restroom Units">
 <meta property="og:description" content="Modular portable restrooms and trailer-mounted toilet units for events, job sites, and parks, 20–35 days lead time, MOQ 1 unit.">
 <meta property="og:url" content="https://moduvilla.com/products/mobile-toilet">
-<meta property="og:image" content="https://moduvilla.com/product-modular-mobile-toilet-unit.jpg">
+<meta property="og:image" content="https://moduvilla.com/product-mobile-portable-sanitary-toilet-unit.jpg">
 
 <script type="application/ld+json">
 {
@@ -52,7 +52,7 @@
     {
       "@type": "Product",
       "name": "ModuVilla Mobile Toilet",
-      "image": "https://moduvilla.com/product-modular-mobile-toilet-unit.jpg",
+      "image": "https://moduvilla.com/product-mobile-portable-sanitary-toilet-unit.jpg",
       "description": "Modular portable restrooms and trailer-mounted mobile toilet units with customizable layouts, sanitary fittings, and 20–35 days lead time.",
       "brand": {
         "@type": "Brand",
@@ -103,7 +103,7 @@ a{text-decoration:none;color:inherit}
 .breadcrumb{padding:16px 6%;background:#F9FAFB;border-bottom:1px solid #E5E7EB;font-size:13px;color:#4B5563;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .breadcrumb a:hover{color:#1D4ED8}
 .p-hero{padding:48px 6% 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
-.p-gallery{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden;min-height:260px;display:flex;align-items:center;justify-content:center}
+.p-gallery{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden}
 .p-gallery img{width:100%;height:auto;display:block;object-fit:cover;max-height:520px}
 .p-badge{display:inline-block;background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;margin-bottom:12px}
 .p-info h1{font-size:30px;line-height:1.25;color:#1F2937;margin-bottom:14px}
@@ -153,16 +153,16 @@ html,body{max-width:100%;overflow-x:hidden}
 
 <div class="nav-wrap">
   <nav class="nav">
-    <a class="logo" href="/">ModuVilla <small id="tLogoSub">Modular Homes & Outdoor Living</small></a>
+    <a class="logo" href="../">ModuVilla <small id="tLogoSub">Modular Homes & Outdoor Living</small></a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="/#products" id="tNavProducts">ALL PRODUCTS</a>
-        <a href="/#factory" id="tNavFactory">FACTORY & OEM</a>
-        <a href="/blog-articles" id="tNavBlog">BLOG & GUIDES</a>
+        <a href="../#products" id="tNavProducts">ALL PRODUCTS</a>
+        <a href="../#factory" id="tNavFactory">FACTORY & OEM</a>
+        <a href="../blog-articles" id="tNavBlog">BLOG & GUIDES</a>
         <a href="#inquiry" id="tNavQuote">GET QUOTE</a>
       </div>
       <div class="lang" id="langDrop">
-        <button class="lang-btn" id="langBtn" type="button" onclick="document.getElementById('langDrop').classList.toggle('open')">🌐 EN ▾</button>
+        <button class="lang-btn" id="langBtn" type="button" onclick="toggleLangMenu(event)">🌐 EN ▾</button>
         <div class="lang-menu">
           <a onclick="setLang('en')">English</a>
           <a onclick="setLang('ar')">العربية</a>
@@ -177,15 +177,21 @@ html,body{max-width:100%;overflow-x:hidden}
 </div>
 
 <div class="breadcrumb">
-  <a href="/" id="tBcHome">Home</a> <span>/</span>
-  <a href="/#products" id="tBcProducts">Products</a> <span>/</span>
+  <a href="../" id="tBcHome">Home</a> <span>/</span>
+  <a href="../#products" id="tBcProducts">Products</a> <span>/</span>
   <strong id="tBcCurrent" style="color:#1F2937">Mobile Toilet</strong>
 </div>
 
 <main>
   <section class="p-hero">
     <div class="p-gallery">
-      <img id="pMainImg" src="/product-modular-mobile-toilet-unit.jpg" alt="Mobile Toilet - Prefabricated Manufacturer Supply" fetchpriority="high" onload="if(this.dataset.tried)this.dataset.loaded='1'" onerror="tryNextImgPath(this)">
+      <img
+        id="pMainImg"
+        src="../product-mobile-portable-sanitary-toilet-unit.jpg"
+        data-fallbacks='["/product-mobile-portable-sanitary-toilet-unit.jpg","./product-mobile-portable-sanitary-toilet-unit.jpg","../../product-mobile-portable-sanitary-toilet-unit.jpg"]'
+        onerror="handleImgFallback(this)"
+        alt="Mobile Toilet - Prefabricated Manufacturer Supply"
+        fetchpriority="high">
     </div>
     <div class="p-info">
       <span class="p-badge" id="tBadge">Modular & Trailer Options • MOQ: 1 Unit</span>
@@ -279,42 +285,114 @@ html,body{max-width:100%;overflow-x:hidden}
 <footer>
   <p><strong id="tCompanyName">Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.</strong></p>
   <p style="margin:8px 0">Email: <a href="mailto:dasleben@moduvilla.com">dasleben@moduvilla.com</a> &nbsp;|&nbsp; WhatsApp: +86 185 6179 0765</p>
-  <p style="margin-top:10px"><a href="/" id="tFooterBack">← Back to Homepage</a></p>
+  <p style="margin-top:10px"><a href="../" id="tFooterBack">← Back to Homepage</a></p>
 </footer>
 
 <a class="wa" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M19.05 4.92A9.82 9.82 0 0012.04 2C6.58 2 2.14 6.44 2.14 11.89c0 1.74.46 3.44 1.33 4.95L2 22l5.26-1.38a9.86 9.86 0 004.72 1.2h.02c5.45 0 9.88-4.44 9.88-9.89 0-2.64-1.03-5.12-2.83-6.92zm-6.99 13.11h-.02a8.05 8.05 0 01-4.1-1.12l-.29-.18-3.13.82.83-3.05-.19-.32a8.06 8.06 0 01-1.24-4.29c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 012.38 5.77c0 4.5-3.65 8.14-8.18 8.14zm4.49-6.1c-.25-.12-1.47-.72-1.69-.81-.22-.08-.39-.12-.55.12-.16.25-.63.81-.77.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.02-.38.1-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03 0 1.2.87 2.36.99 2.52.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg></a>
 
 <script>
-const IMG_CANDIDATES = [
-  '/product-modular-mobile-toilet-unit.jpg',
-  './product-modular-mobile-toilet-unit.jpg',
-  '../product-modular-mobile-toilet-unit.jpg',
-  '../../product-modular-mobile-toilet-unit.jpg'
-];
-function tryNextImgPath(img){
-  var idx = parseInt(img.dataset.imgIdx || '0', 10) + 1;
-  img.dataset.imgIdx = String(idx);
-  img.dataset.tried = '1';
-  if(idx < IMG_CANDIDATES.length){
-    img.src = IMG_CANDIDATES[idx];
-    return;
-  }
-  img.style.display = 'none';
-  if(!img.parentElement.querySelector('.img-fallback')){
-    var box = document.createElement('div');
-    box.className = 'img-fallback';
-    box.style.cssText = 'padding:32px 20px;text-align:center;color:#4B5563;font-size:13px;line-height:1.6';
-    box.innerHTML = '<strong>Image not found in deployment</strong><br>Expected file: <code>product-modular-mobile-toilet-unit.jpg</code> at site root.';
-    img.parentElement.appendChild(box);
+function handleImgFallback(img){
+  try{
+    var list = JSON.parse(img.getAttribute('data-fallbacks') || '[]');
+    var idx = parseInt(img.getAttribute('data-fb-idx') || '0', 10);
+    if(idx < list.length){
+      img.setAttribute('data-fb-idx', String(idx + 1));
+      img.src = list[idx];
+    }else{
+      img.onerror = null;
+    }
+  }catch(e){
+    img.onerror = null;
   }
 }
+function toggleLangMenu(e){
+  if(e) e.stopPropagation();
+  var drop = document.getElementById('langDrop');
+  if(drop) drop.classList.toggle('open');
+}
 
-const I18N = {"ui": {"en": {"btn": "🌐 EN ▾", "topbar_left": "Factory Direct Supply • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com", "logo_sub": "Modular Homes & Outdoor Living", "nav_products": "ALL PRODUCTS", "nav_factory": "FACTORY & OEM", "nav_blog": "BLOG & GUIDES", "nav_quote": "GET QUOTE", "bc_home": "Home", "bc_products": "Products", "cta_wa": "WhatsApp Inquiry", "cta_email": "Email: dasleben@moduvilla.com", "cta_form": "Quick Quote Form", "highlights_title": "Key Highlights", "lbl_name": "Your Name *", "ph_name": "Your name", "lbl_country": "Country / Region *", "ph_country": "Country or port", "lbl_phone": "WhatsApp / Phone *", "ph_phone": "+86 / international number", "lbl_email": "Email *", "ph_email": "you@company.com", "lbl_prod": "Product", "lbl_opt": "Customization / Size / Quantity", "lbl_msg": "Project Details", "btn_wa_send": "Send via WhatsApp", "btn_mail_send": "Send via Email (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Back to Homepage"}, "ar": {"btn": "🌐 AR ▾", "topbar_left": "توريد مباشر من المصنع • ModuVilla / AluVilla / CoveCore", "topbar_right": "واتساب: +86 185 6179 0765  |  البريد الإلكتروني: dasleben@moduvilla.com", "logo_sub": "المنازل المعيارية والمعيشة الخارجية", "nav_products": "جميع المنتجات", "nav_factory": "المصنع و OEM", "nav_blog": "المدونة والأدلة", "nav_quote": "طلب عرض سعر", "bc_home": "الرئيسية", "bc_products": "المنتجات", "cta_wa": "استفسار عبر واتساب", "cta_email": "البريد: dasleben@moduvilla.com", "cta_form": "نموذج عرض سعر سريع", "highlights_title": "أبرز المزايا", "lbl_name": "الاسم *", "ph_name": "اكتب اسمك", "lbl_country": "الدولة / المنطقة *", "ph_country": "الدولة أو ميناء الوصول", "lbl_phone": "واتساب / الهاتف *", "ph_phone": "+86 / رقم دولي", "lbl_email": "البريد الإلكتروني *", "ph_email": "you@company.com", "lbl_prod": "المنتج", "lbl_opt": "التخصيص / المقاس / الكمية", "lbl_msg": "تفاصيل المشروع", "btn_wa_send": "إرسال عبر واتساب", "btn_mail_send": "إرسال عبر البريد (dasleben@moduvilla.com)", "company_name": "شركة تشينغداو ياودني غوان لتكنولوجيا الإسكان مسبق الصنع المحدودة", "footer_back": "← العودة إلى الصفحة الرئيسية"}, "es": {"btn": "🌐 ES ▾", "topbar_left": "Suministro Directo de Fábrica • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Correo: dasleben@moduvilla.com", "logo_sub": "Casas Modulares y Vida Exterior", "nav_products": "PRODUCTOS", "nav_factory": "FÁBRICA Y OEM", "nav_blog": "BLOG Y GUÍAS", "nav_quote": "COTIZAR", "bc_home": "Inicio", "bc_products": "Productos", "cta_wa": "Consultar por WhatsApp", "cta_email": "Correo: dasleben@moduvilla.com", "cta_form": "Cotización Rápida", "highlights_title": "Ventajas Clave", "lbl_name": "Tu Nombre *", "ph_name": "Tu nombre", "lbl_country": "País / Región *", "ph_country": "País o puerto de destino", "lbl_phone": "WhatsApp / Teléfono *", "ph_phone": "+86 / número internacional", "lbl_email": "Correo Electrónico *", "ph_email": "you@company.com", "lbl_prod": "Producto", "lbl_opt": "Personalización / Medida / Cantidad", "lbl_msg": "Detalles del Proyecto", "btn_wa_send": "Enviar por WhatsApp", "btn_mail_send": "Enviar por Correo (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Volver al Inicio"}, "de": {"btn": "🌐 DE ▾", "topbar_left": "Direktlieferung ab Werk • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  E-Mail: dasleben@moduvilla.com", "logo_sub": "Modulhäuser & Outdoor-Living", "nav_products": "ALLE PRODUKTE", "nav_factory": "WERK & OEM", "nav_blog": "BLOG & RATGEBER", "nav_quote": "ANGEBOT ANFORDERN", "bc_home": "Startseite", "bc_products": "Produkte", "cta_wa": "WhatsApp-Anfrage", "cta_email": "E-Mail: dasleben@moduvilla.com", "cta_form": "Schnellanfrage", "highlights_title": "Wichtigste Vorteile", "lbl_name": "Ihr Name *", "ph_name": "Ihr Name", "lbl_country": "Land / Region *", "ph_country": "Land oder Zielhafen", "lbl_phone": "WhatsApp / Telefon *", "ph_phone": "+86 / internationale Nummer", "lbl_email": "E-Mail *", "ph_email": "you@company.com", "lbl_prod": "Produkt", "lbl_opt": "Ausführung / Größe / Menge", "lbl_msg": "Projektdetails", "btn_wa_send": "Per WhatsApp senden", "btn_mail_send": "Per E-Mail senden (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Zurück zur Startseite"}, "fr": {"btn": "🌐 FR ▾", "topbar_left": "Fourniture Directe Usine • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp : +86 185 6179 0765  |  E-mail : dasleben@moduvilla.com", "logo_sub": "Maisons Modulaires & Vie Extérieure", "nav_products": "TOUS LES PRODUITS", "nav_factory": "USINE & OEM", "nav_blog": "BLOG & GUIDES", "nav_quote": "DEVIS", "bc_home": "Accueil", "bc_products": "Produits", "cta_wa": "Demande WhatsApp", "cta_email": "E-mail : dasleben@moduvilla.com", "cta_form": "Formulaire Devis Rapide", "highlights_title": "Points Clés", "lbl_name": "Votre Nom *", "ph_name": "Votre nom", "lbl_country": "Pays / Région *", "ph_country": "Pays ou port de livraison", "lbl_phone": "WhatsApp / Téléphone *", "ph_phone": "+86 / numéro international", "lbl_email": "E-mail *", "ph_email": "you@company.com", "lbl_prod": "Produit", "lbl_opt": "Option / Taille / Quantité", "lbl_msg": "Détails du Projet", "btn_wa_send": "Envoyer via WhatsApp", "btn_mail_send": "Envoyer par E-mail (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Retour à l'accueil"}, "ru": {"btn": "🌐 RU ▾", "topbar_left": "Прямые поставки с завода • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com", "logo_sub": "Модульные дома и пространство у дома", "nav_products": "ВСЕ ТОВАРЫ", "nav_factory": "ЗАВОД И OEM", "nav_blog": "БЛОГ И ГИДЫ", "nav_quote": "ЗАПРОС ЦЕНЫ", "bc_home": "Главная", "bc_products": "Товары", "cta_wa": "Запрос в WhatsApp", "cta_email": "Email: dasleben@moduvilla.com", "cta_form": "Быстрый запрос цены", "highlights_title": "Ключевые преимущества", "lbl_name": "Ваше имя *", "ph_name": "Ваше имя", "lbl_country": "Страна / Регион *", "ph_country": "Страна или порт доставки", "lbl_phone": "WhatsApp / Телефон *", "ph_phone": "+86 / международный номер", "lbl_email": "Email *", "ph_email": "you@company.com", "lbl_prod": "Товар", "lbl_opt": "Размер / Опции / Количество", "lbl_msg": "Детали проекта", "btn_wa_send": "Отправить в WhatsApp", "btn_mail_send": "Отправить на Email (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← На главную"}}, "page": {"ar": {"badge": "خيارات معيارية ومقطورة • الحد الأدنى: وحدة واحدة", "h1": "Mobile Toilet", "lead": "وحدات مراحيض متنقلة معيارية ومحمولة على مقطورة مصممة لمواقع البناء والفعاليات الخارجية والمخيمات والمرافق التجارية.", "tags": ["كبائن قابلة للتخصيص", "متنقلة أو بمقطورة", "الحد الأدنى: وحدة واحدة. المدة: 20–35 يومًا"], "specs": [["الطراز / المقاس", "وحدات فردية أو متعددة أو مقطورة قابلة للتخصيص"], ["الهيكل والتشطيب", "هيكل فولاذي/ألواح مقاوم للتآكل مع داخل سهل التنظيف"], ["التجهيزات الصحية", "مراحيض ومغاسل وتهوية وخيارات سباكة أو خزانات قابلة للتخصيص"], ["الحد الأدنى للطلب", "وحدة واحدة. تواصل معنا للحصول على الكتالوج"], ["مدة الإنتاج", "20–35 يومًا"], ["الفحص", "فحص كامل للمراحل والمصنع مع تقرير؛ يدعم الفحص عبر طرف ثالث"], ["السعر", "يُحدد حسب التخصيص المطلوب"], ["التركيب", "يتوفر دليل تركيب"], ["الأداء", "يخضع لمواصفات المنتج والتصميم النهائي"]], "highlights": [["تصاميم مرنة للغرف", "تكوينات فردية أو متعددة الغرف أو بمقطورة تناسب طاقة الموقع."], ["داخل سهل التنظيف", "أسطح جدران وأرضيات مقاومة للماء مصممة للنظافة والصيانة الدورية."], ["توريد من وحدة واحدة", "مدة إنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."]], "form_title": "طلب عرض سعر — Mobile Toilet", "opt_ph": "مثال: وحدة متعددة / مقطورة، وحدتان", "msg_ph": "عدد الغرف، متطلبات خزان المياه/الصرف أو السباكة، ميناء الوصول..."}, "es": {"badge": "Opciones Modulares y Remolque • MOQ: 1 Unidad", "h1": "Mobile Toilet", "lead": "Sanitarios portátiles modulares y montados en remolque diseñados para obras, eventos al aire libre, campamentos y recintos comerciales.", "tags": ["Cabinas Personalizables", "Portátil y Remolque", "MOQ: 1 unidad. Plazo: 20–35 días"], "specs": [["Modelo / Medida", "Unidades individuales, multicabina o en remolque a medida"], ["Estructura y Acabado", "Bastidor de acero/panel resistente a la corrosión e interior fácil de limpiar"], ["Accesorios Sanitarios", "Inodoros, lavabos, ventilación y opciones de fontanería/tanques personalizables"], ["MOQ", "1 unidad. Contáctanos para catálogo de productos"], ["Tiempo de Fabricación", "20–35 días"], ["Inspección", "Inspección integral y de fábrica con informe; admite inspección de terceros"], ["Precio", "Cotizado según la personalización requerida"], ["Instalación", "Se incluye guía de instalación"], ["Rendimiento", "Sujeto a especificaciones del producto y diseño final"]], "highlights": [["Distribuciones Flexibles", "Configuraciones de una cabina, varias cabinas o remolque adaptadas al sitio."], ["Interior Fácil de Limpiar", "Superficies resistentes al agua pensadas para la higiene y el mantenimiento."], ["Suministro Desde 1 Unidad", "Plazo de 20–35 días con guía de instalación e informe de inspección de fábrica."]], "form_title": "Solicitar Cotización — Mobile Toilet", "opt_ph": "Ej.: multicabina / remolque, 2 unidades", "msg_ph": "Cantidad de cabinas, tanques de agua/residuos o fontanería, puerto de destino..."}, "de": {"badge": "Modular & Anhänger • MOQ: 1 Einheit", "h1": "Mobile Toilet", "lead": "Robuste modulare und anhängermontierte Toilettenkabinen für Baustellen, Events, Campingplätze und gewerbliche Anlagen.", "tags": ["Anpassbare Kabinen", "Mobil & Anhänger", "MOQ: 1 Einheit. Lieferzeit: 20–35 Tage"], "specs": [["Modell / Größe", "Einzel-, Mehrkabinen- oder Anhängereinheiten nach Maß"], ["Aufbau & Oberfläche", "Korrosionsbeständiger Stahl-/Panelrahmen mit pflegeleichtem Innenraum"], ["Sanitärausstattung", "WCs, Waschbecken, Belüftung sowie Leitungs-/Tankoptionen anpassbar"], ["MOQ", "1 Einheit. Produktkatalog auf Anfrage"], ["Fertigungszeit", "20–35 Tage"], ["Prüfung", "Prozess- & Werksprüfung mit Bericht; Drittanbieter-Prüfung möglich"], ["Preis", "Angebot je nach individueller Ausführung"], ["Montage", "Montageanleitung wird mitgeliefert"], ["Leistung", "Abhängig von Produktspezifikationen und Endentwurf"]], "highlights": [["Flexible Raumaufteilung", "Einzelkabinen, Mehrkabinenlösungen oder Anhänger passend zum Standortbedarf."], ["Pflegeleichter Innenraum", "Feuchtigkeitsbeständige Wand- und Bodenflächen für Hygiene und Wartung."], ["Lieferung ab 1 Einheit", "20–35 Tage Produktionszeit inkl. Montageanleitung und Werksprüfbericht."]], "form_title": "Angebot anfordern — Mobile Toilet", "opt_ph": "z. B. Mehrkabine / Anhänger, 2 Einheiten", "msg_ph": "Kabinenanzahl, Frisch-/Abwassertank oder Anschlussbedarf, Zielhafen..."}, "fr": {"badge": "Options Modulaires & Remorque • MOQ : 1 Unité", "h1": "Mobile Toilet", "lead": "Blocs sanitaires mobiles modulaires ou sur remorque conçus pour chantiers, événements extérieurs, campings et sites commerciaux.", "tags": ["Cabines Personnalisables", "Portable & Remorque", "MOQ : 1 unité. Délai : 20–35 jours"], "specs": [["Modèle / Taille", "Unités simples, multi-cabines ou sur remorque sur mesure"], ["Structure & Finition", "Châssis acier/panneau anticorrosion et intérieur facile d'entretien"], ["Équipements Sanitaires", "WC, lavabos, ventilation et options cuves/plomberie personnalisables"], ["MOQ", "1 unité. Contactez-nous pour le catalogue"], ["Délai de Fabrication", "20–35 jours"], ["Contrôle", "Contrôle complet et rapport d'usine ; inspection tierce possible"], ["Prix", "Devis selon personnalisation souhaitée"], ["Installation", "Guide d'installation fourni"], ["Performances", "Selon spécifications produit et plan définitif"]], "highlights": [["Configurations Modulables", "Versions mono-cabine, multi-cabines ou remorque adaptées à votre site."], ["Intérieur Facile à Nettoyer", "Parois et sols résistants à l'eau pour une hygiène et un entretien simples."], ["À Partir d'1 Unité", "Délai de 20–35 jours avec notice d'installation et rapport d'inspection."]], "form_title": "Demander un Devis — Mobile Toilet", "opt_ph": "Ex. : multi-cabines / remorque, 2 unités", "msg_ph": "Nombre de cabines, cuves eau/eaux usées ou raccordement, port de livraison..."}, "ru": {"badge": "Модульные и прицепные • MOQ: 1 шт.", "h1": "Mobile Toilet", "lead": "Надёжные модульные и прицепные туалетные блоки для стройплощадок, мероприятий, кемпингов и коммерческих объектов.", "tags": ["Кабины под заказ", "Мобильные и на прицепе", "MOQ: 1 шт. Срок: 20–35 дней"], "specs": [["Модель / Размер", "Одно-, многокабинные или прицепные блоки по индивидуальным размерам"], ["Конструкция и отделка", "Коррозионностойкий каркас/панели и практичная внутренняя отделка"], ["Сантехника", "Унитазы, раковины, вентиляция, баки и подводка коммуникаций под заказ"], ["MOQ", "1 шт. Свяжитесь с нами для получения каталога"], ["Срок производства", "20–35 дней"], ["Контроль качества", "Поэтапный и заводской контроль с отчётом; возможна независимая инспекция"], ["Цена", "Рассчитывается по индивидуальной спецификации"], ["Монтаж", "Инструкция по монтажу прилагается"], ["Характеристики", "Зависят от спецификации изделия и финального проекта"]], "highlights": [["Гибкая планировка", "Одиночные кабины, блоки на несколько кабин или прицепные решения под задачу."], ["Лёгкая уборка", "Влагостойкие стены и пол рассчитаны на гигиену и регулярное обслуживание."], ["Поставка от 1 шт.", "Срок изготовления 20–35 дней, инструкция и отчёт ОТК."]], "form_title": "Запросить расчёт — Mobile Toilet", "opt_ph": "Напр.: многокабинный / на прицепе, 2 шт.", "msg_ph": "Количество кабин, баки воды/отходов или подключение, порт доставки..."}, "en": {"badge": "Modular & Trailer Options • MOQ: 1 Unit", "h1": "Mobile Toilet", "lead": "Durable modular and trailer-mounted mobile toilet units built for construction sites, outdoor events, campgrounds, and commercial venues.", "tags": ["Customizable Cabins", "Portable & Trailer Mount", "MOQ: 1 unit. Lead Time: 20–35 days"], "specs": [["Model / Size", "Customizable single, multi-stall, or trailer units"], ["Structure & Finish", "Corrosion-resistant steel/panel frame with easy-clean interior"], ["Sanitary Fittings", "Toilets, sinks, ventilation, and plumbing/tank options customizable"], ["MOQ", "1 unit. Contact us for product catalog"], ["Production Lead Time", "20–35 days"], ["Inspection", "Full-process & factory inspection with report; third-party inspection supported"], ["Price", "Quoted according to specific customization"], ["Installation", "Installation guide provided"], ["Performance", "Subject to product specifications and final design"]], "highlights": [["Flexible Stall Layouts", "Single-cabin, multi-stall, or trailer-mounted configurations tailored to site capacity."], ["Easy-Clean Interior", "Water-resistant wall and floor surfaces designed for hygiene and routine maintenance."], ["MOQ 1 Unit Supply", "20–35 days production lead time with installation guide and full factory inspection report."]], "form_title": "Request Quotation — Mobile Toilet", "opt_ph": "e.g. Multi-stall / trailer unit, 2 units", "msg_ph": "Number of stalls, water/waste tank or plumbing needs, destination port..."}}};
+const I18N = {
+  "ui": {
+    "en": {"btn":"🌐 EN ▾","topbar_left":"Factory Direct Supply • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com","logo_sub":"Modular Homes & Outdoor Living","nav_products":"ALL PRODUCTS","nav_factory":"FACTORY & OEM","nav_blog":"BLOG & GUIDES","nav_quote":"GET QUOTE","bc_home":"Home","bc_products":"Products","cta_wa":"WhatsApp Inquiry","cta_email":"Email: dasleben@moduvilla.com","cta_form":"Quick Quote Form","highlights_title":"Key Highlights","lbl_name":"Your Name *","ph_name":"Your name","lbl_country":"Country / Region *","ph_country":"Country or port","lbl_phone":"WhatsApp / Phone *","ph_phone":"+86 / international number","lbl_email":"Email *","ph_email":"you@company.com","lbl_prod":"Product","lbl_opt":"Customization / Size / Quantity","lbl_msg":"Project Details","btn_wa_send":"Send via WhatsApp","btn_mail_send":"Send via Email (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Back to Homepage"},
+    "ar": {"btn":"🌐 AR ▾","topbar_left":"توريد مباشر من المصنع • ModuVilla / AluVilla / CoveCore","topbar_right":"واتساب: +86 185 6179 0765  |  البريد الإلكتروني: dasleben@moduvilla.com","logo_sub":"المنازل المعيارية والمعيشة الخارجية","nav_products":"جميع المنتجات","nav_factory":"المصنع و OEM","nav_blog":"المدونة والأدلة","nav_quote":"طلب عرض سعر","bc_home":"الرئيسية","bc_products":"المنتجات","cta_wa":"استفسار عبر واتساب","cta_email":"البريد: dasleben@moduvilla.com","cta_form":"نموذج عرض سعر سريع","highlights_title":"أبرز المزايا","lbl_name":"الاسم *","ph_name":"اكتب اسمك","lbl_country":"الدولة / المنطقة *","ph_country":"الدولة أو ميناء الوصول","lbl_phone":"واتساب / الهاتف *","ph_phone":"+86 / رقم دولي","lbl_email":"البريد الإلكتروني *","ph_email":"you@company.com","lbl_prod":"المنتج","lbl_opt":"التخصيص / المقاس / الكمية","lbl_msg":"تفاصيل المشروع","btn_wa_send":"إرسال عبر واتساب","btn_mail_send":"إرسال عبر البريد (dasleben@moduvilla.com)","company_name":"شركة تشينغداو ياودني غوان لتكنولوجيا الإسكان مسبق الصنع المحدودة","footer_back":"← العودة إلى الصفحة الرئيسية"},
+    "es": {"btn":"🌐 ES ▾","topbar_left":"Suministro Directo de Fábrica • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Correo: dasleben@moduvilla.com","logo_sub":"Casas Modulares y Vida Exterior","nav_products":"PRODUCTOS","nav_factory":"FÁBRICA Y OEM","nav_blog":"BLOG Y GUÍAS","nav_quote":"COTIZAR","bc_home":"Inicio","bc_products":"Productos","cta_wa":"Consultar por WhatsApp","cta_email":"Correo: dasleben@moduvilla.com","cta_form":"Cotización Rápida","highlights_title":"Ventajas Clave","lbl_name":"Tu Nombre *","ph_name":"Tu nombre","lbl_country":"País / Región *","ph_country":"País o puerto de destino","lbl_phone":"WhatsApp / Teléfono *","ph_phone":"+86 / número internacional","lbl_email":"Correo Electrónico *","ph_email":"you@company.com","lbl_prod":"Producto","lbl_opt":"Personalización / Medida / Cantidad","lbl_msg":"Detalles del Proyecto","btn_wa_send":"Enviar por WhatsApp","btn_mail_send":"Enviar por Correo (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Volver al Inicio"},
+    "de": {"btn":"🌐 DE ▾","topbar_left":"Direktlieferung ab Werk • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  E-Mail: dasleben@moduvilla.com","logo_sub":"Modulhäuser & Outdoor-Living","nav_products":"ALLE PRODUKTE","nav_factory":"WERK & OEM","nav_blog":"BLOG & RATGEBER","nav_quote":"ANGEBOT ANFORDERN","bc_home":"Startseite","bc_products":"Produkte","cta_wa":"WhatsApp-Anfrage","cta_email":"E-Mail: dasleben@moduvilla.com","cta_form":"Schnellanfrage","highlights_title":"Wichtigste Vorteile","lbl_name":"Ihr Name *","ph_name":"Ihr Name","lbl_country":"Land / Region *","ph_country":"Land oder Zielhafen","lbl_phone":"WhatsApp / Telefon *","ph_phone":"+86 / internationale Nummer","lbl_email":"E-Mail *","ph_email":"you@company.com","lbl_prod":"Produkt","lbl_opt":"Ausführung / Größe / Menge","lbl_msg":"Projektdetails","btn_wa_send":"Per WhatsApp senden","btn_mail_send":"Per E-Mail senden (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Zurück zur Startseite"},
+    "fr": {"btn":"🌐 FR ▾","topbar_left":"Fourniture Directe Usine • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp : +86 185 6179 0765  |  E-mail : dasleben@moduvilla.com","logo_sub":"Maisons Modulaires & Vie Extérieure","nav_products":"TOUS LES PRODUITS","nav_factory":"USINE & OEM","nav_blog":"BLOG & GUIDES","nav_quote":"DEVIS","bc_home":"Accueil","bc_products":"Produits","cta_wa":"Demande WhatsApp","cta_email":"E-mail : dasleben@moduvilla.com","cta_form":"Formulaire Devis Rapide","highlights_title":"Points Clés","lbl_name":"Votre Nom *","ph_name":"Votre nom","lbl_country":"Pays / Région *","ph_country":"Pays ou port de livraison","lbl_phone":"WhatsApp / Téléphone *","ph_phone":"+86 / numéro international","lbl_email":"E-mail *","ph_email":"you@company.com","lbl_prod":"Produit","lbl_opt":"Option / Taille / Quantité","lbl_msg":"Détails du Projet","btn_wa_send":"Envoyer via WhatsApp","btn_mail_send":"Envoyer par E-mail (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Retour à l'accueil"},
+    "ru": {"btn":"🌐 RU ▾","topbar_left":"Прямые поставки с завода • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com","logo_sub":"Модульные дома и пространство у дома","nav_products":"ВСЕ ТОВАРЫ","nav_factory":"ЗАВОД И OEM","nav_blog":"БЛОГ И ГИДЫ","nav_quote":"ЗАПРОС ЦЕНЫ","bc_home":"Главная","bc_products":"Товары","cta_wa":"Запрос в WhatsApp","cta_email":"Email: dasleben@moduvilla.com","cta_form":"Быстрый запрос цены","highlights_title":"Ключевые преимущества","lbl_name":"Ваше имя *","ph_name":"Ваше имя","lbl_country":"Страна / Регион *","ph_country":"Страна или порт доставки","lbl_phone":"WhatsApp / Телефон *","ph_phone":"+86 / международный номер","lbl_email":"Email *","ph_email":"you@company.com","lbl_prod":"Товар","lbl_opt":"Размер / Опции / Количество","lbl_msg":"Детали проекта","btn_wa_send":"Отправить в WhatsApp","btn_mail_send":"Отправить на Email (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← На главную"}
+  },
+  "page": {
+    "en": {
+      "badge":"Modular & Trailer Options • MOQ: 1 Unit",
+      "h1":"Mobile Toilet",
+      "lead":"Durable modular and trailer-mounted mobile toilet units built for construction sites, outdoor events, campgrounds, and commercial venues.",
+      "tags":["Customizable Cabins","Portable & Trailer Mount","MOQ: 1 unit. Lead Time: 20–35 days"],
+      "specs":[["Model / Size","Customizable single, multi-stall, or trailer units"],["Structure & Finish","Corrosion-resistant steel/panel frame with easy-clean interior"],["Sanitary Fittings","Toilets, sinks, ventilation, and plumbing/tank options customizable"],["MOQ","1 unit. Contact us for product catalog"],["Production Lead Time","20–35 days"],["Inspection","Full-process & factory inspection with report; third-party inspection supported"],["Price","Quoted according to specific customization"],["Installation","Installation guide provided"],["Performance","Subject to product specifications and final design"]],
+      "highlights":[["Flexible Stall Layouts","Single-cabin, multi-stall, or trailer-mounted configurations tailored to site capacity."],["Easy-Clean Interior","Water-resistant wall and floor surfaces designed for hygiene and routine maintenance."],["MOQ 1 Unit Supply","20–35 days production lead time with installation guide and full factory inspection report."]],
+      "form_title":"Request Quotation — Mobile Toilet",
+      "opt_ph":"e.g. Multi-stall / trailer unit, 2 units",
+      "msg_ph":"Number of stalls, water/waste tank or plumbing needs, destination port..."
+    },
+    "ar": {
+      "badge":"خيارات معيارية ومقطورة • الحد الأدنى: وحدة واحدة",
+      "h1":"مرحاض متنقل (Mobile Toilet)",
+      "lead":"وحدات مراحيض متنقلة معيارية وعلى مقطورة مصممة لمواقع البناء والفعاليات الخارجية والمخيمات والمواقع التجارية.",
+      "tags":["كبائن قابلة للتخصيص","متنقل وعلى مقطورة","الحد الأدنى: وحدة واحدة. المدة: 20–35 يومًا"],
+      "specs":[["الطراز / المقاس","وحدات فردية أو متعددة أو مقطورة قابلة للتخصيص"],["الهيكل والتشطيب","هيكل مقاوم للتآكل مع داخل سهل التنظيف"],["التجهيزات الصحية","مراحيض ومغاسل وتهوية وخيارات سباكة/خزانات قابلة للتخصيص"],["الحد الأدنى للطلب","وحدة واحدة. تواصل معنا للحصول على الكتالوج"],["مدة الإنتاج","20–35 يومًا"],["الفحص","فحص كامل للمراحل والمصنع مع تقرير؛ يدعم الفحص عبر طرف ثالث"],["السعر","يُحدد حسب التخصيص المطلوب"],["التركيب","يتوفر دليل تركيب"],["الأداء","يخضع لمواصفات المنتج والتصميم النهائي"]],
+      "highlights":[["تخطيطات مرنة للكبائن","تكوينات فردية أو متعددة أو على مقطورة تناسب قدرة الموقع."],["تصميم داخلي سهل التنظيف","أسطح جدران وأرضيات مقاومة للماء لسهولة التعقيم والصيانة."],["توريد من وحدة واحدة","مدة إنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."]],
+      "form_title":"طلب عرض سعر — مرحاض متنقل",
+      "opt_ph":"مثال: وحدة متعددة الكبائن / مقطورة، وحدتان",
+      "msg_ph":"عدد الكبائن، احتياجات خزان المياه/الصرف أو السباكة، ميناء الوصول..."
+    },
+    "es": {
+      "badge":"Opciones Modulares y Remolque • MOQ: 1 Unidad",
+      "h1":"Baño Móvil (Mobile Toilet)",
+      "lead":"Unidades de baños modulares y en remolque diseñadas para obras, eventos al aire libre, campings y espacios comerciales.",
+      "tags":["Cabinas Personalizables","Portátil y Remolque","MOQ: 1 unidad. Plazo: 20–35 días"],
+      "specs":[["Modelo / Medida","Unidades individuales, multicabina o en remolque a medida"],["Estructura y Acabado","Estructura resistente a la corrosión e interior de fácil limpieza"],["Equipamiento Sanitario","Inodoros, lavabos, ventilación y opciones de fontanería/tanques a medida"],["MOQ","1 unidad. Contáctanos para catálogo de productos"],["Tiempo de Fabricación","20–35 días"],["Inspección","Inspección integral y de fábrica con informe; admite inspección de terceros"],["Precio","Cotizado según la personalización requerida"],["Instalación","Se incluye guía de instalación"],["Rendimiento","Sujeto a especificaciones del producto y diseño final"]],
+      "highlights":[["Distribuciones Flexibles","Configuraciones individuales, multicabina o sobre remolque según el aforo."],["Interior Fácil de Limpiar","Superficies resistentes al agua para una higiene y mantenimiento sencillos."],["Suministro Desde 1 Unidad","Plazo de 20–35 días con guía de instalación e informe de inspección de fábrica."]],
+      "form_title":"Solicitar Cotización — Baño Móvil",
+      "opt_ph":"Ej. Multicabina / remolque, 2 unidades",
+      "msg_ph":"Cantidad de cabinas, depósito de agua/residuos o fontanería, puerto de destino..."
+    },
+    "de": {
+      "badge":"Modular & Anhänger • MOQ: 1 Einheit",
+      "h1":"Mobile Toilette (Mobile Toilet)",
+      "lead":"Robuste modulare und auf Anhängern montierte Toiletteneinheiten für Baustellen, Events, Campingplätze und Gewerbeflächen.",
+      "tags":["Anpassbare Kabinen","Mobil & Anhänger","MOQ: 1 Einheit. Lieferzeit: 20–35 Tage"],
+      "specs":[["Modell / Größe","Einzel-, Mehrkabinen- oder Anhängereinheiten nach Maß"],["Aufbau & Oberfläche","Korrosionsbeständiger Rahmen mit pflegeleichtem Innenraum"],["Sanitärausstattung","WCs, Waschbecken, Belüftung sowie Tank-/Leitungsoptionen anpassbar"],["MOQ","1 Einheit. Produktkatalog auf Anfrage"],["Fertigungszeit","20–35 Tage"],["Prüfung","Prozess- & Werksprüfung mit Bericht; Drittanbieter-Prüfung möglich"],["Preis","Angebot je nach individueller Ausführung"],["Montage","Montageanleitung wird mitgeliefert"],["Leistung","Abhängig von Produktspezifikationen und Endentwurf"]],
+      "highlights":[["Flexible Kabinenlayouts","Einzel-, Mehrkabinen- oder Anhängerlösungen passend zum Bedarf vor Ort."],["Pflegeleichter Innenraum","Feuchtigkeitsbeständige Oberflächen für Hygiene und einfache Reinigung."],["Lieferung ab 1 Einheit","20–35 Tage Produktionszeit inkl. Montageanleitung und Werksprüfbericht."]],
+      "form_title":"Angebot anfordern — Mobile Toilette",
+      "opt_ph":"z. B. Mehrkabinen / Anhänger, 2 Einheiten",
+      "msg_ph":"Anzahl der Kabinen, Frisch-/Abwassertank oder Sanitäranschlüsse, Zielhafen..."
+    },
+    "fr": {
+      "badge":"Options Modulaires & Remorque • MOQ : 1 Unité",
+      "h1":"Toilette Mobile (Mobile Toilet)",
+      "lead":"Sanitaires mobiles modulaires et sur remorque conçus pour chantiers, événements extérieurs, campings et sites commerciaux.",
+      "tags":["Cabines Modulables","Portable & Sur Remorque","MOQ : 1 unité. Délai : 20–35 jours"],
+      "specs":[["Modèle / Taille","Unités simples, multi-cabines ou sur remorque personnalisables"],["Structure & Finition","Châssis résistant à la corrosion et intérieur facile d'entretien"],["Équipements Sanitaires","WC, lavabos, ventilation et options cuve/plomberie personnalisables"],["MOQ","1 unité. Contactez-nous pour le catalogue"],["Délai de Fabrication","20–35 jours"],["Contrôle","Contrôle complet et rapport d'usine ; inspection tierce possible"],["Prix","Devis selon personnalisation souhaitée"],["Installation","Guide d'installation fourni"],["Performances","Selon spécifications produit et plan définitif"]],
+      "highlights":[["Configurations Modulables","Formats simple cabine, multi-cabines ou sur remorque selon la fréquentation."],["Entretien Facile","Parois et sols résistants à l'eau pour une hygiène irréprochable."],["Commande dès 1 Unité","Délai de 20–35 jours avec notice d'installation et rapport d'inspection."]],
+      "form_title":"Demander un Devis — Toilette Mobile",
+      "opt_ph":"Ex. Multi-cabines / remorque, 2 unités",
+      "msg_ph":"Nombre de cabines, réservoir eau/eaux usées ou raccordement, port de destination..."
+    },
+    "ru": {
+      "badge":"Модули и прицепы • MOQ: 1 шт.",
+      "h1":"Мобильный туалет (Mobile Toilet)",
+      "lead":"Модульные и прицепные санитарные блоки для стройплощадок, мероприятий, кемпингов и коммерческих объектов.",
+      "tags":["Индивидуальные кабины","Переносной и на прицепе","MOQ: 1 шт. Срок: 20–35 дней"],
+      "specs":[["Модель / Размер","Одно-, многокабинные блоки или на прицепе под заказ"],["Конструкция и отделка","Коррозионностойкий каркас и лёгкая в уходе внутренняя отделка"],["Сантехническое оснащение","Унитазы, раковины, вентиляция, баки и подводка под заказ"],["MOQ","1 шт. Свяжитесь с нами для получения каталога"],["Срок производства","20–35 дней"],["Контроль качества","Поэтапный и заводской контроль с отчётом; возможна независимая инспекция"],["Цена","Рассчитывается по индивидуальной спецификации"],["Монтаж","Инструкция по монтажу прилагается"],["Характеристики","Зависят от спецификации изделия и финального проекта"]],
+      "highlights":[["Гибкая планировка кабин","Одно-, многокабинные или прицепные решения под нагрузку объекта."],["Лёгкий уход внутри","Влагостойкие покрытия стен и пола для гигиены и уборки."],["Поставка от 1 шт.","Срок изготовления 20–35 дней, инструкция и отчёт ОТК."]],
+      "form_title":"Запросить расчёт — Мобильный туалет",
+      "opt_ph":"Напр.: многокабинный / на прицепе, 2 шт.",
+      "msg_ph":"Число кабин, баки воды/стоков или разводка, порт назначения..."
+    }
+  }
+};
+
 function applyTranslations(l){
   const u = I18N.ui[l] || I18N.ui.en;
   const p = I18N.page[l] || I18N.page.en;
-  document.documentElement.lang = l;
-  document.body.dir = (l === 'ar') ? 'rtl' : 'ltr';
   document.getElementById('langBtn').textContent = u.btn;
   document.getElementById('tTopLeft').textContent = u.topbar_left;
   document.getElementById('tTopRight').textContent = u.topbar_right;
@@ -358,6 +436,8 @@ function applyTranslations(l){
 function setLang(l){
   if(!['en','ar','es','de','fr','ru'].includes(l)) l = 'en';
   try{ localStorage.setItem('moduvilla_lang', l); }catch(e){}
+  document.documentElement.lang = l;
+  document.body.dir = (l === 'ar') ? 'rtl' : 'ltr';
   applyTranslations(l);
   var drop = document.getElementById('langDrop');
   if(drop) drop.classList.remove('open');
@@ -385,7 +465,7 @@ function buildText(){
 }
 function sendQuote(e){
   e.preventDefault();
-  window.open('https://wa.me/8618561790765?text=' + encodeURIComponent(buildText()), '_blank', 'noopener,noreferrer');
+  window.open('https://wa.me/8618561790765?text=' + encodeURIComponent(buildText()), '_blank');
 }
 function sendEmailQuote(){
   location.href = 'mailto:dasleben@moduvilla.com?subject=' + encodeURIComponent('Product Inquiry: ' + document.getElementById('qProd').value) + '&body=' + encodeURIComponent(buildText());
