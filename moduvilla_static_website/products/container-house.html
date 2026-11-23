@@ -72,6 +72,30 @@
           "description": "Quoted according to specific customization / final design plan"
         },
         "availability": "https://schema.org/InStock",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnLink": "https://moduvilla.com/faq",
+          "description": "Subject to sales contract and customization terms."
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 20,
+              "maxValue": 35,
+              "unitCode": "DAY"
+            }
+          },
+          "description": "Production lead time 20-35 days; international shipping arranged per order and destination."
+        },
         "seller": {
           "@type": "Organization",
           "name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd."
