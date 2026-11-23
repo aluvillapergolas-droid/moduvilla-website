@@ -20,7 +20,7 @@
 <meta property="og:title" content="Wooden Cabin | Timber & Wood-Finish Prefabricated Cabin">
 <meta property="og:description" content="Warm timber-styled prefabricated cabin for resorts, retreats, and guest stays, customizable size, 20–35 days lead time, MOQ 1 unit.">
 <meta property="og:url" content="https://moduvilla.com/products/wooden-cabin">
-<meta property="og:image" content="https://moduvilla.com/product-wooden-cabin-prefab-lodge.jpg">
+<meta property="og:image" content="https://moduvilla.com/product-wooden-prefab-cabin-eco-resort-house.jpg">
 
 <script type="application/ld+json">
 {
@@ -52,7 +52,7 @@
     {
       "@type": "Product",
       "name": "ModuVilla Wooden Cabin",
-      "image": "https://moduvilla.com/product-wooden-cabin-prefab-lodge.jpg",
+      "image": "https://moduvilla.com/product-wooden-prefab-cabin-eco-resort-house.jpg",
       "description": "Prefabricated wooden cabin with timber aesthetics, customizable dimensions, installation guide, and 20–35 days lead time.",
       "brand": {
         "@type": "Brand",
@@ -104,7 +104,7 @@ a{text-decoration:none;color:inherit}
 .breadcrumb a:hover{color:#1D4ED8}
 .p-hero{padding:48px 6% 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
 .p-gallery{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden}
-.p-gallery img{width:100%;height:auto;display:block;object-fit:cover;max-height:520px}
+.p-gallery img{width:100%;height:auto;display:block}
 .p-badge{display:inline-block;background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;margin-bottom:12px}
 .p-info h1{font-size:30px;line-height:1.25;color:#1F2937;margin-bottom:14px}
 .p-lead{font-size:15px;color:#4B5563;margin-bottom:20px}
@@ -162,7 +162,7 @@ html,body{max-width:100%;overflow-x:hidden}
         <a href="#inquiry" id="tNavQuote">GET QUOTE</a>
       </div>
       <div class="lang" id="langDrop">
-        <button class="lang-btn" id="langBtn" type="button" onclick="document.getElementById('langDrop').classList.toggle('open')">🌐 EN ▾</button>
+        <button class="lang-btn" id="langBtn" type="button" onclick="toggleLangMenu(event)">🌐 EN ▾</button>
         <div class="lang-menu">
           <a onclick="setLang('en')">English</a>
           <a onclick="setLang('ar')">العربية</a>
@@ -185,7 +185,13 @@ html,body{max-width:100%;overflow-x:hidden}
 <main>
   <section class="p-hero">
     <div class="p-gallery">
-      <img src="../product-wooden-cabin-prefab-lodge.jpg" alt="Wooden Cabin - Prefabricated Manufacturer Supply" fetchpriority="high">
+      <img
+        id="pMainImg"
+        src="../product-wooden-prefab-cabin-eco-resort-house.jpg"
+        data-fallbacks='["/product-wooden-prefab-cabin-eco-resort-house.jpg","./product-wooden-prefab-cabin-eco-resort-house.jpg","../../product-wooden-prefab-cabin-eco-resort-house.jpg"]'
+        onerror="handleImgFallback(this)"
+        alt="Wooden Cabin - Prefabricated Manufacturer Supply"
+        fetchpriority="high">
     </div>
     <div class="p-info">
       <span class="p-badge" id="tBadge">Timber & Wood Finish • MOQ: 1 Unit</span>
@@ -285,7 +291,105 @@ html,body{max-width:100%;overflow-x:hidden}
 <a class="wa" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M19.05 4.92A9.82 9.82 0 0012.04 2C6.58 2 2.14 6.44 2.14 11.89c0 1.74.46 3.44 1.33 4.95L2 22l5.26-1.38a9.86 9.86 0 004.72 1.2h.02c5.45 0 9.88-4.44 9.88-9.89 0-2.64-1.03-5.12-2.83-6.92zm-6.99 13.11h-.02a8.05 8.05 0 01-4.1-1.12l-.29-.18-3.13.82.83-3.05-.19-.32a8.06 8.06 0 01-1.24-4.29c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 012.38 5.77c0 4.5-3.65 8.14-8.18 8.14zm4.49-6.1c-.25-.12-1.47-.72-1.69-.81-.22-.08-.39-.12-.55.12-.16.25-.63.81-.77.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.02-.38.1-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03 0 1.2.87 2.36.99 2.52.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg></a>
 
 <script>
-const I18N = {"ui": {"en": {"btn": "🌐 EN ▾", "topbar_left": "Factory Direct Supply • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com", "logo_sub": "Modular Homes & Outdoor Living", "nav_products": "ALL PRODUCTS", "nav_factory": "FACTORY & OEM", "nav_blog": "BLOG & GUIDES", "nav_quote": "GET QUOTE", "bc_home": "Home", "bc_products": "Products", "cta_wa": "WhatsApp Inquiry", "cta_email": "Email: dasleben@moduvilla.com", "cta_form": "Quick Quote Form", "highlights_title": "Key Highlights", "lbl_name": "Your Name *", "ph_name": "Your name", "lbl_country": "Country / Region *", "ph_country": "Country or port", "lbl_phone": "WhatsApp / Phone *", "ph_phone": "+86 / international number", "lbl_email": "Email *", "ph_email": "you@company.com", "lbl_prod": "Product", "lbl_opt": "Customization / Size / Quantity", "lbl_msg": "Project Details", "btn_wa_send": "Send via WhatsApp", "btn_mail_send": "Send via Email (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Back to Homepage"}, "ar": {"btn": "🌐 AR ▾", "topbar_left": "توريد مباشر من المصنع • ModuVilla / AluVilla / CoveCore", "topbar_right": "واتساب: +86 185 6179 0765  |  البريد الإلكتروني: dasleben@moduvilla.com", "logo_sub": "المنازل المعيارية والمعيشة الخارجية", "nav_products": "جميع المنتجات", "nav_factory": "المصنع و OEM", "nav_blog": "المدونة والأدلة", "nav_quote": "طلب عرض سعر", "bc_home": "الرئيسية", "bc_products": "المنتجات", "cta_wa": "استفسار عبر واتساب", "cta_email": "البريد: dasleben@moduvilla.com", "cta_form": "نموذج عرض سعر سريع", "highlights_title": "أبرز المزايا", "lbl_name": "الاسم *", "ph_name": "اكتب اسمك", "lbl_country": "الدولة / المنطقة *", "ph_country": "الدولة أو ميناء الوصول", "lbl_phone": "واتساب / الهاتف *", "ph_phone": "+86 / رقم دولي", "lbl_email": "البريد الإلكتروني *", "ph_email": "you@company.com", "lbl_prod": "المنتج", "lbl_opt": "التخصيص / المقاس / الكمية", "lbl_msg": "تفاصيل المشروع", "btn_wa_send": "إرسال عبر واتساب", "btn_mail_send": "إرسال عبر البريد (dasleben@moduvilla.com)", "company_name": "شركة تشينغداو ياودني غوان لتكنولوجيا الإسكان مسبق الصنع المحدودة", "footer_back": "← العودة إلى الصفحة الرئيسية"}, "es": {"btn": "🌐 ES ▾", "topbar_left": "Suministro Directo de Fábrica • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Correo: dasleben@moduvilla.com", "logo_sub": "Casas Modulares y Vida Exterior", "nav_products": "PRODUCTOS", "nav_factory": "FÁBRICA Y OEM", "nav_blog": "BLOG Y GUÍAS", "nav_quote": "COTIZAR", "bc_home": "Inicio", "bc_products": "Productos", "cta_wa": "Consultar por WhatsApp", "cta_email": "Correo: dasleben@moduvilla.com", "cta_form": "Cotización Rápida", "highlights_title": "Ventajas Clave", "lbl_name": "Tu Nombre *", "ph_name": "Tu nombre", "lbl_country": "País / Región *", "ph_country": "País o puerto de destino", "lbl_phone": "WhatsApp / Teléfono *", "ph_phone": "+86 / número internacional", "lbl_email": "Correo Electrónico *", "ph_email": "you@company.com", "lbl_prod": "Producto", "lbl_opt": "Personalización / Medida / Cantidad", "lbl_msg": "Detalles del Proyecto", "btn_wa_send": "Enviar por WhatsApp", "btn_mail_send": "Enviar por Correo (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Volver al Inicio"}, "de": {"btn": "🌐 DE ▾", "topbar_left": "Direktlieferung ab Werk • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  E-Mail: dasleben@moduvilla.com", "logo_sub": "Modulhäuser & Outdoor-Living", "nav_products": "ALLE PRODUKTE", "nav_factory": "WERK & OEM", "nav_blog": "BLOG & RATGEBER", "nav_quote": "ANGEBOT ANFORDERN", "bc_home": "Startseite", "bc_products": "Produkte", "cta_wa": "WhatsApp-Anfrage", "cta_email": "E-Mail: dasleben@moduvilla.com", "cta_form": "Schnellanfrage", "highlights_title": "Wichtigste Vorteile", "lbl_name": "Ihr Name *", "ph_name": "Ihr Name", "lbl_country": "Land / Region *", "ph_country": "Land oder Zielhafen", "lbl_phone": "WhatsApp / Telefon *", "ph_phone": "+86 / internationale Nummer", "lbl_email": "E-Mail *", "ph_email": "you@company.com", "lbl_prod": "Produkt", "lbl_opt": "Ausführung / Größe / Menge", "lbl_msg": "Projektdetails", "btn_wa_send": "Per WhatsApp senden", "btn_mail_send": "Per E-Mail senden (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Zurück zur Startseite"}, "fr": {"btn": "🌐 FR ▾", "topbar_left": "Fourniture Directe Usine • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp : +86 185 6179 0765  |  E-mail : dasleben@moduvilla.com", "logo_sub": "Maisons Modulaires & Vie Extérieure", "nav_products": "TOUS LES PRODUITS", "nav_factory": "USINE & OEM", "nav_blog": "BLOG & GUIDES", "nav_quote": "DEVIS", "bc_home": "Accueil", "bc_products": "Produits", "cta_wa": "Demande WhatsApp", "cta_email": "E-mail : dasleben@moduvilla.com", "cta_form": "Formulaire Devis Rapide", "highlights_title": "Points Clés", "lbl_name": "Votre Nom *", "ph_name": "Votre nom", "lbl_country": "Pays / Région *", "ph_country": "Pays ou port de livraison", "lbl_phone": "WhatsApp / Téléphone *", "ph_phone": "+86 / numéro international", "lbl_email": "E-mail *", "ph_email": "you@company.com", "lbl_prod": "Produit", "lbl_opt": "Option / Taille / Quantité", "lbl_msg": "Détails du Projet", "btn_wa_send": "Envoyer via WhatsApp", "btn_mail_send": "Envoyer par E-mail (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← Retour à l'accueil"}, "ru": {"btn": "🌐 RU ▾", "topbar_left": "Прямые поставки с завода • ModuVilla / AluVilla / CoveCore", "topbar_right": "WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com", "logo_sub": "Модульные дома и пространство у дома", "nav_products": "ВСЕ ТОВАРЫ", "nav_factory": "ЗАВОД И OEM", "nav_blog": "БЛОГ И ГИДЫ", "nav_quote": "ЗАПРОС ЦЕНЫ", "bc_home": "Главная", "bc_products": "Товары", "cta_wa": "Запрос в WhatsApp", "cta_email": "Email: dasleben@moduvilla.com", "cta_form": "Быстрый запрос цены", "highlights_title": "Ключевые преимущества", "lbl_name": "Ваше имя *", "ph_name": "Ваше имя", "lbl_country": "Страна / Регион *", "ph_country": "Страна или порт доставки", "lbl_phone": "WhatsApp / Телефон *", "ph_phone": "+86 / международный номер", "lbl_email": "Email *", "ph_email": "you@company.com", "lbl_prod": "Товар", "lbl_opt": "Размер / Опции / Количество", "lbl_msg": "Детали проекта", "btn_wa_send": "Отправить в WhatsApp", "btn_mail_send": "Отправить на Email (dasleben@moduvilla.com)", "company_name": "Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.", "footer_back": "← На главную"}}, "page": {"ar": {"badge": "Timber & Wood Finish • الحد الأدنى: وحدة واحدة", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "الحد الأدنى: وحدة واحدة. المدة: 20–35 يومًا"], "specs": [["الطراز / المقاس", "مقاسات كوخ قابلة للتخصيص"], ["الخامة والتشطيب", "كسوة خشبية مع هيكل معزول"], ["الداخل والتوزيع", "أبواب ونوافذ وشرفة وتوزيع غرف قابل للتخصيص"], ["الحد الأدنى للطلب", "وحدة واحدة. تواصل معنا للحصول على الكتالوج"], ["مدة الإنتاج", "20–35 يومًا"], ["الفحص", "فحص كامل للمراحل والمصنع مع تقرير؛ يدعم الفحص عبر طرف ثالث"], ["السعر", "يُحدد حسب التخصيص المطلوب"], ["التركيب", "يتوفر دليل تركيب"], ["الأداء", "يخضع لمواصفات المنتج والتصميم النهائي"]], "highlights": [["Warm Timber Appeal", "مدة الإنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."], ["Flexible Customization", "مدة الإنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."], ["MOQ 1 Unit Supply", "مدة الإنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."]], "form_title": "طلب عرض سعر — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}, "es": {"badge": "Timber & Wood Finish • MOQ: 1 Unidad", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "MOQ: 1 unidad. Plazo: 20–35 días"], "specs": [["Modelo / Medida", "Customizable cabin dimensions"], ["Material y Acabado", "Timber / wood-grain cladding with insulated structure"], ["Interior y Distribución", "Customizable doors, windows, deck, and room layout"], ["MOQ", "1 unidad. Contáctanos para catálogo de productos"], ["Tiempo de Fabricación", "20–35 días"], ["Inspección", "Inspección integral y de fábrica con informe; admite inspección de terceros"], ["Precio", "Cotizado según la personalización requerida"], ["Instalación", "Se incluye guía de instalación"], ["Rendimiento", "Sujeto a especificaciones del producto y diseño final"]], "highlights": [["Warm Timber Appeal", "Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."], ["Flexible Customization", "Adapt cabin size, glazing, and interior layout to match your site plan."], ["MOQ 1 Unit Supply", "Plazo de 20–35 días con guía de instalación e informe de inspección de fábrica."]], "form_title": "Solicitar Cotización — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}, "de": {"badge": "Timber & Wood Finish • MOQ: 1 Einheit", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "MOQ: 1 Einheit. Lieferzeit: 20–35 Tage"], "specs": [["Modell / Größe", "Customizable cabin dimensions"], ["Material & Oberfläche", "Timber / wood-grain cladding with insulated structure"], ["Innenraum & Grundriss", "Customizable doors, windows, deck, and room layout"], ["MOQ", "1 Einheit. Produktkatalog auf Anfrage"], ["Fertigungszeit", "20–35 Tage"], ["Prüfung", "Prozess- & Werksprüfung mit Bericht; Drittanbieter-Prüfung möglich"], ["Preis", "Angebot je nach individueller Ausführung"], ["Montage", "Montageanleitung wird mitgeliefert"], ["Leistung", "Abhängig von Produktspezifikationen und Endentwurf"]], "highlights": [["Warm Timber Appeal", "Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."], ["Flexible Customization", "Adapt cabin size, glazing, and interior layout to match your site plan."], ["MOQ 1 Unit Supply", "20–35 Tage Produktionszeit inkl. Montageanleitung und Werksprüfbericht."]], "form_title": "Angebot anfordern — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}, "fr": {"badge": "Timber & Wood Finish • MOQ : 1 Unité", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "MOQ : 1 unité. Délai : 20–35 jours"], "specs": [["Modèle / Taille", "Customizable cabin dimensions"], ["Matériau & Finition", "Timber / wood-grain cladding with insulated structure"], ["Intérieur & Agencement", "Customizable doors, windows, deck, and room layout"], ["MOQ", "1 unité. Contactez-nous pour le catalogue"], ["Délai de Fabrication", "20–35 jours"], ["Contrôle", "Contrôle complet et rapport d'usine ; inspection tierce possible"], ["Prix", "Devis selon personnalisation souhaitée"], ["Installation", "Guide d'installation fourni"], ["Performances", "Selon spécifications produit et plan définitif"]], "highlights": [["Warm Timber Appeal", "Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."], ["Flexible Customization", "Adapt cabin size, glazing, and interior layout to match your site plan."], ["MOQ 1 Unit Supply", "Délai de 20–35 jours avec notice d'installation et rapport d'inspection."]], "form_title": "Demander un Devis — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}, "ru": {"badge": "Timber & Wood Finish • MOQ: 1 шт.", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "MOQ: 1 шт. Срок: 20–35 дней"], "specs": [["Модель / Размер", "Customizable cabin dimensions"], ["Материал и отделка", "Timber / wood-grain cladding with insulated structure"], ["Интерьер и планировка", "Customizable doors, windows, deck, and room layout"], ["MOQ", "1 шт. Свяжитесь с нами для получения каталога"], ["Срок производства", "20–35 дней"], ["Контроль качества", "Поэтапный и заводской контроль с отчётом; возможна независимая инспекция"], ["Цена", "Рассчитывается по индивидуальной спецификации"], ["Монтаж", "Инструкция по монтажу прилагается"], ["Характеристики", "Зависят от спецификации изделия и финального проекта"]], "highlights": [["Warm Timber Appeal", "Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."], ["Flexible Customization", "Adapt cabin size, glazing, and interior layout to match your site plan."], ["MOQ 1 Unit Supply", "Срок изготовления 20–35 дней, инструкция и отчёт ОТК."]], "form_title": "Запросить расчёт — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}, "en": {"badge": "Timber & Wood Finish • MOQ: 1 Unit", "h1": "Wooden Cabin", "lead": "Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.", "tags": ["Wood / Timber Aesthetics", "Customizable Sizes", "MOQ: 1 unit. Lead Time: 20–35 days"], "specs": [["Model / Size", "Customizable cabin dimensions"], ["Material & Finish", "Timber / wood-grain cladding with insulated structure"], ["Interior & Layout", "Customizable doors, windows, deck, and room layout"], ["MOQ", "1 unit. Contact us for product catalog"], ["Production Lead Time", "20–35 days"], ["Inspection", "Full-process & factory inspection with report; third-party inspection supported"], ["Price", "Quoted according to specific customization"], ["Installation", "Installation guide provided"], ["Performance", "Subject to product specifications and final design"]], "highlights": [["Warm Timber Appeal", "Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."], ["Flexible Customization", "Adapt cabin size, glazing, and interior layout to match your site plan."], ["MOQ 1 Unit Supply", "20–35 days production lead time with installation guide and full factory inspection report."]], "form_title": "Request Quotation — Wooden Cabin", "opt_ph": "e.g. Custom size, wood finish, 1 unit", "msg_ph": "Share cabin size, layout needs, or destination port..."}}};
+function handleImgFallback(img){
+  try{
+    var list = JSON.parse(img.getAttribute('data-fallbacks') || '[]');
+    var idx = parseInt(img.getAttribute('data-fb-idx') || '0', 10);
+    if(idx < list.length){
+      img.setAttribute('data-fb-idx', String(idx + 1));
+      img.src = list[idx];
+    }else{
+      img.onerror = null;
+    }
+  }catch(e){
+    img.onerror = null;
+  }
+}
+function toggleLangMenu(e){
+  if(e) e.stopPropagation();
+  var drop = document.getElementById('langDrop');
+  if(drop) drop.classList.toggle('open');
+}
+
+const I18N = {
+  "ui": {
+    "en": {"btn":"🌐 EN ▾","topbar_left":"Factory Direct Supply • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com","logo_sub":"Modular Homes & Outdoor Living","nav_products":"ALL PRODUCTS","nav_factory":"FACTORY & OEM","nav_blog":"BLOG & GUIDES","nav_quote":"GET QUOTE","bc_home":"Home","bc_products":"Products","cta_wa":"WhatsApp Inquiry","cta_email":"Email: dasleben@moduvilla.com","cta_form":"Quick Quote Form","highlights_title":"Key Highlights","lbl_name":"Your Name *","ph_name":"Your name","lbl_country":"Country / Region *","ph_country":"Country or port","lbl_phone":"WhatsApp / Phone *","ph_phone":"+86 / international number","lbl_email":"Email *","ph_email":"you@company.com","lbl_prod":"Product","lbl_opt":"Customization / Size / Quantity","lbl_msg":"Project Details","btn_wa_send":"Send via WhatsApp","btn_mail_send":"Send via Email (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Back to Homepage"},
+    "ar": {"btn":"🌐 AR ▾","topbar_left":"توريد مباشر من المصنع • ModuVilla / AluVilla / CoveCore","topbar_right":"واتساب: +86 185 6179 0765  |  البريد الإلكتروني: dasleben@moduvilla.com","logo_sub":"المنازل المعيارية والمعيشة الخارجية","nav_products":"جميع المنتجات","nav_factory":"المصنع و OEM","nav_blog":"المدونة والأدلة","nav_quote":"طلب عرض سعر","bc_home":"الرئيسية","bc_products":"المنتجات","cta_wa":"استفسار عبر واتساب","cta_email":"البريد: dasleben@moduvilla.com","cta_form":"نموذج عرض سعر سريع","highlights_title":"أبرز المزايا","lbl_name":"الاسم *","ph_name":"اكتب اسمك","lbl_country":"الدولة / المنطقة *","ph_country":"الدولة أو ميناء الوصول","lbl_phone":"واتساب / الهاتف *","ph_phone":"+86 / رقم دولي","lbl_email":"البريد الإلكتروني *","ph_email":"you@company.com","lbl_prod":"المنتج","lbl_opt":"التخصيص / المقاس / الكمية","lbl_msg":"تفاصيل المشروع","btn_wa_send":"إرسال عبر واتساب","btn_mail_send":"إرسال عبر البريد (dasleben@moduvilla.com)","company_name":"شركة تشينغداو ياودني غوان لتكنولوجيا الإسكان مسبق الصنع المحدودة","footer_back":"← العودة إلى الصفحة الرئيسية"},
+    "es": {"btn":"🌐 ES ▾","topbar_left":"Suministro Directo de Fábrica • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Correo: dasleben@moduvilla.com","logo_sub":"Casas Modulares y Vida Exterior","nav_products":"PRODUCTOS","nav_factory":"FÁBRICA Y OEM","nav_blog":"BLOG Y GUÍAS","nav_quote":"COTIZAR","bc_home":"Inicio","bc_products":"Productos","cta_wa":"Consultar por WhatsApp","cta_email":"Correo: dasleben@moduvilla.com","cta_form":"Cotización Rápida","highlights_title":"Ventajas Clave","lbl_name":"Tu Nombre *","ph_name":"Tu nombre","lbl_country":"País / Región *","ph_country":"País o puerto de destino","lbl_phone":"WhatsApp / Teléfono *","ph_phone":"+86 / número internacional","lbl_email":"Correo Electrónico *","ph_email":"you@company.com","lbl_prod":"Producto","lbl_opt":"Personalización / Medida / Cantidad","lbl_msg":"Detalles del Proyecto","btn_wa_send":"Enviar por WhatsApp","btn_mail_send":"Enviar por Correo (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Volver al Inicio"},
+    "de": {"btn":"🌐 DE ▾","topbar_left":"Direktlieferung ab Werk • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  E-Mail: dasleben@moduvilla.com","logo_sub":"Modulhäuser & Outdoor-Living","nav_products":"ALLE PRODUKTE","nav_factory":"WERK & OEM","nav_blog":"BLOG & RATGEBER","nav_quote":"ANGEBOT ANFORDERN","bc_home":"Startseite","bc_products":"Produkte","cta_wa":"WhatsApp-Anfrage","cta_email":"E-Mail: dasleben@moduvilla.com","cta_form":"Schnellanfrage","highlights_title":"Wichtigste Vorteile","lbl_name":"Ihr Name *","ph_name":"Ihr Name","lbl_country":"Land / Region *","ph_country":"Land oder Zielhafen","lbl_phone":"WhatsApp / Telefon *","ph_phone":"+86 / internationale Nummer","lbl_email":"E-Mail *","ph_email":"you@company.com","lbl_prod":"Produkt","lbl_opt":"Ausführung / Größe / Menge","lbl_msg":"Projektdetails","btn_wa_send":"Per WhatsApp senden","btn_mail_send":"Per E-Mail senden (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Zurück zur Startseite"},
+    "fr": {"btn":"🌐 FR ▾","topbar_left":"Fourniture Directe Usine • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp : +86 185 6179 0765  |  E-mail : dasleben@moduvilla.com","logo_sub":"Maisons Modulaires & Vie Extérieure","nav_products":"TOUS LES PRODUITS","nav_factory":"USINE & OEM","nav_blog":"BLOG & GUIDES","nav_quote":"DEVIS","bc_home":"Accueil","bc_products":"Produits","cta_wa":"Demande WhatsApp","cta_email":"E-mail : dasleben@moduvilla.com","cta_form":"Formulaire Devis Rapide","highlights_title":"Points Clés","lbl_name":"Votre Nom *","ph_name":"Votre nom","lbl_country":"Pays / Région *","ph_country":"Pays ou port de livraison","lbl_phone":"WhatsApp / Téléphone *","ph_phone":"+86 / numéro international","lbl_email":"E-mail *","ph_email":"you@company.com","lbl_prod":"Produit","lbl_opt":"Option / Taille / Quantité","lbl_msg":"Détails du Projet","btn_wa_send":"Envoyer via WhatsApp","btn_mail_send":"Envoyer par E-mail (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← Retour à l'accueil"},
+    "ru": {"btn":"🌐 RU ▾","topbar_left":"Прямые поставки с завода • ModuVilla / AluVilla / CoveCore","topbar_right":"WhatsApp: +86 185 6179 0765  |  Email: dasleben@moduvilla.com","logo_sub":"Модульные дома и пространство у дома","nav_products":"ВСЕ ТОВАРЫ","nav_factory":"ЗАВОД И OEM","nav_blog":"БЛОГ И ГИДЫ","nav_quote":"ЗАПРОС ЦЕНЫ","bc_home":"Главная","bc_products":"Товары","cta_wa":"Запрос в WhatsApp","cta_email":"Email: dasleben@moduvilla.com","cta_form":"Быстрый запрос цены","highlights_title":"Ключевые преимущества","lbl_name":"Ваше имя *","ph_name":"Ваше имя","lbl_country":"Страна / Регион *","ph_country":"Страна или порт доставки","lbl_phone":"WhatsApp / Телефон *","ph_phone":"+86 / международный номер","lbl_email":"Email *","ph_email":"you@company.com","lbl_prod":"Товар","lbl_opt":"Размер / Опции / Количество","lbl_msg":"Детали проекта","btn_wa_send":"Отправить в WhatsApp","btn_mail_send":"Отправить на Email (dasleben@moduvilla.com)","company_name":"Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.","footer_back":"← На главную"}
+  },
+  "page": {
+    "en": {
+      "badge":"Timber & Wood Finish • MOQ: 1 Unit",
+      "h1":"Wooden Cabin",
+      "lead":"Prefabricated wooden cabin combining natural timber aesthetics with modular construction for lodges, vacation homes, and garden retreats.",
+      "tags":["Wood / Timber Aesthetics","Customizable Sizes","MOQ: 1 unit. Lead Time: 20–35 days"],
+      "specs":[["Model / Size","Customizable cabin dimensions"],["Material & Finish","Timber / wood-grain cladding with insulated structure"],["Interior & Layout","Customizable doors, windows, deck, and room layout"],["MOQ","1 unit. Contact us for product catalog"],["Production Lead Time","20–35 days"],["Inspection","Full-process & factory inspection with report; third-party inspection supported"],["Price","Quoted according to specific customization"],["Installation","Installation guide provided"],["Performance","Subject to product specifications and final design"]],
+      "highlights":[["Warm Timber Appeal","Natural wood aesthetics ideal for holiday parks, lodges, and backyard retreats."],["Flexible Customization","Adapt cabin size, glazing, and interior layout to match your site plan."],["MOQ 1 Unit Supply","20–35 days production lead time with installation guide and full factory inspection report."]],
+      "form_title":"Request Quotation — Wooden Cabin",
+      "opt_ph":"e.g. Custom size, wood finish, 1 unit",
+      "msg_ph":"Share cabin size, layout needs, or destination port..."
+    },
+    "ar": {
+      "badge":"تشطيب خشبي • الحد الأدنى: وحدة واحدة",
+      "h1":"Wooden Cabin",
+      "lead":"كوخ خشبي مسبق الصنع يجمع بين جماليات الخشب والبناء المعياري للمنتجعات وبيوت العطلات والاستراحات.",
+      "tags":["طابع خشبي دافئ","مقاسات قابلة للتخصيص","الحد الأدنى: وحدة واحدة. المدة: 20–35 يومًا"],
+      "specs":[["الطراز / المقاس","مقاسات كوخ قابلة للتخصيص"],["الخامة والتشطيب","كسوة خشبية مع هيكل معزول"],["الداخل والتوزيع","أبواب ونوافذ وشرفة وتوزيع غرف قابل للتخصيص"],["الحد الأدنى للطلب","وحدة واحدة. تواصل معنا للحصول على الكتالوج"],["مدة الإنتاج","20–35 يومًا"],["الفحص","فحص كامل للمراحل والمصنع مع تقرير؛ يدعم الفحص عبر طرف ثالث"],["السعر","يُحدد حسب التخصيص المطلوب"],["التركيب","يتوفر دليل تركيب"],["الأداء","يخضع لمواصفات المنتج والتصميم النهائي"]],
+      "highlights":[["طابع خشبي دافئ","مظهر خشبي طبيعي مناسب للقرى السياحية والنُزل والاستراحات."],["تخصيص مرن","تعديل المقاس والزجاج وتوزيع الغرف حسب مخطط الموقع."],["توريد من وحدة واحدة","مدة إنتاج 20–35 يومًا مع دليل تركيب وتقرير فحص مصنعي كامل."]],
+      "form_title":"طلب عرض سعر — Wooden Cabin",
+      "opt_ph":"مثال: مقاس مخصص، تشطيب خشبي، وحدة واحدة",
+      "msg_ph":"شارك مقاس الكوخ أو متطلبات التوزيع أو ميناء الوصول..."
+    },
+    "es": {
+      "badge":"Acabado Madera • MOQ: 1 Unidad",
+      "h1":"Wooden Cabin",
+      "lead":"Cabaña prefabricada de estética madera con construcción modular para lodges, casas de vacaciones y jardines.",
+      "tags":["Estética Madera","Medidas Personalizables","MOQ: 1 unidad. Plazo: 20–35 días"],
+      "specs":[["Modelo / Medida","Dimensiones de cabaña personalizables"],["Material y Acabado","Revestimiento tipo madera con estructura aislada"],["Interior y Distribución","Puertas, ventanas, terraza y distribución personalizables"],["MOQ","1 unidad. Contáctanos para catálogo de productos"],["Tiempo de Fabricación","20–35 días"],["Inspección","Inspección integral y de fábrica con informe; admite inspección de terceros"],["Precio","Cotizado según la personalización requerida"],["Instalación","Se incluye guía de instalación"],["Rendimiento","Sujeto a especificaciones del producto y diseño final"]],
+      "highlights":[["Estilo Madera Cálido","Acabado natural ideal para complejos turísticos, cabañas y patios."],["Personalización Flexible","Adapta medidas, carpintería y distribución a tu terreno."],["Suministro Desde 1 Unidad","Plazo de 20–35 días con guía de instalación e informe de inspección de fábrica."]],
+      "form_title":"Solicitar Cotización — Wooden Cabin",
+      "opt_ph":"Ej. Medida a medida, acabado madera, 1 unidad",
+      "msg_ph":"Indica medidas de la cabaña, distribución o puerto de destino..."
+    },
+    "de": {
+      "badge":"Holzoptik • MOQ: 1 Einheit",
+      "h1":"Wooden Cabin",
+      "lead":"Vorgefertigtes Holzhaus mit natürlicher Holzoptik und Modulbauweise für Ferienanlagen, Lodges und Gärten.",
+      "tags":["Holz- & Timber-Optik","Individuelle Maße","MOQ: 1 Einheit. Lieferzeit: 20–35 Tage"],
+      "specs":[["Modell / Größe","Kabinenmaße individuell anpassbar"],["Material & Oberfläche","Holz-/Holzdekorverkleidung mit gedämmter Konstruktion"],["Innenraum & Grundriss","Türen, Fenster, Terrasse und Raumaufteilung anpassbar"],["MOQ","1 Einheit. Produktkatalog auf Anfrage"],["Fertigungszeit","20–35 Tage"],["Prüfung","Prozess- & Werksprüfung mit Bericht; Drittanbieter-Prüfung möglich"],["Preis","Angebot je nach individueller Ausführung"],["Montage","Montageanleitung wird mitgeliefert"],["Leistung","Abhängig von Produktspezifikationen und Endentwurf"]],
+      "highlights":[["Warme Holzoptik","Natürlicher Look für Ferienparks, Lodges und Rückzugsorte im Grünen."],["Flexible Anpassung","Größe, Verglasung und Grundriss passend zum Projekt planen."],["Lieferung ab 1 Einheit","20–35 Tage Produktionszeit inkl. Montageanleitung und Werksprüfbericht."]],
+      "form_title":"Angebot anfordern — Wooden Cabin",
+      "opt_ph":"z. B. Wunschmaß, Holzdekor, 1 Einheit",
+      "msg_ph":"Kabinengröße, Raumbedarf oder Zielhafen angeben..."
+    },
+    "fr": {
+      "badge":"Finition Bois • MOQ : 1 Unité",
+      "h1":"Wooden Cabin",
+      "lead":"Chalet préfabriqué alliant esthétique bois et conception modulaire pour résidences de vacances, lodges et jardins.",
+      "tags":["Esthétique Bois","Dimensions Sur Mesure","MOQ : 1 unité. Délai : 20–35 jours"],
+      "specs":[["Modèle / Taille","Dimensions de chalet personnalisables"],["Matériau & Finition","Bardage bois / effet bois avec structure isolée"],["Intérieur & Agencement","Portes, fenêtres, terrasse et plan intérieur personnalisables"],["MOQ","1 unité. Contactez-nous pour le catalogue"],["Délai de Fabrication","20–35 jours"],["Contrôle","Contrôle complet et rapport d'usine ; inspection tierce possible"],["Prix","Devis selon personnalisation souhaitée"],["Installation","Guide d'installation fourni"],["Performances","Selon spécifications produit et plan définitif"]],
+      "highlights":[["Chaleur du Bois","Esthétique chaleureuse idéale pour hébergements touristiques et jardins."],["Personnalisation Souple","Adaptez dimensions, ouvertures et agencement à votre projet."],["Commande dès 1 Unité","Délai de 20–35 jours avec notice d'installation et rapport d'inspection."]],
+      "form_title":"Demander un Devis — Wooden Cabin",
+      "opt_ph":"Ex. Dimension sur mesure, finition bois, 1 unité",
+      "msg_ph":"Précisez dimensions, agencement souhaité ou port de livraison..."
+    },
+    "ru": {
+      "badge":"Отделка под дерево • MOQ: 1 шт.",
+      "h1":"Wooden Cabin",
+      "lead":"Модульный деревянный домик с тёплой эстетикой дерева для баз отдыха, глэмпингов и загородных участков.",
+      "tags":["Эстетика дерева","Размеры под заказ","MOQ: 1 шт. Срок: 20–35 дней"],
+      "specs":[["Модель / Размер","Размеры домика под заказ"],["Материал и отделка","Деревянная / под дерево обшивка и утеплённый каркас"],["Интерьер и планировка","Двери, окна, терраса и планировка комнат под заказ"],["MOQ","1 шт. Свяжитесь с нами для получения каталога"],["Срок производства","20–35 дней"],["Контроль качества","Поэтапный и заводской контроль с отчётом; возможна независимая инспекция"],["Цена","Рассчитывается по индивидуальной спецификации"],["Монтаж","Инструкция по монтажу прилагается"],["Характеристики","Зависят от спецификации изделия и финального проекта"]],
+      "highlights":[["Тёплый стиль дерева","Естественный облик для баз отдыха, коттеджей и садовых участков."],["Гибкая адаптация","Подбор габаритов, остекления и планировки под задачу проекта."],["Поставка от 1 шт.","Срок изготовления 20–35 дней, инструкция и отчёт ОТК."]],
+      "form_title":"Запросить расчёт — Wooden Cabin",
+      "opt_ph":"Напр.: размер под заказ, отделка под дерево, 1 шт.",
+      "msg_ph":"Укажите размер домика, планировку или порт доставки..."
+    }
+  }
+};
+
 function applyTranslations(l){
   const u = I18N.ui[l] || I18N.ui.en;
   const p = I18N.page[l] || I18N.page.en;
@@ -331,18 +435,21 @@ function applyTranslations(l){
 }
 function setLang(l){
   if(!['en','ar','es','de','fr','ru'].includes(l)) l = 'en';
-  localStorage.setItem('moduvilla_lang', l);
+  try{ localStorage.setItem('moduvilla_lang', l); }catch(e){}
   document.documentElement.lang = l;
   document.body.dir = (l === 'ar') ? 'rtl' : 'ltr';
   applyTranslations(l);
-  document.getElementById('langDrop').classList.remove('open');
+  var drop = document.getElementById('langDrop');
+  if(drop) drop.classList.remove('open');
 }
 document.addEventListener('click', function(e){
   var drop = document.getElementById('langDrop');
   if(drop && !drop.contains(e.target)) drop.classList.remove('open');
 });
 (function(){
-  var p = new URLSearchParams(location.search).get('lang') || localStorage.getItem('moduvilla_lang') || 'en';
+  var saved = 'en';
+  try{ saved = localStorage.getItem('moduvilla_lang') || 'en'; }catch(e){}
+  var p = new URLSearchParams(location.search).get('lang') || saved;
   setLang(['en','ar','es','de','fr','ru'].includes(p) ? p : 'en');
 })();
 function buildText(){
@@ -354,8 +461,7 @@ function buildText(){
     'Email: ' + document.getElementById('qEmail').value,
     'Option: ' + document.getElementById('qOpt').value,
     'Details: ' + document.getElementById('qMsg').value
-  ].join('
-');
+  ].join('\n');
 }
 function sendQuote(e){
   e.preventDefault();
