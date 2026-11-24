@@ -103,8 +103,8 @@ a{text-decoration:none;color:inherit}
 .breadcrumb{padding:16px 6%;background:#F9FAFB;border-bottom:1px solid #E5E7EB;font-size:13px;color:#4B5563;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .breadcrumb a:hover{color:#1D4ED8}
 .p-hero{padding:48px 6% 64px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
-.p-gallery{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden}
-.p-gallery img{width:100%;height:auto;display:block;object-fit:cover;max-height:520px}
+.p-gallery{background:#F9FAFB;border:1px solid #E5E7EB;border-radius:18px;overflow:hidden;width:100%}
+.p-gallery img{width:100%;max-width:100%;height:auto;display:block}
 .p-badge{display:inline-block;background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:600;margin-bottom:12px}
 .p-info h1{font-size:30px;line-height:1.25;color:#1F2937;margin-bottom:14px}
 .p-lead{font-size:15px;color:#4B5563;margin-bottom:20px}
@@ -139,6 +139,7 @@ footer a{color:#FFFFFF;text-decoration:underline}
 body[dir=rtl] .nav,body[dir=rtl] .nav-links,body[dir=rtl] .breadcrumb,body[dir=rtl] .cta-row{flex-direction:row-reverse}
 body[dir=rtl] .lang-menu{right:auto;left:0}
 body[dir=rtl] .spec-table td{text-align:right}
+body[dir=rtl] .wa{right:auto;left:22px}
 html,body{max-width:100%;overflow-x:hidden}
 .topbar span,.p-info,.p-info h1,.p-lead,.spec-table td,.feat-card h3,.feat-card p,footer p{min-width:0;overflow-wrap:anywhere;word-break:break-word}
 @media(max-width:960px){.p-hero,.feat-grid,.fg{grid-template-columns:1fr}.nav-links{display:none}.p-info h1{font-size:24px}.btn-primary,.btn-outline{width:100%;justify-content:center}}
@@ -153,12 +154,12 @@ html,body{max-width:100%;overflow-x:hidden}
 
 <div class="nav-wrap">
   <nav class="nav">
-    <a class="logo" href="../">ModuVilla <small id="tLogoSub">Modular Homes & Outdoor Living</small></a>
+    <a class="logo" href="../" data-keep-lang="1">ModuVilla <small id="tLogoSub">Modular Homes &amp; Outdoor Living</small></a>
     <div class="nav-right">
       <div class="nav-links">
-        <a href="../#products" id="tNavProducts">ALL PRODUCTS</a>
-        <a href="../#factory" id="tNavFactory">FACTORY & OEM</a>
-        <a href="../blog-articles" id="tNavBlog">BLOG & GUIDES</a>
+        <a href="../#products" data-keep-lang="1" id="tNavProducts">ALL PRODUCTS</a>
+        <a href="../#factory" data-keep-lang="1" id="tNavFactory">FACTORY &amp; OEM</a>
+        <a href="../blog-articles" data-keep-lang="1" id="tNavBlog">BLOG &amp; GUIDES</a>
         <a href="#inquiry" id="tNavQuote">GET QUOTE</a>
       </div>
       <div class="lang" id="langDrop">
@@ -177,8 +178,8 @@ html,body{max-width:100%;overflow-x:hidden}
 </div>
 
 <div class="breadcrumb">
-  <a href="../" id="tBcHome">Home</a> <span>/</span>
-  <a href="../#products" id="tBcProducts">Products</a> <span>/</span>
+  <a href="../" data-keep-lang="1" id="tBcHome">Home</a> <span>/</span>
+  <a href="../#products" data-keep-lang="1" id="tBcProducts">Products</a> <span>/</span>
   <strong id="tBcCurrent" style="color:#1F2937">AluVilla-4th Gen Pergola</strong>
 </div>
 
@@ -204,11 +205,11 @@ html,body{max-width:100%;overflow-x:hidden}
       </div>
       <table class="spec-table" id="tSpecs">
         <tr><td>Model / Size</td><td>Customizable single or multi-bay dimensions</td></tr>
-        <tr><td>Material</td><td>Powder-coated aluminum alloy structure & louvers</td></tr>
-        <tr><td>Roof & Options</td><td>Adjustable louver roof; LED, screen, or side panels optional</td></tr>
+        <tr><td>Material</td><td>Powder-coated aluminum alloy structure &amp; louvers</td></tr>
+        <tr><td>Roof &amp; Options</td><td>Adjustable louver roof; LED, screen, or side panels optional</td></tr>
         <tr><td>MOQ</td><td>1 set. Contact us for product catalog</td></tr>
         <tr><td>Production Lead Time</td><td>20–35 days</td></tr>
-        <tr><td>Inspection</td><td>Full-process & factory inspection with report; third-party inspection supported</td></tr>
+        <tr><td>Inspection</td><td>Full-process &amp; factory inspection with report; third-party inspection supported</td></tr>
         <tr><td>Price</td><td>Quoted according to specific customization</td></tr>
         <tr><td>Installation</td><td>Installation guide provided</td></tr>
         <tr><td>Performance</td><td>Subject to product specifications and final design</td></tr>
@@ -285,12 +286,38 @@ html,body{max-width:100%;overflow-x:hidden}
 <footer>
   <p><strong id="tCompanyName">Qingdao Yaodeni Guan Prefabricated Housing Technology Co., Ltd.</strong></p>
   <p style="margin:8px 0">Email: <a href="mailto:dasleben@moduvilla.com">dasleben@moduvilla.com</a> &nbsp;|&nbsp; WhatsApp: +86 185 6179 0765</p>
-  <p style="margin-top:10px"><a href="../" id="tFooterBack">← Back to Homepage</a></p>
+  <p style="margin-top:10px"><a href="../" data-keep-lang="1" id="tFooterBack">← Back to Homepage</a></p>
 </footer>
 
 <a class="wa" href="https://wa.me/8618561790765" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M19.05 4.92A9.82 9.82 0 0012.04 2C6.58 2 2.14 6.44 2.14 11.89c0 1.74.46 3.44 1.33 4.95L2 22l5.26-1.38a9.86 9.86 0 004.72 1.2h.02c5.45 0 9.88-4.44 9.88-9.89 0-2.64-1.03-5.12-2.83-6.92zm-6.99 13.11h-.02a8.05 8.05 0 01-4.1-1.12l-.29-.18-3.13.82.83-3.05-.19-.32a8.06 8.06 0 01-1.24-4.29c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.39a8.1 8.1 0 012.38 5.77c0 4.5-3.65 8.14-8.18 8.14zm4.49-6.1c-.25-.12-1.47-.72-1.69-.81-.22-.08-.39-.12-.55.12-.16.25-.63.81-.77.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.02-.38.1-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03 0 1.2.87 2.36.99 2.52.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg></a>
 
 <script>
+const SUPPORTED_LANGS = ['en','ar','es','de','fr','ru'];
+
+function withLangUrl(href, lang) {
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+    return href;
+  }
+  try {
+    var url = new URL(href, location.href);
+    url.searchParams.set('lang', lang);
+    var pathname = url.pathname;
+    if (pathname.endsWith('/index.html')) pathname = pathname.slice(0, -10);
+    else if (pathname.endsWith('.html')) pathname = pathname.slice(0, -5);
+    return pathname + url.search + url.hash;
+  } catch (e) {
+    return href;
+  }
+}
+
+function syncLinks(lang) {
+  document.querySelectorAll('a[data-keep-lang="1"]').forEach(function(a) {
+    var baseHref = a.getAttribute('data-base-href') || a.getAttribute('href');
+    a.setAttribute('data-base-href', baseHref);
+    a.setAttribute('href', withLangUrl(baseHref, lang));
+  });
+}
+
 function handleImgFallback(img){
   try{
     var list = JSON.parse(img.getAttribute('data-fallbacks') || '[]');
@@ -305,6 +332,7 @@ function handleImgFallback(img){
     img.onerror = null;
   }
 }
+
 function toggleLangMenu(e){
   if(e) e.stopPropagation();
   var drop = document.getElementById('langDrop');
@@ -370,7 +398,7 @@ const I18N = {
       "h1":"Pergola AluVilla 4e Gén.",
       "lead":"Pergola aluminium de 4e génération pour terrasses et jardins avec lames orientables et dimensions sur mesure.",
       "tags":["AluVilla 4e Gén.","Système Lames Aluminium","MOQ : 1 ensemble. Délai : 20–35 jours"],
-      "specs":[["Modèle / Taille","Dimensions personnalisables simple ou multi-travées"],["Matériau","Structure et lames en alliage d'aluminium thermolaqué"],["Toiture & Options","Toiture à lames orientables ; LED, screens ou parois latérales en option"],["MOQ","1 ensemble. Contactez-nous pour le catalogue"],["Délai de Fabrication","20–35 jours"],["Contrôle","Contrôle complet et rapport d'usine ; inspection tierce possible"],["Prix","Devis selon personnalisation souhaitée"],["Installation","Guide d'installation fourni"],["Performances","Selon spécifications produit et plan définitif"]],
+      "specs":[["Modèle / Taille","Dimensions personnalisables simple ou multi-travées"],["Matériau","Structure et lames en alliage d'aluminium thermolaqué"],["Toiture & Options","Toiture àames orientables ; LED, screens ou parois latérales en option"],["MOQ","1 ensemble. Contactez-nous pour le catalogue"],["Délai de Fabrication","20–35 jours"],["Contrôle","Contrôle complet et rapport d'usine ; inspection tierce possible"],["Prix","Devis selon personnalisation souhaitée"],["Installation","Guide d'installation fourni"],["Performances","Selon spécifications produit et plan définitif"]],
       "highlights":[["Gestion de l'Ombrage","Lames orientables pour régler l'ensoleillement et la ventilation."],["Robustesse Aluminium","Profilés résistants à la corrosion pour un usage durable en extérieur."],["Commande dès 1 Ensemble","Délai de 20–35 jours avec notice d'installation et rapport d'inspection."]],
       "form_title":"Demander un Devis — Pergola AluVilla 4e Gén.",
       "opt_ph":"Ex. 3m × 4m, teinte RAL, options LED / screen",
@@ -432,26 +460,38 @@ function applyTranslations(l){
   document.getElementById('tBtnMailSend').textContent = u.btn_mail_send;
   document.getElementById('tCompanyName').textContent = u.company_name;
   document.getElementById('tFooterBack').textContent = u.footer_back;
+  syncLinks(l);
 }
+
 function setLang(l){
   if(!['en','ar','es','de','fr','ru'].includes(l)) l = 'en';
   try{ localStorage.setItem('moduvilla_lang', l); }catch(e){}
   document.documentElement.lang = l;
   document.body.dir = (l === 'ar') ? 'rtl' : 'ltr';
+  try {
+    var url = new URL(location.href);
+    if (url.searchParams.get('lang') !== l) {
+      url.searchParams.set('lang', l);
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
+    }
+  } catch (e) {}
   applyTranslations(l);
   var drop = document.getElementById('langDrop');
   if(drop) drop.classList.remove('open');
 }
+
 document.addEventListener('click', function(e){
   var drop = document.getElementById('langDrop');
   if(drop && !drop.contains(e.target)) drop.classList.remove('open');
 });
+
 (function(){
   var saved = 'en';
   try{ saved = localStorage.getItem('moduvilla_lang') || 'en'; }catch(e){}
   var p = new URLSearchParams(location.search).get('lang') || saved;
   setLang(['en','ar','es','de','fr','ru'].includes(p) ? p : 'en');
 })();
+
 function buildText(){
   return [
     'Product: ' + document.getElementById('qProd').value,
@@ -463,10 +503,12 @@ function buildText(){
     'Details: ' + document.getElementById('qMsg').value
   ].join('\n');
 }
+
 function sendQuote(e){
   e.preventDefault();
-  window.open('https://wa.me/8618561790765?text=' + encodeURIComponent(buildText()), '_blank');
+  window.open('https://wa.me/8618561790765?text=' + encodeURIComponent(buildText()), '_blank', 'noopener,noreferrer');
 }
+
 function sendEmailQuote(){
   location.href = 'mailto:dasleben@moduvilla.com?subject=' + encodeURIComponent('Product Inquiry: ' + document.getElementById('qProd').value) + '&body=' + encodeURIComponent(buildText());
 }
