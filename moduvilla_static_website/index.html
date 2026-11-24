@@ -367,7 +367,7 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
     <div class="cat-bar" aria-label="Product Categories">
       <button type="button" class="cat-btn active" data-cat="all" onclick="filterProducts('all', this)" data-i="cat_all">All Products</button>
       <button type="button" class="cat-btn" data-cat="ModuVilla" onclick="filterProducts('ModuVilla', this)" data-i="cat_moduvilla">ModuVilla House Series</button>
-      <button type="button" class="cat-btn" data-cat="AluVilla" onclick="filterProducts('AluVilla', this)" data-i="cat_aluvilla">AluVilla Pergolas Series</button>
+      <a class="cat-btn ext-link" href="./outdoor-pergolas"><span data-i="cat_aluvilla">AluVilla Pergolas Series</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
       <button type="button" class="cat-btn" data-cat="CoveCore" onclick="filterProducts('CoveCore', this)" data-i="cat_covecore">CoveCore Outdoor Series</button>
       <a class="cat-btn ext-link" href="./large-tents"><span data-i="cat_tents">Large Tents</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
       <a class="cat-btn ext-link" href="./building-materials"><span data-i="cat_materials">Building Materials</span><span class="cat-ext-icon" aria-hidden="true">↗</span></a>
@@ -526,7 +526,7 @@ body[dir=rtl] .lang-menu{right:auto;left:0}
     <div class="ft" data-i="products_title">PRODUCTS</div>
     <div class="brand-list">
       <div><b>ModuVilla</b><br><span data-i="brand_modu">House Series</span></div>
-      <div><b>AluVilla</b><br><span data-i="brand_alu">Pergolas Series</span></div>
+      <a href="./outdoor-pergolas"><b>AluVilla</b><br><span data-i="brand_alu">Pergolas Series</span></a>
       <div><b>CoveCore</b><br><span data-i="brand_cove">Outdoor Series</span></div>
     </div>
   </div>
@@ -1425,7 +1425,7 @@ function prodTitle(p){var t=TYPE[curLang][p.id]||TYPE.en[p.id];return p.brand?p.
 function pairText(pair){var L=AL[curLang]||AL.en,V=AV[curLang]||AV.en;return (L[pair[0]]||pair[0])+": "+(V[pair[1]]||pair[1])}
 
 function syncPageLinks(lang){
-  var pages=["./large-tents","./building-materials","./construction-machinery","./hot-air-balloons","./blog-articles","./faq","./products/modular-house","./products/triangle-a-frame-house","./products/folding-expandable-house","./products/container-house","./products/mobile-toilet","./products/wooden-cabin","./products/pergola-4generation","./products/pergola-4pro","./products/pergola-smart","./products/house-trailers","./products/outdoor-kitchen","./products/container-pool"];
+  var pages=["./outdoor-pergolas","./large-tents","./building-materials","./construction-machinery","./hot-air-balloons","./blog-articles","./faq","./products/modular-house","./products/triangle-a-frame-house","./products/folding-expandable-house","./products/container-house","./products/mobile-toilet","./products/wooden-cabin","./products/pergola-4generation","./products/pergola-4pro","./products/pergola-smart","./products/house-trailers","./products/outdoor-kitchen","./products/container-pool"];
   var suffix=lang&&lang!=="en"?"?lang="+encodeURIComponent(lang):"";
   document.querySelectorAll("a[href]").forEach(function(a){
     var raw=a.getAttribute("href")||"";
